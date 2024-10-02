@@ -1,0 +1,15 @@
+.quiz-question {
+    font-size: 20px;
+    /* Adjust this value to increase/decrease font size */
+    line-height: 1.5;
+    /* Optional: improves readability */
+    margin-bottom: 10px;
+    /* Space below each question */
+}
+
+.quiz-container {
+    font-family: Arial, sans-serif;
+    /* Set a common font for the quiz */
+    color: #b9b9b9;
+    /* Text color */
+}

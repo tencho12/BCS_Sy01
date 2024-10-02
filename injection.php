@@ -70,49 +70,49 @@
                 <div class="col-5">
                   <h2 class="mb-2">SQL Injection Quiz</h2>
                     <div class="container">
-                      <form id="quizForm">
-                          <div class="py-2">
-                              <p>1. What is SQL injection?</p>
-                              <input type="radio" name="q1" value="A" required> A) A type of SQL command<br>
-                              <input type="radio" name="q1" value="B"> B) A security vulnerability<br>
-                              <input type="radio" name="q1" value="C"> C) A database management technique<br>
-                              <input type="radio" name="q1" value="D"> D) None of the above<br>
-                          </div>
+                      <div id="quizContainer" class="quiz-container">
+                        <div class="py-2 quiz-question" id="question1" class="question">
+                            <p>1. What is SQL injection?</p>
+                            <input type="radio" name="q1" value="A" required> A) A type of SQL command<br>
+                            <input type="radio" name="q1" value="B"> B) A security vulnerability<br>
+                            <input type="radio" name="q1" value="C"> C) A database management technique<br>
+                            <input type="radio" name="q1" value="D"> D) None of the above<br>
+                            <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q1', 'B')">Submit</button>
+                        </div>
 
-                          <div class="py-2">
+                          <div class="py-2 quiz-question" id="question2" class="question" style="display:none;">
                               <p>2. Which of the following is a method to prevent SQL injection?</p>
                               <input type="radio" name="q2" value="A" required> A) Input sanitization<br>
                               <input type="radio" name="q2" value="B"> B) Using prepared statements<br>
                               <input type="radio" name="q2" value="C"> C) Both A and B<br>
                               <input type="radio" name="q2" value="D"> D) None of the above<br>
+                              <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q2', 'C')">Submit</button>
                           </div>
 
-                          <div class="py-2">
-                              <p>3. Why should error messages be generic in production?</p>
-                              <input type="radio" name="q3" value="A" required> A) To prevent revealing sensitive information<br>
-                              <input type="radio" name="q3" value="B"> B) They are not important<br>
-                              <input type="radio" name="q3" value="C"> C) To confuse attackers<br>
-                              <input type="radio" name="q3" value="D"> D) To make debugging easier<br>
-                          </div>
-                          <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswers()">Submit</button>
-                      </form>
+                            <div class="py-2 quiz-question" id="question3" class="question" style="display:none;">
+                                <p>3. Why should error messages be generic in production?</p>
+                                <input type="radio" name="q3" value="A" required> A) To prevent revealing sensitive information<br>
+                                <input type="radio" name="q3" value="B"> B) They are not important<br>
+                                <input type="radio" name="q3" value="C"> C) To confuse attackers<br>
+                                <input type="radio" name="q3" value="D"> D) To make debugging easier<br>
+                                <button type="button" class="btn btn-outline-primary mt-3" onclick="checkAnswer('q3', 'A')">Submit</button>
+                            </div>
 
-                      <div class="my-3">
-                        <h4>Result:</h4>
-                        <h5 id="resultText"></h5>
-                      </div>
-                    </div>
+                            <div id="resultText" style="display:none;">
+                                <h4>Result:</h4>
+                                <h5 id="feedbackText"></h5>
+                                <button type="button" class="btn btn-outline-primary mt-3" onclick="restartQuiz()">Start Again</button>
+                            </div>
+                  </div>
                 </div>
+              </div>
                 <div class="col-7">
-                  <h3 style="color: yellow">WHEN YOU PASS THE QUIZ, The secure form will be displayed here for testing</h3>
+                  <h3 id="quizheader" style="color: yellow">WHEN YOU PASS THE QUIZ, The secure form will be displayed here for testing</h3>
                   <div id="result" class="result hidden"> 
                     <iframe src="injection_secure.php" style="width: 100%; height: 500px; border: none;"></iframe>
-                    
                   </div>
                 <div>
               </div> 
-              
-            
             </div>
           </div>
         </div>
@@ -121,40 +121,6 @@
 
 
   <?php include 'footer.php'; ?>
-
-        <script>
-          function checkAnswers() {
-          const answers = {
-              q1: 'B',
-              q2: 'C',
-              q3: 'A'
-          };
-
-          let score = 0;
-          const totalQuestions = Object.keys(answers).length;
-
-          for (let question in answers) {
-              const userAnswer = document.querySelector(`input[name="${question}"]:checked`);
-              if (userAnswer && userAnswer.value === answers[question]) {
-                  score++;
-              }
-          }
-
-          const resultText = document.getElementById('resultText');
-          
-          // Reset the result display
-          document.getElementById('result').classList.add('hidden');
-
-          if (score === totalQuestions) {
-              // Only display the result if all answers are correct
-              resultText.innerText = `Congratulations! You scored ${score} out of ${totalQuestions}.`;
-              document.getElementById('result').classList.remove('hidden');
-          } else {
-              // Provide feedback if not all answers are correct
-              resultText.innerText = `You scored ${score} out of ${totalQuestions}. Try again!`;
-          }
-      }
-      </script>
 
     <script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script
@@ -178,6 +144,7 @@
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/paradise_slider_min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/tencho.js"></script>
 
 
   </body>
