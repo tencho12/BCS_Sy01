@@ -6,36 +6,36 @@
             <div class="single-footer-widget">
               <h6>WAVES</h6>
               <p>
-                SWAPT - Secure Web Application PenTesting Tools, is a Web
-                Vulnerability scanning tool that make your Web Applications safe
-                and secure.
+                WAVES - Web Application Vulnerability & Exploit Simulator is an
+                Web Vulnerability Simulator tool that will help you make your Web
+                Applications safe and secure.
               </p>
-              <h6>Follow Us</h6>
+              <!-- <h6>Follow Us</h6>
               <div class="footer-social d-flex align-items-center">
                 <a href="#"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="ml-10"><i class="fa fa-instagram"></i></a>
                 <a href="#" class="ml-10"><i class="fa fa-linkedin"></i></a>
                 <a href="#" class="ml-10"><i class="fa fa-youtube"></i></a>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="single-footer-widget">
-              <h6>Company</h6>
+              <h6>QUICK LINks</h6>
               <ul class="quick_link">
                 <li>
-                  <a href="#service"
-                    ><i class="fa fa-chevron-right mr-5"></i>About</a
+                  <a href="index.php"
+                    ><i class="fa fa-chevron-right mr-5"></i>HOME</a
                   >
                 </li>
                 <li>
                   <a href="#team"
-                    ><i class="fa fa-chevron-right mr-5"></i>Team</a
+                    ><i class="fa fa-chevron-right mr-5"></i>SQL INJECTION</a
                   >
                 </li>
                 <li>
                   <a href="#facts-area"
-                    ><i class="fa fa-chevron-right mr-5"></i>Reviews</a
+                    ><i class="fa fa-chevron-right mr-5"></i>BROKEN AUTH</a
                   >
                 </li>
               </ul>
@@ -43,24 +43,21 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="single-footer-widget">
-              <h6>Help</h6>
+              <h6>ONLINE REFERENCES</h6>
               <ul class="quick_link">
                 <li>
-                  <a href="#"
-                    ><i class="fa fa-chevron-right mr-5"></i>Terms and
-                    Conditions</a
+                  <a href="https://owasp.org/www-community/attacks/SQL_Injection" target="_blank"
+                    ><i class="fa fa-chevron-right mr-5"></i>OWASP - SQL Injection</a
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    ><i class="fa fa-chevron-right mr-5"></i>Privacy Policy</a
+                  <a href="https://owasp.org/API-Security/editions/2023/en/0xa2-broken-authentication/" target="_blank"
+                    ><i class="fa fa-chevron-right mr-5"></i>BROKEN AUTHENTICATION</a
                   >
                 </li>
                 <li>
-                  <a href="#"
-                    ><i class="fa fa-chevron-right mr-5"></i>Frequently Asked
-                    Questions</a
-                  >
+                  <a href="https://owasp.org/www-community/attacks/xss/" target="_blank"
+                    ><i class="fa fa-chevron-right mr-5"></i>Cross Site Scripting (XSS)</a>
                 </li>
               </ul>
             </div>
@@ -73,7 +70,7 @@
                   <li>
                     <a href="#"
                       ><i class="fa fa-envelope" aria-hidden="true"></i
-                      >besecure@swapt.com</a
+                      >syndicate1@gmail.com</a
                     >
                   </li>
                   <li>
@@ -85,7 +82,7 @@
                   <li>
                     <a href="#"
                       ><i class="fa fa-map-marker" aria-hidden="true"></i
-                      ><span>Bahria University Karachi Campus</span></a
+                      ><span>MCTE, MHOW</span></a
                     >
                   </li>
                 </ul>
@@ -122,6 +119,6 @@
       </div>
     </footer>
     <div class="copyright_area">
-      Copyright 2018-2022 All rights reserved. <a href="#">SWAPT</a>
+      Copyright 2024-2024 All rights reserved. <a href="#">WAVES</a>
     </div>
     <!-- End footer Area -->
