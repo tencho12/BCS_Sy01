@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $id = $_POST['user_id'];
 
     // Unsafely construct the SQL query
-    $query = "SELECT first_name, last_name FROM users WHERE user_id = '$id';";
+    $query = "SELECT first_name, last_name, password FROM users WHERE user_id = '$id';";
     
     // Execute the query
     $result = mysqli_query($conn, $query);
@@ -102,6 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                               <th>ID</th>
                               <th>First Name</th>
                               <th>Last Name</th>
+                              <th>Password</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -110,6 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                   <td><?php echo htmlspecialchars($id); ?></td>
                                   <td><?php echo htmlspecialchars($user['first_name']); ?></td>
                                   <td><?php echo htmlspecialchars($user['last_name']); ?></td>
+                                  <td><?php echo htmlspecialchars($user['password']); ?></td>
                               </tr>
                           <?php endforeach; ?>
                       </tbody>

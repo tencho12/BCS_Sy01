@@ -29,13 +29,18 @@
                   >
                 </li>
                 <li>
-                  <a href="#team"
+                  <a href="injection.php"
                     ><i class="fa fa-chevron-right mr-5"></i>SQL INJECTION</a
                   >
                 </li>
                 <li>
-                  <a href="#facts-area"
+                  <a href="cryptofail.php"
                     ><i class="fa fa-chevron-right mr-5"></i>BROKEN AUTH</a
+                  >
+                </li>
+                <li>
+                  <a href="xss.php"
+                    ><i class="fa fa-chevron-right mr-5"></i>XSS</a
                   >
                 </li>
               </ul>
@@ -75,7 +80,7 @@
                   </li>
                   <li>
                     <a href="#"
-                      ><i class="fa fa-phone" aria-hidden="true"></i>+92 123
+                      ><i class="fa fa-phone" aria-hidden="true"></i>+91 123
                       456789</a
                     >
                   </li>

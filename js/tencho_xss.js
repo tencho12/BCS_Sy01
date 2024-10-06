@@ -1,8 +1,9 @@
+
           function checkAnswers() {
           const answers = {
-              q1: 'B',
-              q2: 'C',
-              q3: 'A'
+              q1: 'D',
+              q2: 'B',
+              q3: 'C',
           };
 
           let score = 0;
@@ -54,6 +55,7 @@
         }
     }
 
+    // tencho change here
     function showNextQuestion() {
         if (currentQuestion <= 3) {
             hideAllQuestions();
@@ -66,6 +68,7 @@
         }
     }
 
+     // tencho change here
     function hideAllQuestions() {
         for (let i = 1; i <= 3; i++) {
             document.getElementById(`question${i}`).style.display = 'none';
@@ -78,3 +81,5 @@
         document.getElementById('resultText').style.display = 'none';
         document.getElementById(`question1`).style.display = 'block';
     }
+
+    
