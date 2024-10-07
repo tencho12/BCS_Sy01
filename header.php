@@ -15,23 +15,24 @@
             <a href="#" class="dropdown-toggle">XSS</a>
             <ul class="dropdown-menu">
               <li><a href="xss_overview.php">OVERVIEW</a></li>
-              <li><a href="xss_quiz.php">QUIZ</a></li>
+              <li><a href="quiz.php?quiz=xss">QUIZ</a></li>
               <li><a href="xss.php">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
             <a href="injection.php" class="dropdown-toggle">SQL INJECTION</a>
             <ul class="dropdown-menu">
-              <li><a href="injection.php">OVERVIEW</a></li>
-              <li><a href="advanced-injection.php">QUIZ</a></li>
-              <li><a href="advanced-injection.php">DEMO</a></li>
+              <li><a href="injection_overview.php">OVERVIEW</a></li>
+              <li><a href="quiz.php?quiz=sql_injection">QUIZ</a></li>
+              <li><a href="injection.php">DEMO</a></li>
             </ul>
           </li>
           <li class="menu-item dropdown">
             <a href="cryptofail.php" class="dropdown-toggle">CRYPTOGRAPHIC FAILURE</a>
             <ul class="dropdown-menu">
-              <li><a href="cryptofail.php">Introduction</a></li>
-              <li><a href="advanced-crypto.php">Advanced Crypto Failures</a></li>
+              <li><a href="cryptofail_overview.php">OVERVIEW</a></li>
+              <li><a href="quiz.php?quiz=cryptographic_fail">QUIZ</a></li>
+              <li><a href="cryptofail.php">DEMO</a></li>
             </ul>
           </li>
           <!-- <li><a href="xss.php">XSS</a></li> -->

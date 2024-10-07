@@ -40,11 +40,6 @@
     <link rel="stylesheet" href="css/full_width_animated_layers_008.css" />
     <link rel="stylesheet" href="css/main.css" />
     <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap JS (including Popper.js) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
   </head>
 
   <body id="home">
@@ -55,14 +50,9 @@
     <section class="team-area section-gap" id="research">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="menu-content pb-50 col-lg-8">
+          <div class="menu-content pb-40 pt-30 col-lg-8">
             <div class="title text-center">
-              <h1 class="mb-10 text-warning">REFERENCE DOCUMENTS</h1>
-              <p>
-                We combine our shared passion for cybersecurity with software
-                development expertise to create the coolest online platform for
-                demonstrating OSWASP TOP 10 vulnerabilities.
-              </p>
+              <h1 class="text-warning">QUIZ</h1>
             </div>
           </div>
         </div>
@@ -71,7 +61,7 @@
                 <div id="quiz-container" class="card p-4">
                     <!-- Quiz questions will be loaded here -->
                 </div>
-                <p class="mt-3 text-dark"><strong>Your Current Score: <span id="current-score">0</span></strong></p>
+                
                 <div id="controls" class="mt-4 d-flex justify-content-between">
                     <button id="prev-btn" class="btn btn-secondary">Previous</button>
                     <button id="next-btn" class="btn btn-primary">Next</button>

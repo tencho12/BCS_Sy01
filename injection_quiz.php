@@ -17,7 +17,6 @@
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-     
     <title>WAVES - Be Aware, Be Secure</title>
 
     <link
@@ -39,12 +38,6 @@
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/full_width_animated_layers_008.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Bootstrap JS (including Popper.js) -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
   </head>
 
   <body id="home">
@@ -67,24 +60,46 @@
           </div>
         </div>
         <div class="container text-dark">
-            <div class="col-md-8 offset-md-2">
-                <div id="quiz-container" class="card p-4">
-                    <!-- Quiz questions will be loaded here -->
-                </div>
-                <p class="mt-3 text-dark"><strong>Your Current Score: <span id="current-score">0</span></strong></p>
-                <div id="controls" class="mt-4 d-flex justify-content-between">
-                    <button id="prev-btn" class="btn btn-secondary">Previous</button>
-                    <button id="next-btn" class="btn btn-primary">Next</button>
-                    <a class="btn btn-danger mb-2" href="index.php" role="button" >
-                     Quit
-                      </a>
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header text-dark">SQL Injection</h5>
+                <div class="card-body">
+                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
+                  <p class="card-text">SQL injection exploits improper handling of user-supplied input. Most web applications allow users to input data via forms (e.g., login fields, search boxes)....... </p>
+                  <a href="blog.php?id=1" class="btn btn-sm btn-outline-info">Read All</a>
                 </div>
               </div>
             </div>
-        </div>
-    </section>
 
-    
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header text-dark">Broken Authentication</h5>
+                <div class="card-body">
+                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
+                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>
+                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <div class="card-body">
+                  <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
+                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwords, credit card  ........ </p>
+                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
+                </div>
+              </div>
+            </div>
+          </div>
+  </div>
+      </div>
+    </section>
 
     <!-- End contact-page Area -->
 
@@ -112,8 +127,5 @@
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/paradise_slider_min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/quiz_script.js"></script>
-    
-
   </body>
 </html>

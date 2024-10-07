@@ -1,0 +1,1570 @@
+{
+  "xss": {
+    "title": "Math Quiz",
+    "questions": [
+      {
+        "question": "What does XSS stand for?",
+        "answers": [
+          "Cross-Site Scripting",
+          "Cross-System Scripting",
+          "Cross-Site Scanning",
+          "Cross-Site Setup"
+        ],
+        "correct_answer": "Cross-Site Scripting",
+        "hint": "It involves injecting malicious scripts into web pages."
+      },
+      {
+        "question": "What type of attack does XSS represent?",
+        "answers": [
+          "SQL Injection",
+          "Cross-Site Scripting",
+          "Phishing",
+          "Man-in-the-Middle"
+        ],
+        "correct_answer": "Cross-Site Scripting",
+        "hint": "It involves client-side code execution in the user's browser."
+      },
+      {
+        "question": "Which of the following is a common effect of an XSS attack?",
+        "answers": [
+          "Defacement of a website",
+          "Server overload",
+          "Stealing session cookies",
+          "Remote file inclusion"
+        ],
+        "correct_answer": "Stealing session cookies",
+        "hint": "It compromises user identity and hijacks sessions."
+      },
+      {
+        "question": "Which of the following types of XSS attacks occurs when malicious code is permanently stored on the target server?",
+        "answers": ["Stored XSS", "Reflected XSS", "DOM-based XSS", "Phishing"],
+        "correct_answer": "Stored XSS",
+        "hint": "This attack remains in the system until retrieved."
+      },
+      {
+        "question": "Which type of XSS attack occurs when the injected script is reflected off a web server and delivered via a URL?",
+        "answers": [
+          "Stored XSS",
+          "Reflected XSS",
+          "DOM-based XSS",
+          "Remote File Inclusion"
+        ],
+        "correct_answer": "Reflected XSS",
+        "hint": "It often involves sending a malicious link to a user."
+      },
+      {
+        "question": "In which type of XSS attack does the payload modify the structure of a page in the victim’s browser without server involvement?",
+        "answers": [
+          "Stored XSS",
+          "Reflected XSS",
+          "DOM-based XSS",
+          "Remote Code Execution"
+        ],
+        "correct_answer": "DOM-based XSS",
+        "hint": "This XSS attack happens entirely on the client side."
+      },
+      {
+        "question": "Which of the following is a way to prevent XSS attacks?",
+        "answers": [
+          "Using HTTPS",
+          "Escaping user input",
+          "Enabling CORS",
+          "Hiding sensitive information"
+        ],
+        "correct_answer": "Escaping user input",
+        "hint": "Special characters in the input must be sanitized."
+      },
+      {
+        "question": "Which function should be avoided when dealing with XSS attacks in JavaScript?",
+        "answers": ["console.log", "eval", "alert", "document.write"],
+        "correct_answer": "eval",
+        "hint": "This function can execute arbitrary code, making it dangerous."
+      },
+      {
+        "question": "Which of these is a potential consequence of an XSS attack?",
+        "answers": [
+          "Denial of service",
+          "Stealing user data",
+          "Malware installation",
+          "Browser crash"
+        ],
+        "correct_answer": "Stealing user data",
+        "hint": "It can capture sensitive information like login details."
+      },
+      {
+        "question": "What is a key difference between stored XSS and reflected XSS?",
+        "answers": [
+          "Stored XSS affects the server, reflected does not",
+          "Reflected XSS is temporary",
+          "Stored XSS can only occur on HTTPS",
+          "Both are identical"
+        ],
+        "correct_answer": "Reflected XSS is temporary",
+        "hint": "Stored data is persistent, while reflected data is ephemeral."
+      },
+      {
+        "question": "Which HTTP header can help prevent certain XSS attacks?",
+        "answers": [
+          "Content-Type",
+          "X-XSS-Protection",
+          "Cache-Control",
+          "X-Frame-Options"
+        ],
+        "correct_answer": "X-XSS-Protection",
+        "hint": "This header helps prevent cross-site scripting attacks in some browsers."
+      },
+      {
+        "question": "Which of the following is a vector for XSS attacks?",
+        "answers": [
+          "Query strings",
+          "Form inputs",
+          "URL parameters",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "hint": "XSS can exploit various user inputs."
+      },
+      {
+        "question": "In a typical XSS attack, where does the malicious code get executed?",
+        "answers": [
+          "On the server",
+          "In the browser",
+          "On the firewall",
+          "In the cloud"
+        ],
+        "correct_answer": "In the browser",
+        "hint": "XSS is a client-side attack."
+      },
+      {
+        "question": "Which browser security feature is designed to mitigate XSS attacks?",
+        "answers": [
+          "Same-Origin Policy",
+          "Content Security Policy",
+          "Strict Transport Security",
+          "X-Frame-Options"
+        ],
+        "correct_answer": "Content Security Policy",
+        "hint": "This feature defines how resources like JavaScript are loaded on the page."
+      },
+      {
+        "question": "Which of the following JavaScript methods can make a web page vulnerable to XSS if misused?",
+        "answers": [
+          "addEventListener",
+          "setTimeout",
+          "innerHTML",
+          "querySelector"
+        ],
+        "correct_answer": "innerHTML",
+        "hint": "This method directly inserts HTML content into a document."
+      },
+      {
+        "question": "What is the main purpose of the Content Security Policy (CSP)?",
+        "answers": [
+          "To restrict malicious scripts",
+          "To manage SSL/TLS certificates",
+          "To enable cross-origin resource sharing",
+          "To prevent SQL injections"
+        ],
+        "correct_answer": "To restrict malicious scripts",
+        "hint": "CSP defines where scripts can be loaded from."
+      },
+      {
+        "question": "How can encoding user input help prevent XSS?",
+        "answers": [
+          "It makes user input safe for inclusion in HTML",
+          "It hashes user data",
+          "It encrypts the input",
+          "It escapes all characters"
+        ],
+        "correct_answer": "It makes user input safe for inclusion in HTML",
+        "hint": "Encoding prevents execution of the injected script."
+      },
+      {
+        "question": "Which event can an attacker exploit using XSS?",
+        "answers": ["onClick", "onSubmit", "onLoad", "All of the above"],
+        "correct_answer": "All of the above",
+        "hint": "JavaScript events can be used to trigger malicious scripts."
+      },
+      {
+        "question": "Why is reflected XSS more commonly found in phishing attacks?",
+        "answers": [
+          "It is easier to execute via URL",
+          "It affects all users permanently",
+          "It requires user input",
+          "It is server-side only"
+        ],
+        "correct_answer": "It is easier to execute via URL",
+        "hint": "A malicious link can carry the attack."
+      },
+      {
+        "question": "Which of the following frameworks helps to mitigate XSS attacks by escaping inputs automatically?",
+        "answers": ["Django", "Express", "React", "All of the above"],
+        "correct_answer": "All of the above",
+        "hint": "Many modern frameworks include XSS prevention mechanisms."
+      },
+      {
+        "question": "Which of the following is a limitation of browser-based XSS protection?",
+        "answers": [
+          "It only works in modern browsers",
+          "It blocks all scripts",
+          "It doesn't work on HTTPS",
+          "It is enabled by default"
+        ],
+        "correct_answer": "It only works in modern browsers",
+        "hint": "Older browsers may not have this protection."
+      },
+      {
+        "question": "What is the role of input validation in preventing XSS?",
+        "answers": [
+          "It ensures the input is safe for execution",
+          "It sanitizes malicious characters",
+          "It prevents SQL injection",
+          "It rejects non-ASCII characters"
+        ],
+        "correct_answer": "It sanitizes malicious characters",
+        "hint": "Input validation can neutralize dangerous content."
+      },
+      {
+        "question": "What is one way to test for XSS vulnerabilities?",
+        "answers": [
+          "Penetration testing",
+          "Code review",
+          "Fuzz testing",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "hint": "Multiple methods can be used to uncover XSS flaws."
+      },
+      {
+        "question": "Which XSS type is most difficult to detect because it happens entirely on the client side?",
+        "answers": [
+          "Stored XSS",
+          "Reflected XSS",
+          "DOM-based XSS",
+          "Persistent XSS"
+        ],
+        "correct_answer": "DOM-based XSS",
+        "hint": "This form of XSS occurs without server-side interaction."
+      },
+      {
+        "question": "Which attribute can be added to an HTML tag to prevent JavaScript from executing in some browsers?",
+        "answers": ["sandbox", "secure", "csrf-token", "readonly"],
+        "correct_answer": "sandbox",
+        "hint": "This attribute restricts execution in embedded content."
+      },
+      {
+        "question": "Which of the following best describes XSS?",
+        "answers": [
+          "Injecting malicious scripts into a web page",
+          "Flooding a server with requests",
+          "Modifying server-side scripts",
+          "Cracking user passwords"
+        ],
+        "correct_answer": "Injecting malicious scripts into a web page",
+        "hint": "XSS targets client-side code in the browser."
+      },
+      {
+        "question": "Which of the following is an example of XSS?",
+        "answers": [
+          "<script>alert('XSS')</script>",
+          "SELECT * FROM users",
+          "chmod 777 /var/www",
+          "rm -rf /home/*"
+        ],
+        "correct_answer": "<script>alert('XSS')</script>",
+        "hint": "It's a script that displays an alert."
+      },
+      {
+        "question": "What does the 'Same-Origin Policy' (SOP) help prevent?",
+        "answers": [
+          "XSS",
+          "SQL Injection",
+          "Cross-Site Request Forgery",
+          "Buffer Overflow"
+        ],
+        "correct_answer": "XSS",
+        "hint": "SOP prevents scripts from one site from interacting with another site."
+      },
+      {
+        "question": "Which header can be used to control which resources can be loaded in a web application, thus reducing the risk of XSS?",
+        "answers": [
+          "Content-Security-Policy",
+          "Set-Cookie",
+          "Location",
+          "Authorization"
+        ],
+        "correct_answer": "Content-Security-Policy",
+        "hint": "This header defines the locations from which resources can be loaded."
+      },
+      {
+        "question": "Which type of attack is XSS commonly confused with?",
+        "answers": [
+          "SQL Injection",
+          "Cross-Site Request Forgery",
+          "Phishing",
+          "Denial of Service"
+        ],
+        "correct_answer": "Cross-Site Request Forgery",
+        "hint": "Both attacks involve exploiting user interactions with websites."
+      },
+      {
+        "question": "What is a key indicator of a website being vulnerable to reflected XSS?",
+        "answers": [
+          "Data is reflected back in the URL or response",
+          "Server crashes frequently",
+          "Pages take a long time to load",
+          "The website uses SSL"
+        ],
+        "correct_answer": "Data is reflected back in the URL or response",
+        "hint": "Reflected XSS often involves user-supplied data being returned in the response."
+      },
+      {
+        "question": "Which of the following can help mitigate DOM-based XSS?",
+        "answers": [
+          "Avoiding client-side manipulation of user input",
+          "Encrypting all data",
+          "Implementing firewalls",
+          "Using AJAX requests"
+        ],
+        "correct_answer": "Avoiding client-side manipulation of user input",
+        "hint": "DOM-based XSS occurs when input is dynamically modified on the client side."
+      },
+      {
+        "question": "Which method is recommended for safely rendering user-generated HTML content?",
+        "answers": [
+          "Using a library that sanitizes HTML",
+          "Allowing all user inputs",
+          "Rendering without modification",
+          "Disabling JavaScript"
+        ],
+        "correct_answer": "Using a library that sanitizes HTML",
+        "hint": "The library should filter out harmful tags and attributes."
+      },
+      {
+        "question": "What is the primary difference between XSS and SQL injection?",
+        "answers": [
+          "XSS targets client-side scripts, SQL injection targets databases",
+          "SQL injection is harder to prevent",
+          "XSS requires user authentication",
+          "SQL injection is a type of XSS"
+        ],
+        "correct_answer": "XSS targets client-side scripts, SQL injection targets databases",
+        "hint": "XSS focuses on the browser while SQL injection exploits database queries."
+      },
+      {
+        "question": "Which JavaScript property, when misused, can lead to XSS?",
+        "answers": [
+          "innerHTML",
+          "document.cookie",
+          "console.log",
+          "window.location"
+        ],
+        "correct_answer": "innerHTML",
+        "hint": "This property directly inserts HTML into a webpage."
+      },
+      {
+        "question": "What can attackers steal via XSS?",
+        "answers": [
+          "Session tokens",
+          "Server passwords",
+          "Firewall configurations",
+          "Database backups"
+        ],
+        "correct_answer": "Session tokens",
+        "hint": "This allows attackers to impersonate users."
+      },
+      {
+        "question": "Which of the following is NOT a good practice for preventing XSS?",
+        "answers": [
+          "Validating and sanitizing user input",
+          "Escaping special characters",
+          "Allowing raw HTML input",
+          "Implementing a Content Security Policy (CSP)"
+        ],
+        "correct_answer": "Allowing raw HTML input",
+        "hint": "Allowing raw HTML makes it easy to inject malicious code."
+      },
+      {
+        "question": "What is the purpose of the 'HttpOnly' flag on cookies?",
+        "answers": [
+          "To prevent client-side scripts from accessing the cookie",
+          "To ensure the cookie is only transmitted over HTTPS",
+          "To prevent the cookie from being modified",
+          "To mark the cookie as secure"
+        ],
+        "correct_answer": "To prevent client-side scripts from accessing the cookie",
+        "hint": "It prevents JavaScript from accessing the cookie, mitigating the risk of XSS."
+      },
+      {
+        "question": "What does DOM stand for in the context of XSS?",
+        "answers": [
+          "Document Object Model",
+          "Data Object Methodology",
+          "Dynamic Object Manager",
+          "Document Orientation Map"
+        ],
+        "correct_answer": "Document Object Model",
+        "hint": "It's a programming interface for web documents."
+      },
+      {
+        "question": "Which of the following is true for reflected XSS?",
+        "answers": [
+          "It requires user interaction",
+          "It is stored on the server",
+          "It only affects admins",
+          "It cannot be mitigated"
+        ],
+        "correct_answer": "It requires user interaction",
+        "hint": "Reflected XSS typically involves tricking the user into clicking a malicious link."
+      },
+      {
+        "question": "Which of these is a preventive measure for XSS attacks?",
+        "answers": [
+          "Input validation",
+          "Using long passwords",
+          "Encrypting database entries",
+          "Rate limiting"
+        ],
+        "correct_answer": "Input validation",
+        "hint": "Validating input helps filter out potential threats."
+      },
+      {
+        "question": "What does the 'sandbox' attribute in iframes do?",
+        "answers": [
+          "Restricts what JavaScript can do inside the iframe",
+          "Prevents the iframe from being displayed",
+          "Logs all iframe activity",
+          "Prevents SQL injections"
+        ],
+        "correct_answer": "Restricts what JavaScript can do inside the iframe",
+        "hint": "This attribute limits potentially malicious code within the iframe."
+      },
+      {
+        "question": "Which is a common vector for reflected XSS?",
+        "answers": [
+          "Search boxes",
+          "Internal scripts",
+          "Database queries",
+          "HTTPS headers"
+        ],
+        "correct_answer": "Search boxes",
+        "hint": "User input is immediately reflected in the response in this case."
+      },
+      {
+        "question": "Which term describes the use of trusted data that an attacker alters in order to bypass XSS protections?",
+        "answers": [
+          "Input validation failure",
+          "Trusted data attack",
+          "Script injection",
+          "Data poisoning"
+        ],
+        "correct_answer": "Data poisoning",
+        "hint": "Attackers modify trusted data to exploit vulnerabilities."
+      },
+      {
+        "question": "Which of the following tools can help test for DOM-based XSS?",
+        "answers": ["DOMInvader", "Hydra", "Nmap", "sqlmap"],
+        "correct_answer": "DOMInvader",
+        "hint": "This tool is used for testing XSS in the browser's DOM."
+      },
+      {
+        "question": "How can the 'X-Content-Type-Options' header prevent XSS?",
+        "answers": [
+          "It prevents MIME-type sniffing",
+          "It encrypts the web content",
+          "It disallows cookies",
+          "It disables JavaScript"
+        ],
+        "correct_answer": "It prevents MIME-type sniffing",
+        "hint": "This header ensures the browser interprets files based on the correct content type."
+      },
+      {
+        "question": "How does a web application firewall (WAF) help prevent XSS attacks?",
+        "answers": [
+          "It blocks malicious requests",
+          "It encrypts user sessions",
+          "It restricts access to the admin panel",
+          "It disables JavaScript execution"
+        ],
+        "correct_answer": "It blocks malicious requests",
+        "hint": "A WAF filters out malicious inputs before they reach the application."
+      },
+      {
+        "question": "What is the purpose of the 'X-Frame-Options' header?",
+        "answers": [
+          "To prevent clickjacking",
+          "To prevent XSS",
+          "To disable JavaScript",
+          "To ensure secure cookies"
+        ],
+        "correct_answer": "To prevent clickjacking",
+        "hint": "This header restricts embedding of web pages to prevent malicious interactions."
+      },
+      {
+        "question": "Which of these is an indication that a site might be vulnerable to XSS?",
+        "answers": [
+          "Unescaped user inputs in the HTML output",
+          "Slow page load times",
+          "Long URL query strings",
+          "Large session cookies"
+        ],
+        "correct_answer": "Unescaped user inputs in the HTML output",
+        "hint": "Look for inputs that are reflected back in the page without being properly escaped."
+      },
+      {
+        "question": "Which language is commonly exploited in an XSS attack?",
+        "answers": ["JavaScript", "Python", "PHP", "C++"],
+        "correct_answer": "JavaScript",
+        "hint": "This is a client-side language that runs in the browser."
+      }
+    ]
+  },
+  "sql_injection": {
+    "questions": [
+      {
+        "question": "What is SQL Injection?",
+        "answers": [
+          "A type of web design technique",
+          "A method to inject CSS into a website",
+          "An attack that allows manipulation of SQL queries",
+          "A way to enhance SQL database performance"
+        ],
+        "correct_answer": "An attack that allows manipulation of SQL queries",
+        "hint": "It exploits vulnerabilities in SQL query handling."
+      },
+      {
+        "question": "Which SQL command is often targeted in SQL Injection attacks?",
+        "answers": ["SELECT", "UPDATE", "DELETE", "All of the above"],
+        "correct_answer": "All of the above",
+        "hint": "It impacts commands that retrieve or alter data in the database."
+      },
+      {
+        "question": "What does the term 'sanitizing input' mean?",
+        "answers": [
+          "Formatting data for display",
+          "Removing potentially harmful code from user input",
+          "Filtering data based on SQL standards",
+          "Storing data in a specific format"
+        ],
+        "correct_answer": "Removing potentially harmful code from user input",
+        "hint": "It's a preventive measure against injection attacks."
+      },
+      {
+        "question": "Which type of SQL Injection attack can allow unauthorized users to access database tables?",
+        "answers": [
+          "Error-based SQL Injection",
+          "Boolean-based SQL Injection",
+          "Union-based SQL Injection",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "hint": "Different SQL Injection types exploit various query responses."
+      },
+      {
+        "question": "How can SQL Injection be prevented?",
+        "answers": [
+          "Using prepared statements",
+          "Validating user input",
+          "Using ORM frameworks",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "hint": "Multiple strategies are combined for defense."
+      },
+      {
+        "question": "Which SQL clause is most commonly exploited in SQL Injection?",
+        "answers": ["JOIN", "ORDER BY", "WHERE", "GROUP BY"],
+        "correct_answer": "WHERE",
+        "hint": "This clause is used to filter results based on conditions."
+      },
+      {
+        "question": "What is 'parameterized query' in SQL?",
+        "answers": [
+          "A query that combines multiple tables",
+          "A query that uses placeholders for data",
+          "A query that combines multiple WHERE conditions",
+          "A query that is optimized for performance"
+        ],
+        "correct_answer": "A query that uses placeholders for data",
+        "hint": "It helps avoid hardcoding data into SQL commands."
+      },
+      {
+        "question": "What is the purpose of UNION in SQL Injection?",
+        "answers": [
+          "To prevent SQL Injection",
+          "To combine multiple SQL Injection attempts",
+          "To retrieve data from multiple tables in one attack",
+          "To bypass database security"
+        ],
+        "correct_answer": "To retrieve data from multiple tables in one attack",
+        "hint": "It combines results of multiple SELECT queries."
+      },
+      {
+        "question": "Which is a common SQL Injection testing tool?",
+        "answers": ["Nmap", "SQLmap", "Wireshark", "Metasploit"],
+        "correct_answer": "SQLmap",
+        "hint": "It’s an automated tool specifically for SQL Injection."
+      },
+      {
+        "question": "What is 'Blind SQL Injection'?",
+        "answers": [
+          "An attack where data is displayed on the screen",
+          "An attack that relies on boolean responses without visible errors",
+          "An attack that manipulates data without using SQL",
+          "An attack that hides data from users"
+        ],
+        "correct_answer": "An attack that relies on boolean responses without visible errors",
+        "hint": "It uses true/false responses to gather data."
+      },
+      {
+        "question": "In which type of SQL Injection attack are error messages used to gain information?",
+        "answers": [
+          "Union-based SQL Injection",
+          "Error-based SQL Injection",
+          "Boolean-based SQL Injection",
+          "Time-based SQL Injection"
+        ],
+        "correct_answer": "Error-based SQL Injection",
+        "hint": "It leverages detailed error messages from the database."
+      },
+      {
+        "question": "Which function is a safe way to handle user input in SQL queries?",
+        "answers": [
+          "Concatenating strings",
+          "Prepared statements",
+          "Adding slashes",
+          "Using SQL comments"
+        ],
+        "correct_answer": "Prepared statements",
+        "hint": "It replaces direct user input with placeholders."
+      },
+      {
+        "question": "What does the 'LIMIT' clause do in SQL?",
+        "answers": [
+          "Restricts data modifications",
+          "Limits data fetching to a specified number",
+          "Limits the size of database tables",
+          "Prevents SQL Injection"
+        ],
+        "correct_answer": "Limits data fetching to a specified number",
+        "hint": "It's used to control the number of rows in a result set."
+      },
+      {
+        "question": "Which of the following is NOT a type of SQL Injection?",
+        "answers": [
+          "Error-based SQL Injection",
+          "Union-based SQL Injection",
+          "Double Injection",
+          "Boolean-based SQL Injection"
+        ],
+        "correct_answer": "Double Injection",
+        "hint": "It is not a recognized type of SQL Injection."
+      },
+      {
+        "question": "Why is input validation important in SQL?",
+        "answers": [
+          "It allows faster query processing",
+          "It ensures only allowed data is used in queries",
+          "It adds more columns to the database",
+          "It helps increase database size"
+        ],
+        "correct_answer": "It ensures only allowed data is used in queries",
+        "hint": "Input validation restricts unauthorized data formats."
+      },
+      {
+        "question": "What is Time-based Blind SQL Injection?",
+        "answers": [
+          "An attack that uses response delays to gather information",
+          "An attack that changes the database structure",
+          "An attack that affects the display of records",
+          "An attack that only works with Union queries"
+        ],
+        "correct_answer": "An attack that uses response delays to gather information",
+        "hint": "This attack uses timing differences to infer information."
+      },
+      {
+        "question": "What is the purpose of 'escapes' in SQL queries?",
+        "answers": [
+          "To increase performance",
+          "To prevent syntax errors and injection",
+          "To add additional tables",
+          "To concatenate strings"
+        ],
+        "correct_answer": "To prevent syntax errors and injection",
+        "hint": "Escapes protect special characters in queries."
+      },
+      {
+        "question": "What does the acronym SQL stand for?",
+        "answers": [
+          "Structured Query Language",
+          "Standard Quality Language",
+          "Sequential Query Language",
+          "Simple Query Language"
+        ],
+        "correct_answer": "Structured Query Language",
+        "hint": "It’s the standard language for managing databases."
+      },
+      {
+        "question": "What type of SQL Injection attack relies on if statements?",
+        "answers": [
+          "Error-based",
+          "Boolean-based",
+          "Union-based",
+          "Stacked Injection"
+        ],
+        "correct_answer": "Boolean-based",
+        "hint": "It relies on true/false evaluations."
+      },
+      {
+        "question": "Which SQL statement is often combined with UNION in injection attacks?",
+        "answers": ["JOIN", "SELECT", "INSERT", "DELETE"],
+        "correct_answer": "SELECT",
+        "hint": "The statement retrieves data from one or more tables."
+      },
+      {
+        "question": "Which of these is a sign of SQL Injection vulnerability?",
+        "answers": [
+          "Unusual database errors in user interface",
+          "Slow response times in the app",
+          "Inconsistent data results",
+          "Automatic login of users"
+        ],
+        "correct_answer": "Unusual database errors in user interface",
+        "hint": "It typically indicates an improperly handled query."
+      },
+      {
+        "question": "What type of data should be avoided in SQL queries?",
+        "answers": [
+          "Numeric values",
+          "Concatenated strings from user input",
+          "Placeholders",
+          "Empty strings"
+        ],
+        "correct_answer": "Concatenated strings from user input",
+        "hint": "Directly inserting user data can be risky."
+      },
+      {
+        "question": "How does error-based SQL Injection work?",
+        "answers": [
+          "By adding columns to a table",
+          "By using errors to reveal database details",
+          "By changing database structure",
+          "By hiding data in query results"
+        ],
+        "correct_answer": "By using errors to reveal database details",
+        "hint": "It leverages visible errors to gain insight."
+      },
+      {
+        "question": "What is a common method to avoid SQL Injection?",
+        "answers": [
+          "Allowing all inputs",
+          "Using escape sequences",
+          "Using HTTP protocols",
+          "Writing dynamic SQL queries"
+        ],
+        "correct_answer": "Using escape sequences",
+        "hint": "This protects special characters in SQL queries."
+      },
+      {
+        "question": "What happens when a SQL Injection attack succeeds?",
+        "answers": [
+          "Nothing noticeable",
+          "The attacker gains unauthorized database access",
+          "The database gets faster",
+          "Only front-end design changes"
+        ],
+        "correct_answer": "The attacker gains unauthorized database access",
+        "hint": "It grants attackers access to protected data."
+      },
+      [
+        {
+          "question": "What is the primary goal of SQL Injection?",
+          "answers": [
+            "To improve database performance",
+            "To access or modify unauthorized data",
+            "To monitor user activity",
+            "To compress database tables"
+          ],
+          "correct_answer": "To access or modify unauthorized data",
+          "hint": "It’s a way to gain unauthorized access to information."
+        },
+        {
+          "question": "Which SQL keyword is commonly abused in SQL Injection attacks to add additional queries?",
+          "answers": ["GROUP BY", "AND", "OR", "UNION"],
+          "correct_answer": "UNION",
+          "hint": "This keyword allows combining multiple query results."
+        },
+        {
+          "question": "What type of data does a SQL Injection vulnerability most commonly target?",
+          "answers": [
+            "Non-critical data",
+            "Sensitive data like usernames and passwords",
+            "Publicly available data",
+            "Database schema only"
+          ],
+          "correct_answer": "Sensitive data like usernames and passwords",
+          "hint": "The goal is to retrieve protected information."
+        },
+        {
+          "question": "In SQL Injection, what is the effect of the ‘;’ (semicolon) character?",
+          "answers": [
+            "It ends the SQL statement",
+            "It comments out the rest of the line",
+            "It changes the query structure",
+            "It splits data into columns"
+          ],
+          "correct_answer": "It ends the SQL statement",
+          "hint": "This character marks the end of an SQL command."
+        },
+        {
+          "question": "What does SQL Injection most often exploit in web applications?",
+          "answers": [
+            "Network configurations",
+            "Client-side scripts",
+            "Server-side SQL queries",
+            "Database hardware"
+          ],
+          "correct_answer": "Server-side SQL queries",
+          "hint": "It targets the database layer directly."
+        },
+        {
+          "question": "Which of these is an example of a SQL Injection payload?",
+          "answers": [
+            "' OR '1'='1",
+            "DROP TABLE users;",
+            "SELECT * FROM users",
+            "ALL OF THE ABOVE"
+          ],
+          "correct_answer": "ALL OF THE ABOVE",
+          "hint": "Any query manipulating or extracting data via SQL is considered a payload."
+        },
+        {
+          "question": "How does Boolean-based Blind SQL Injection gather information?",
+          "answers": [
+            "By retrieving error messages",
+            "By measuring response times",
+            "By observing true or false responses",
+            "By scanning the database schema"
+          ],
+          "correct_answer": "By observing true or false responses",
+          "hint": "It relies on conditions that yield binary (yes/no) results."
+        },
+        {
+          "question": "Which programming practice helps protect against SQL Injection?",
+          "answers": [
+            "Using inline SQL",
+            "Using input sanitization and prepared statements",
+            "Hardcoding values in SQL",
+            "Reducing query length"
+          ],
+          "correct_answer": "Using input sanitization and prepared statements",
+          "hint": "It prevents direct injection by validating inputs."
+        },
+        {
+          "question": "What is a prepared statement in SQL?",
+          "answers": [
+            "A query with hardcoded values",
+            "A template that requires parameters",
+            "A multi-layer query",
+            "A subquery with parameters"
+          ],
+          "correct_answer": "A template that requires parameters",
+          "hint": "It serves as a secure SQL template."
+        },
+        {
+          "question": "What does the term 'stacked queries' refer to?",
+          "answers": [
+            "Running multiple queries in sequence",
+            "Optimizing a single query",
+            "Grouping database columns",
+            "Saving query results"
+          ],
+          "correct_answer": "Running multiple queries in sequence",
+          "hint": "Stacked queries allow running several queries in one statement."
+        },
+        {
+          "question": "Which SQL clause is often vulnerable to SQL Injection if not handled properly?",
+          "answers": ["JOIN", "WHERE", "FROM", "LIMIT"],
+          "correct_answer": "WHERE",
+          "hint": "This clause specifies the condition for selecting records."
+        },
+        {
+          "question": "What is 'stored procedure' in SQL?",
+          "answers": [
+            "A saved, parameterized SQL query",
+            "A query with dynamic columns",
+            "A query that requires grouping",
+            "A query that returns only IDs"
+          ],
+          "correct_answer": "A saved, parameterized SQL query",
+          "hint": "It’s stored in the database and is parameterized for security."
+        },
+        {
+          "question": "How does 'input validation' help prevent SQL Injection?",
+          "answers": [
+            "By blocking unwanted characters",
+            "By storing data in a specific format",
+            "By modifying data types",
+            "By increasing database speed"
+          ],
+          "correct_answer": "By blocking unwanted characters",
+          "hint": "It restricts potentially malicious data."
+        },
+        {
+          "question": "What is 'escaping' in SQL?",
+          "answers": [
+            "A way to prevent SQL Injection",
+            "A command to remove duplicate values",
+            "A function to delete records",
+            "A query that filters results"
+          ],
+          "correct_answer": "A way to prevent SQL Injection",
+          "hint": "It involves handling special characters safely."
+        },
+        {
+          "question": "Why is SQL Injection dangerous?",
+          "answers": [
+            "It slows down the database",
+            "It allows unauthorized access and modification of data",
+            "It increases data storage",
+            "It requires minimal technical skill"
+          ],
+          "correct_answer": "It allows unauthorized access and modification of data",
+          "hint": "The main concern is unauthorized access to sensitive information."
+        },
+        {
+          "question": "Which type of SQL Injection attack uses conditional statements to extract data?",
+          "answers": [
+            "Error-based",
+            "Boolean-based",
+            "Union-based",
+            "Stacked Injection"
+          ],
+          "correct_answer": "Boolean-based",
+          "hint": "It leverages conditional responses from the database."
+        },
+        {
+          "question": "What is 'concatenation' in SQL?",
+          "answers": [
+            "A way to validate input",
+            "Combining strings or data together",
+            "A command to delete tables",
+            "Grouping results by criteria"
+          ],
+          "correct_answer": "Combining strings or data together",
+          "hint": "It’s often exploited in SQL Injection attacks."
+        },
+        {
+          "question": "Which language is most commonly used in SQL Injection attacks?",
+          "answers": ["Java", "JavaScript", "SQL", "Python"],
+          "correct_answer": "SQL",
+          "hint": "The attack is named after the database query language it targets."
+        },
+        {
+          "question": "What is a NULL byte in SQL Injection?",
+          "answers": [
+            "A byte that stops string processing",
+            "A byte that resets the database",
+            "A byte that closes a connection",
+            "A byte used to access tables"
+          ],
+          "correct_answer": "A byte that stops string processing",
+          "hint": "It’s used to terminate strings in certain languages."
+        },
+        {
+          "question": "What is an ORM (Object-Relational Mapping)?",
+          "answers": [
+            "A tool for SQL Injection",
+            "A way to map code to SQL statements",
+            "A type of database backup",
+            "A command to structure data"
+          ],
+          "correct_answer": "A way to map code to SQL statements",
+          "hint": "It helps in translating data between databases and code."
+        },
+        {
+          "question": "What does the SQL command 'DROP TABLE' do?",
+          "answers": [
+            "Deletes records from a table",
+            "Removes a table completely from the database",
+            "Changes table structure",
+            "Merges multiple tables"
+          ],
+          "correct_answer": "Removes a table completely from the database",
+          "hint": "It deletes the table itself, not just its contents."
+        },
+        {
+          "question": "Which of the following is an indicator of potential SQL Injection?",
+          "answers": [
+            "Missing data",
+            "Special characters in user input causing errors",
+            "Slow page loading",
+            "File upload failure"
+          ],
+          "correct_answer": "Special characters in user input causing errors",
+          "hint": "Unexpected characters in queries can signal SQL Injection."
+        },
+        {
+          "question": "Why is 'least privilege' important for database security?",
+          "answers": [
+            "It improves query performance",
+            "It reduces risk by limiting access",
+            "It allows faster data processing",
+            "It supports SQL Injection testing"
+          ],
+          "correct_answer": "It reduces risk by limiting access",
+          "hint": "Restricting permissions can prevent extensive damage."
+        },
+        {
+          "question": "Which character is commonly used to comment out SQL code?",
+          "answers": ["--", "#", "/*", ";"],
+          "correct_answer": "--",
+          "hint": "It’s a common SQL comment symbol that hides parts of the query."
+        },
+        {
+          "question": "What does SQL Injection mainly exploit?",
+          "answers": [
+            "Weak input validation",
+            "Strong query handling",
+            "Optimized SQL structure",
+            "Indexed databases"
+          ],
+          "correct_answer": "Weak input validation",
+          "hint": "It takes advantage of improperly handled user input."
+        }
+      ]
+    ]
+  },
+  "cryptographic_fail": {
+    "questions": [
+      {
+        "question": "What is the purpose of cryptography in cybersecurity?",
+        "answers": [
+          "To compress data",
+          "To protect data integrity and confidentiality",
+          "To increase storage capacity",
+          "To organize data in tables"
+        ],
+        "correct_answer": "To protect data integrity and confidentiality",
+        "hint": "It ensures data security and privacy."
+      },
+      {
+        "question": "Which of these is a common cryptographic algorithm?",
+        "answers": ["AES", "HTML", "FTP", "JSON"],
+        "correct_answer": "AES",
+        "hint": "It’s a widely used encryption standard developed for secure data encryption."
+      },
+      {
+        "question": "What does SSL stand for in network security?",
+        "answers": [
+          "Secure Socket Layer",
+          "Secure Software Library",
+          "Server Socket License",
+          "Safety Secure Layer"
+        ],
+        "correct_answer": "Secure Socket Layer",
+        "hint": "It’s a protocol used for securing data transfer over networks."
+      },
+      {
+        "question": "Which cryptographic failure occurs when outdated protocols are used?",
+        "answers": [
+          "Weak key management",
+          "Using deprecated algorithms",
+          "Poor hashing",
+          "Lack of certificate validation"
+        ],
+        "correct_answer": "Using deprecated algorithms",
+        "hint": "Older algorithms may no longer be secure due to advances in attack methods."
+      },
+      {
+        "question": "What is a 'cipher' in cryptography?",
+        "answers": [
+          "A method to rearrange data in a table",
+          "A way to encode or decode data",
+          "A server that stores keys",
+          "A type of firewall"
+        ],
+        "correct_answer": "A way to encode or decode data",
+        "hint": "It’s used to transform data to keep it secure."
+      },
+      {
+        "question": "What is a common cryptographic failure in password storage?",
+        "answers": [
+          "Using secure hashing",
+          "Storing passwords in plaintext",
+          "Encrypting passwords with a strong key",
+          "Using random salts"
+        ],
+        "correct_answer": "Storing passwords in plaintext",
+        "hint": "It occurs when passwords are stored without any form of encryption or hashing."
+      },
+      {
+        "question": "Which of these is a strong cryptographic hashing algorithm?",
+        "answers": ["MD5", "SHA-1", "SHA-256", "ROT13"],
+        "correct_answer": "SHA-256",
+        "hint": "It’s widely recommended for secure data hashing."
+      },
+      {
+        "question": "What is 'salting' in cryptography?",
+        "answers": [
+          "Adding random data to passwords before hashing",
+          "Encrypting data multiple times",
+          "Removing special characters from data",
+          "Splitting data into smaller segments"
+        ],
+        "correct_answer": "Adding random data to passwords before hashing",
+        "hint": "It’s a method to make password hashes unique."
+      },
+      {
+        "question": "What type of attack is mitigated by strong cryptographic hashing?",
+        "answers": [
+          "SQL Injection",
+          "Cross-site scripting",
+          "Brute-force attacks",
+          "DDoS attacks"
+        ],
+        "correct_answer": "Brute-force attacks",
+        "hint": "It’s an attack where attackers try different combinations to guess passwords."
+      },
+      {
+        "question": "Which of the following is an example of a cryptographic failure?",
+        "answers": [
+          "Using SSL/TLS for data transmission",
+          "Encrypting all data before storing it",
+          "Using MD5 for password hashing",
+          "Storing data in an encrypted database"
+        ],
+        "correct_answer": "Using MD5 for password hashing",
+        "hint": "This hashing algorithm is considered insecure and outdated."
+      },
+      {
+        "question": "What is a man-in-the-middle attack?",
+        "answers": [
+          "An attack that accesses server files",
+          "An attack that modifies the user interface",
+          "An attack where a third party intercepts data between two parties",
+          "An attack on internal databases only"
+        ],
+        "correct_answer": "An attack where a third party intercepts data between two parties",
+        "hint": "This attack exploits data in transit."
+      },
+      {
+        "question": "Why is key length important in cryptography?",
+        "answers": [
+          "It controls data organization",
+          "Longer keys offer stronger security",
+          "It speeds up data processing",
+          "It makes encryption unnecessary"
+        ],
+        "correct_answer": "Longer keys offer stronger security",
+        "hint": "The longer the key, the harder it is to break."
+      },
+      {
+        "question": "What is 'public key' in public key cryptography?",
+        "answers": [
+          "A key used only by the sender",
+          "A key shared openly and used to encrypt data",
+          "A key for network connections",
+          "A key for decrypting all messages"
+        ],
+        "correct_answer": "A key shared openly and used to encrypt data",
+        "hint": "It’s used in combination with a private key for encryption."
+      },
+      {
+        "question": "What cryptographic concept is compromised when keys are not protected?",
+        "answers": [
+          "Confidentiality",
+          "Database normalization",
+          "Data replication",
+          "Data compression"
+        ],
+        "correct_answer": "Confidentiality",
+        "hint": "It’s the protection of data from unauthorized access."
+      },
+      {
+        "question": "Which attack takes advantage of weak encryption to reveal original data?",
+        "answers": [
+          "SQL Injection",
+          "Phishing",
+          "Ciphertext-only attack",
+          "Cross-site scripting"
+        ],
+        "correct_answer": "Ciphertext-only attack",
+        "hint": "This attack analyzes only encrypted data to guess its content."
+      },
+      {
+        "question": "What is 'two-factor authentication' in cryptography?",
+        "answers": [
+          "Using two encryption keys",
+          "Using two methods to verify a user’s identity",
+          "Encrypting data twice",
+          "Storing data in two locations"
+        ],
+        "correct_answer": "Using two methods to verify a user’s identity",
+        "hint": "It’s an extra layer of security for user authentication."
+      },
+      {
+        "question": "What is 'cipher block chaining' (CBC) in cryptography?",
+        "answers": [
+          "A method of splitting keys",
+          "A mode of encryption where each block depends on the previous block",
+          "A technique for data decryption",
+          "A way to create digital signatures"
+        ],
+        "correct_answer": "A mode of encryption where each block depends on the previous block",
+        "hint": "This mode increases security by linking each data block."
+      },
+      {
+        "question": "Why is it dangerous to use a predictable random number generator for cryptography?",
+        "answers": [
+          "It improves encryption security",
+          "Attackers can guess encryption keys",
+          "It increases processing speed",
+          "It makes data decryption harder"
+        ],
+        "correct_answer": "Attackers can guess encryption keys",
+        "hint": "A weak random number generator leads to predictable keys."
+      },
+      {
+        "question": "Which of these is a secure practice in cryptography?",
+        "answers": [
+          "Storing encryption keys with data",
+          "Using strong, random encryption keys",
+          "Using hardcoded keys in applications",
+          "Using short encryption keys"
+        ],
+        "correct_answer": "Using strong, random encryption keys",
+        "hint": "Randomly generated keys are harder to predict or crack."
+      },
+      {
+        "question": "What is a digital signature?",
+        "answers": [
+          "A method of securely signing a document",
+          "A way to encrypt a document",
+          "A method to decrypt a message",
+          "A way to organize data blocks"
+        ],
+        "correct_answer": "A method of securely signing a document",
+        "hint": "It authenticates the identity of the sender."
+      },
+      {
+        "question": "What does 'end-to-end encryption' mean?",
+        "answers": [
+          "Data is encrypted during transmission only",
+          "Data is encrypted before sending and decrypted by the recipient only",
+          "Data is encrypted after reaching the server",
+          "Data is encrypted in the database"
+        ],
+        "correct_answer": "Data is encrypted before sending and decrypted by the recipient only",
+        "hint": "Only the sender and receiver can access the decrypted data."
+      },
+      {
+        "question": "What is the risk of using hardcoded encryption keys in code?",
+        "answers": [
+          "Increased encryption strength",
+          "Easier access for attackers if the code is exposed",
+          "Improved encryption speed",
+          "Less complex key management"
+        ],
+        "correct_answer": "Easier access for attackers if the code is exposed",
+        "hint": "Keys in the code can be extracted by malicious actors."
+      },
+      {
+        "question": "Why is SHA-1 considered insecure?",
+        "answers": [
+          "It has a short key size",
+          "It is vulnerable to collision attacks",
+          "It doesn’t use randomization",
+          "It doesn’t support large data sets"
+        ],
+        "correct_answer": "It is vulnerable to collision attacks",
+        "hint": "Two different inputs can produce the same hash."
+      },
+      {
+        "question": "What is 'plaintext' in cryptography?",
+        "answers": [
+          "Encrypted data",
+          "Data before encryption",
+          "A hashing function",
+          "An encrypted database"
+        ],
+        "correct_answer": "Data before encryption",
+        "hint": "It’s the original, unprotected version of data."
+      },
+      {
+        "question": "What is an example of a weak cryptographic practice?",
+        "answers": [
+          "Using strong, complex passwords",
+          "Encrypting data with AES",
+          "Using short, predictable keys",
+          "Storing keys in secure vaults"
+        ],
+        "correct_answer": "Using short, predictable keys",
+        "hint": "Keys that are easily guessed reduce encryption effectiveness."
+      },
+
+      [
+        {
+          "question": "Which cryptographic algorithm is generally considered insecure due to short key length?",
+          "answers": ["DES", "AES", "RSA", "SHA-256"],
+          "correct_answer": "DES",
+          "hint": "This algorithm has a 56-bit key, which is now easily breakable."
+        },
+        {
+          "question": "What is the main weakness of using MD5 for hashing?",
+          "answers": [
+            "It is too fast",
+            "It produces collisions",
+            "It uses too much memory",
+            "It is difficult to implement"
+          ],
+          "correct_answer": "It produces collisions",
+          "hint": "Multiple inputs can yield the same hash, compromising uniqueness."
+        },
+        {
+          "question": "What type of cryptographic failure occurs when encryption keys are reused?",
+          "answers": [
+            "Key proliferation",
+            "Key exhaustion",
+            "Key reuse attack",
+            "Key rotation"
+          ],
+          "correct_answer": "Key reuse attack",
+          "hint": "Using the same encryption key multiple times increases the risk of compromise."
+        },
+        {
+          "question": "Which of the following protocols is vulnerable to cryptographic attacks?",
+          "answers": ["TLS 1.2", "SSL 3.0", "AES-256", "SHA-512"],
+          "correct_answer": "SSL 3.0",
+          "hint": "It is an older protocol that has known vulnerabilities, like POODLE."
+        },
+        {
+          "question": "What is a common vulnerability in poorly implemented cryptography?",
+          "answers": [
+            "Buffer overflow",
+            "Timing attacks",
+            "SQL injection",
+            "Cross-site scripting"
+          ],
+          "correct_answer": "Timing attacks",
+          "hint": "This vulnerability arises when response times vary based on cryptographic processing."
+        },
+        {
+          "question": "Why should passwords never be encrypted with reversible encryption methods?",
+          "answers": [
+            "It allows easy decryption by attackers",
+            "It takes too long to encrypt",
+            "It increases data storage requirements",
+            "It requires additional hardware"
+          ],
+          "correct_answer": "It allows easy decryption by attackers",
+          "hint": "Passwords should not be easily reversible if compromised."
+        },
+        {
+          "question": "What is a 'nonce' in cryptography?",
+          "answers": [
+            "A randomly generated number used only once",
+            "A hashing function",
+            "A private key",
+            "A type of attack"
+          ],
+          "correct_answer": "A randomly generated number used only once",
+          "hint": "It prevents replay attacks by ensuring unique values for each session."
+        },
+        {
+          "question": "What is side-channel leakage?",
+          "answers": [
+            "Accidental data access",
+            "Data leakage through non-direct means like power consumption",
+            "Encrypted data storage",
+            "Data verification issue"
+          ],
+          "correct_answer": "Data leakage through non-direct means like power consumption",
+          "hint": "Leakage of information through indirect channels can aid in key extraction."
+        },
+        {
+          "question": "What is the best way to store encryption keys securely?",
+          "answers": [
+            "On the same server as the encrypted data",
+            "Using hardcoded keys",
+            "In a dedicated hardware security module (HSM)",
+            "In plaintext within the database"
+          ],
+          "correct_answer": "In a dedicated hardware security module (HSM)",
+          "hint": "This module is specifically designed for secure key storage and management."
+        },
+        {
+          "question": "Which of the following attacks targets encryption by modifying the data in transit?",
+          "answers": [
+            "Man-in-the-middle attack",
+            "SQL injection",
+            "Brute-force attack",
+            "Buffer overflow"
+          ],
+          "correct_answer": "Man-in-the-middle attack",
+          "hint": "This attack intercepts and may alter data as it moves between two parties."
+        },
+        {
+          "question": "Which of these is a common risk of storing data using symmetric encryption with a shared key?",
+          "answers": [
+            "Key compromise affects only one user",
+            "Key compromise affects all users sharing the key",
+            "Keys must be publicly distributed",
+            "It increases data storage requirements"
+          ],
+          "correct_answer": "Key compromise affects all users sharing the key",
+          "hint": "Symmetric encryption relies on a shared secret that, if exposed, endangers all users."
+        },
+        {
+          "question": "What does 'ephemeral' mean in cryptographic key exchange?",
+          "answers": [
+            "The key is used only temporarily",
+            "The key is permanent",
+            "The key is shared by multiple parties",
+            "The key is stored in plaintext"
+          ],
+          "correct_answer": "The key is used only temporarily",
+          "hint": "This key type is short-lived and typically used for one session."
+        },
+        {
+          "question": "Which attack exploits weak randomness in encryption?",
+          "answers": [
+            "Padding oracle attack",
+            "Collision attack",
+            "Birthday attack",
+            "Replay attack"
+          ],
+          "correct_answer": "Birthday attack",
+          "hint": "This attack is based on the likelihood of duplicate values in hash functions."
+        },
+        {
+          "question": "What is the primary purpose of hashing passwords?",
+          "answers": [
+            "To make passwords unreadable without decryption",
+            "To make passwords easy to access",
+            "To prevent data transmission",
+            "To increase processing speed"
+          ],
+          "correct_answer": "To make passwords unreadable without decryption",
+          "hint": "Hashing ensures passwords are stored in a way that protects their original form."
+        },
+        {
+          "question": "Why should hardcoded cryptographic keys be avoided?",
+          "answers": [
+            "It increases performance",
+            "It reduces storage requirements",
+            "It allows easier access if code is exposed",
+            "It enhances security"
+          ],
+          "correct_answer": "It allows easier access if code is exposed",
+          "hint": "Hardcoded keys can be extracted if an attacker gains access to the code."
+        },
+        {
+          "question": "What is a cryptographic 'salt' used for?",
+          "answers": [
+            "To encrypt data",
+            "To add randomness to hashed passwords",
+            "To compress files",
+            "To create digital signatures"
+          ],
+          "correct_answer": "To add randomness to hashed passwords",
+          "hint": "It helps prevent attackers from using precomputed hash tables."
+        },
+        {
+          "question": "What is a 'padding oracle attack'?",
+          "answers": [
+            "An attack based on analyzing how an application handles padding errors",
+            "An attack on the key generation process",
+            "An attack on certificate validity",
+            "An attack targeting the server directly"
+          ],
+          "correct_answer": "An attack based on analyzing how an application handles padding errors",
+          "hint": "It leverages responses to padding issues in encrypted data."
+        },
+        {
+          "question": "Why is it recommended to rotate encryption keys regularly?",
+          "answers": [
+            "To improve encryption speed",
+            "To limit exposure if a key is compromised",
+            "To reduce data storage",
+            "To ensure compatibility with older protocols"
+          ],
+          "correct_answer": "To limit exposure if a key is compromised",
+          "hint": "Regular key rotation reduces the risk if a key is exposed."
+        },
+        {
+          "question": "What is the main risk of using weak encryption algorithms?",
+          "answers": [
+            "They require more resources",
+            "They are easy to crack by attackers",
+            "They increase encryption speed",
+            "They are difficult to implement"
+          ],
+          "correct_answer": "They are easy to crack by attackers",
+          "hint": "Weak algorithms offer limited protection against attacks."
+        },
+        {
+          "question": "Which protocol replaced SSL due to vulnerabilities?",
+          "answers": ["FTP", "TLS", "HTTP", "SHA"],
+          "correct_answer": "TLS",
+          "hint": "This protocol is an improved version, addressing SSL weaknesses."
+        },
+        {
+          "question": "What is a 'key exchange algorithm'?",
+          "answers": [
+            "An algorithm for storing data",
+            "An algorithm to securely exchange encryption keys",
+            "A data compression technique",
+            "A hashing algorithm for passwords"
+          ],
+          "correct_answer": "An algorithm to securely exchange encryption keys",
+          "hint": "It ensures that encryption keys are securely shared between parties."
+        },
+        {
+          "question": "What is the result of not using 'encryption padding'?",
+          "answers": [
+            "Stronger encryption",
+            "Possible vulnerability to certain attacks",
+            "Faster encryption",
+            "Automatic encryption of data"
+          ],
+          "correct_answer": "Possible vulnerability to certain attacks",
+          "hint": "Padding adds random data to prevent predictable patterns."
+        },
+        {
+          "question": "What is 'entropy' in cryptographic terms?",
+          "answers": [
+            "A measure of randomness",
+            "A type of encryption",
+            "A protocol for secure communication",
+            "A form of key exchange"
+          ],
+          "correct_answer": "A measure of randomness",
+          "hint": "Higher entropy means greater unpredictability, which strengthens security."
+        },
+        {
+          "question": "What is the risk of using symmetric encryption without a secure key distribution method?",
+          "answers": [
+            "Key might be exposed during transfer",
+            "It increases encryption strength",
+            "Keys will expire faster",
+            "Data will be automatically decrypted"
+          ],
+          "correct_answer": "Key might be exposed during transfer",
+          "hint": "Secure key distribution prevents unauthorized access to keys."
+        },
+        {
+          "question": "What is 'cryptographic obfuscation'?",
+          "answers": [
+            "A technique to make data harder to understand",
+            "A hashing algorithm",
+            "A way to compress encrypted data",
+            "A method for breaking encryption"
+          ],
+          "correct_answer": "A technique to make data harder to understand",
+          "hint": "Obfuscation hides the real purpose of data or code."
+        }
+      ]
+    ]
+  }
+}

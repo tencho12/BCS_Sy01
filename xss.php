@@ -49,8 +49,11 @@
     <!-- Start service Area -->
     <section class="service-area section-gap" id="vulnerabilities" data-animation="animated fadeInUp">
       <div class="container" style="margin-top: 40px;">
-         <div>
-             <iframe src="xss_insecure.php" style="width: 100%; height: 500px; border: none;"></iframe>
+         <div class="p-5">
+            <a class="btn btn-light mb-2" href="xss_insecure.php" target="_blank" role="button" >
+                   Test vulnerable code
+            </a>
+             <!-- <iframe src="xss_insecure.php" style="width: 100%; height: 500px; border: none;"></iframe> -->
           </div>
           <div class="row">
             <div class="col">
@@ -68,11 +71,11 @@
                    View OWASP Documentation
                 </a>
             </div>
-            <div class="col">
+            <!-- <div class="col">
                 <a class="btn btn-light mb-2" href="xss_insecure.php" target="_blank" role="button" >
                    View Full Screen
                 </a>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="container mt-5 collapse" id="collapseExample">
@@ -119,7 +122,10 @@
                 <div class="col-7">
                   <h3 id="quizheader" style="color: yellow">WHEN YOU PASS THE QUIZ, The secure form will be displayed here for testing</h3>
                   <div id="result" class="result hidden"> 
-                    <iframe src="xss_secure.php" style="width: 100%; height: 500px; border: none;"></iframe>
+                     <a class="btn btn-light mb-2" href="xss_insecure.php" target="_blank" role="button" >
+                      Test vulnerable code
+                      </a>
+                    <!-- <iframe src="xss_secure.php" style="width: 100%; height: 500px; border: none;"></iframe> -->
                   </div>
                 <div>
               </div> 
