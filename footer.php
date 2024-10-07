@@ -10,13 +10,6 @@
                 Web Vulnerability Simulator tool that will help you make your Web
                 Applications safe and secure.
               </p>
-              <!-- <h6>Follow Us</h6>
-              <div class="footer-social d-flex align-items-center">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="ml-10"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="ml-10"><i class="fa fa-linkedin"></i></a>
-                <a href="#" class="ml-10"><i class="fa fa-youtube"></i></a>
-              </div> -->
             </div>
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
@@ -87,8 +80,7 @@
                   <li>
                     <a href="#"
                       ><i class="fa fa-map-marker" aria-hidden="true"></i
-                      ><span>MCTE, MHOW</span></a
-                    >
+                      ><span>MCTE, MHOW</span></a>
                   </li>
                 </ul>
               </address>

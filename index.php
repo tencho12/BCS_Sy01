@@ -56,22 +56,21 @@
       <!-- Wrapper For Slides -->
       <div class="carousel-inner" role="listbox">
         <div class="carousel-item active">
-          <img src="img/bg1.jpg" alt="fw_al_001_01" />
+          <img src="img/bibhuti.jpg" alt="fw_al_001_01" />
           <div class="fw_al_008_slide">
-            <h6 data-animation="animated fadeInUp">Be Aware, Be Secure</h6>
-            <h2 data-animation="animated fadeInUp">We Care About</h2>
-            <h3 data-animation="animated fadeInUp">Your Protection</h3>
+            <h2 data-animation="animated fadeInUp">WAVES</h2><br>
             <p data-animation="animated fadeInUp">
-              WAVES - Web Application Vulnerability & Exploit Simulator is an
-              Web Vulnerability Simulator tool that will help you make your Web
-              Applications safe and secure.
+                The Web Application
+                Vulnerability & Exposures Simulator (WAVES) provides you with an
+                offline envioronment to demonstrate the most common Web Application
+                Security Risks as listed in the popular websites such as OWASP Top 10. To
+                check them out, click on the link below.
             </p>
             <a
-              href="#research"
+              href="#vulnerabilities"
               data-animation="animated fadeInUp"
               class="sliderbtn1"
-              ><span style="font-weight: bolder"> Get Started</span></a
-            >
+              ><span style="font-weight: bolder">OWASP TOP 10<span></a>
           </div>
         </div>
       </div>
@@ -84,6 +83,7 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-40 header-text">
+              <br/>
             <h1>OWASP TOP 10 vulnerabilities</h1>
             <p>Explore the OWASP top 10 vulnerabilities</p>
           </div>
@@ -166,7 +166,50 @@
             </div>
           </div>
         </div>
-        
+<br/><br/>
+    <!-- First Row (next 3 vulnerabilities) -->
+<div class="row">
+  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInLeft;">
+    <div class="single-service">
+      <div class="serivce-icon">
+        <i class="fa fa-lock"></i>
+      </div>
+      <h3>Broken Authentication</h3>
+      <p>
+        Flaws in authentication mechanisms allow attackers to assume other
+        users' identities, such as through stolen passwords or session hijacking.
+      </p>
+      <a href="broken_authentication.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="1.8s" style="visibility: visible; animation-delay: 1.8s; animation-name: fadeInLeft;">
+    <div class="single-service">
+      <div class="serivce-icon">
+        <i class="fa fa-file-code-o"></i>
+      </div>
+      <h3>Insecure Design</h3>
+      <p>
+        Vulnerabilities resulting from poor system design, emphasizing secure development principles for minimizing risks.
+      </p>
+      <a href="insecure_design.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.1s" style="visibility: visible; animation-delay: 2.1s; animation-name: fadeInLeft;">
+    <div class="single-service">
+      <div class="serivce-icon">
+        <i class="fa fa-unlock"></i>
+      </div>
+      <h3>Security Misconfiguration</h3>
+      <p>
+        Inadequate security settings can lead to unauthorized access, data exposure, and compromise of sensitive data.
+      </p>
+      <a href="security_misconfiguration.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
     
@@ -229,92 +272,8 @@
     <section class="contact-page-area section-gap" id="contact">
       <div class="container">
         <div class="row">
-          <!-- <div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>-->
-          <div class="col-lg-4 d-flex flex-column address-wrap">
-            <div class="single-contact-address d-flex flex-row">
-              <div class="icon">
-                <span class="lnr lnr-home"></span>
-              </div>
-              <div class="contact-details">
-                <h5>MCT Campus</h5>
-                <p>Mhow, Indore</p>
-              </div>
-            </div>
-            <div class="single-contact-address d-flex flex-row">
-              <div class="icon">
-                <span class="lnr lnr-phone-handset"></span>
-              </div>
-              <div class="contact-details">
-                <h5>+92 123 445 678</h5>
-                <!-- <p>24/7 Free Customer Support Available</p> -->
-              </div>
-            </div>
-            <div class="single-contact-address d-flex flex-row">
-              <div class="icon">
-                <span class="lnr lnr-envelope"></span>
-              </div>
-              <div class="contact-details">
-                <h5>admin@waves.com</h5>
-                <p>Send us your query anytime!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <form
-              id="myForm"
-              action="mail.php"
-              method="post"
-              class="contact-form text-right form-area"
-            >
-              <div class="row">
-                <div class="col-lg-6 form-group">
-                  <input
-                    name="name"
-                    placeholder="Enter your name"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter your name'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="text"
-                  />
 
-                  <input
-                    name="email"
-                    placeholder="Enter email address"
-                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter email address'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="email"
-                  />
-
-                  <input
-                    name="subject"
-                    placeholder="Enter your subject"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter your subject'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="text"
-                  />
                   <div class="mt-20 alert-msg" style="text-align: left"></div>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <textarea
-                    class="common-textarea form-control"
-                    name="message"
-                    placeholder="Messege"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Messege'"
-                    required=""
-                  ></textarea>
-                  <button
-                    class="primary-btn mt-20 text-white"
-                    style="float: right"
-                  >
-                    Send Message
-                  </button>
                 </div>
               </div>
             </form>

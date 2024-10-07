@@ -1,12 +1,13 @@
 <header id="header">
   <div class="container header-top">
   </div>
-  <hr />
+
   <div class="container">
     <div class="row align-items-center justify-content-between d-flex">
       <div id="logo">
         <a href="index.php">WAVES</a>
       </div>
+
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="index.php">Home</a></li>
@@ -16,6 +17,30 @@
             <ul class="dropdown-menu">
               <li><a href="xss_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=xss">QUIZ</a></li>
+              <li><a href="xss.php">DEMO</a></li>
+            </ul>
+          </li>
+           <li class="menu-item dropdown">
+            <a href="#" class="dropdown-toggle">BRUTE FORCE</a>
+            <ul class="dropdown-menu">
+              <li><a href="xss_overview.php">OVERVIEW</a></li>
+              <li><a href="xss_quiz.php">QUIZ</a></li>
+              <li><a href="xss.php">DEMO</a></li>
+            </ul>
+          </li>
+           <li class="menu-item dropdown">
+            <a href="#" class="dropdown-toggle">CSRF</a>
+            <ul class="dropdown-menu">
+              <li><a href="xss_overview.php">OVERVIEW</a></li>
+              <li><a href="xss_quiz.php">QUIZ</a></li>
+              <li><a href="xss.php">DEMO</a></li>
+            </ul>
+          </li>
+           <li class="menu-item dropdown">
+            <a href="#" class="dropdown-toggle">IDOR</a>
+            <ul class="dropdown-menu">
+              <li><a href="xss_overview.php">OVERVIEW</a></li>
+              <li><a href="xss_quiz.php">QUIZ</a></li>
               <li><a href="xss.php">DEMO</a></li>
             </ul>
           </li>
@@ -39,10 +64,11 @@
           <!-- <li><a href="injection.php">SQL INJECTION</a></li>
           <li><a href="cryptofail.php">CRYPTOGRAPHIC FAILURE</a></li>
           <li><a href="index.php#research">RESEARCH</a></li> -->
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact">USER GUIDE</a></li>
         </ul>
       </nav>
       <!-- #nav-menu-container -->
     </div>
   </div>
+    <hr/>
 </header>

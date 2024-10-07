@@ -3,7 +3,7 @@
 
 $servername = "localhost";
 $username = "tencho";  // Replace with your DB username
-$password = "Tencho@123!";      // Replace with your DB password
+$password = "";      // Replace with your DB password
 $dbname = "syndicateone_db";  // Replace with your DB name
 
 // Create a connection
