@@ -50,7 +50,7 @@
     <section class="service-area section-gap" id="vulnerabilities" data-animation="animated fadeInUp">
       <div class="container" style="margin-top: 40px;">
          <div>
-             <iframe src="injection_insecure.php" style="width: 100%; height: 400px; border: none;"></iframe>
+             <iframe src="crypto_insecure.php" style="width: 100%; height: 600px; border: none;"></iframe>
           </div>
           <div class="row">
             <div class="col">
@@ -59,7 +59,7 @@
                 </a>
             </div>
             <div class="col">
-                <a class="btn btn-info mb-2" href="https://owasp.org/www-community/attacks/SQL_Injection" target="_blank" role="button" >
+                <a class="btn btn-info mb-2" href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures/" target="_blank" role="button" >
                    View OWASP Documentation
                 </a>
             </div>
@@ -69,33 +69,33 @@
           <div class="row">
                 <div class="col-5">
                   <h2 class="mb-2">SQL Injection Quiz</h2>
-                    <div class="container">
+                   <div class="container">
                       <div id="quizContainer" class="quiz-container">
                         <div class="py-2 quiz-question" id="question1" class="question">
-                            <p>1. What is SQL injection?</p>
-                            <input type="radio" name="q1" value="A" required> A) A type of SQL command<br>
-                            <input type="radio" name="q1" value="B"> B) A security vulnerability<br>
-                            <input type="radio" name="q1" value="C"> C) A database management technique<br>
-                            <input type="radio" name="q1" value="D"> D) None of the above<br>
-                            <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q1', 'B')">Submit</button>
+                            <p>1. What is cryptographic failure?</p>
+                            <input type="radio" name="q1" value="A" required> A) Failure to use encryption<br>
+                            <input type="radio" name="q1" value="B"> B) Using weak or outdated cryptographic algorithms<br>
+                            <input type="radio" name="q1" value="C"> C) Storing encryption keys insecurely<br>
+                            <input type="radio" name="q1" value="D"> D) All of the above<br>
+                            <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q1', 'D')">Submit</button>
                         </div>
 
                           <div class="py-2 quiz-question" id="question2" class="question" style="display:none;">
-                              <p>2. Which of the following is a method to prevent SQL injection?</p>
-                              <input type="radio" name="q2" value="A" required> A) Input sanitization<br>
-                              <input type="radio" name="q2" value="B"> B) Using prepared statements<br>
-                              <input type="radio" name="q2" value="C"> C) Both A and B<br>
-                              <input type="radio" name="q2" value="D"> D) None of the above<br>
-                              <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q2', 'C')">Submit</button>
+                              <p>2. Which of the following is a best practice to secure encryption keys?</p>
+                              <input type="radio" name="q2" value="A" required> A) Store keys in the same database as the encrypted data<br>
+                              <input type="radio" name="q2" value="B"> B) Use hardware security modules (HSM) for key management<br>
+                              <input type="radio" name="q2" value="C"> C) Store keys in environment variables<br>
+                              <input type="radio" name="q2" value="D"> D) Hard-code keys in the source code<br>
+                              <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q2', 'B')">Submit</button>
                           </div>
 
                             <div class="py-2 quiz-question" id="question3" class="question" style="display:none;">
-                                <p>3. Why should error messages be generic in production?</p>
-                                <input type="radio" name="q3" value="A" required> A) To prevent revealing sensitive information<br>
-                                <input type="radio" name="q3" value="B"> B) They are not important<br>
-                                <input type="radio" name="q3" value="C"> C) To confuse attackers<br>
-                                <input type="radio" name="q3" value="D"> D) To make debugging easier<br>
-                                <button type="button" class="btn btn-outline-primary mt-3" onclick="checkAnswer('q3', 'A')">Submit</button>
+                                <p>3. What is the risk of using outdated cryptographic algorithms like DES or MD5?</p>
+                                <input type="radio" name="q3" value="A" required> A) Faster encryption<br>
+                                <input type="radio" name="q3" value="B"> B) They are more secure than modern algorithms<br>
+                                <input type="radio" name="q3" value="C"> C) They are vulnerable to attacks due to their short key lengths<br>
+                                <input type="radio" name="q3" value="D")> D) They are resistant to all forms of cryptanalysis<br>
+                                <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q3', 'C')">Submit</button>
                             </div>
 
                             <div id="resultText" style="display:none;">
@@ -103,13 +103,20 @@
                                 <h5 id="feedbackText"></h5>
                                 <button type="button" class="btn btn-outline-primary mt-3" onclick="restartQuiz()">Start Again</button>
                             </div>
+                 
+                  <div id="resultText" style="display:none;">
+                    <h4>Result:</h4>
+                    <h5 id="feedbackText"></h5>
+                    <button type="button" class="btn btn-outline-primary mt-3" onclick="restartQuiz()">Start Again</button>
+                  </div>
+                           
                   </div>
                 </div>
               </div>
                 <div class="col-7">
                   <h3 id="quizheader" style="color: yellow">WHEN YOU PASS THE QUIZ, The secure form will be displayed here for testing</h3>
                   <div id="result" class="result hidden"> 
-                    <iframe src="injection_secure.php" style="width: 100%; height: 500px; border: none;"></iframe>
+                    <iframe src="crypto_secure.php" style="width: 100%; height: 600px; border: none;"></iframe>
                   </div>
                 <div>
               </div> 
@@ -144,7 +151,7 @@
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/paradise_slider_min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/tencho_injection.js"></script>
+    <script src="js/tencho_cryptofail.js"></script>
 
   </body>
 </html>

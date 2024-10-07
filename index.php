@@ -67,17 +67,10 @@
               Applications safe and secure.
             </p>
             <a
-              href="http://127.0.0.1:8000"
+              href="#research"
               data-animation="animated fadeInUp"
               class="sliderbtn1"
-              target="_blank"
               ><span style="font-weight: bolder"> Get Started</span></a
-            >
-            <a
-              href="#price"
-              data-animation="animated fadeInUp"
-              class="sliderbtn2"
-              ><span style="font-weight: bolder">More Detail</span></a
             >
           </div>
         </div>
@@ -96,34 +89,9 @@
           </div>
         </div>
         <div class="row">
+  
           <div
-            class="col-lg-3 col-sm-12 col-md-3 wow fadeInLeft"
-            data-wow-delay="0.3s"
-            style="
-              visibility: visible;
-              animation-delay: 0.3s;
-              animation-name: fadeInLeft;
-            "
-          >
-            <div class="single-service">
-              <div class="serivce-icon">
-                <i class="fa fa-shield"></i>
-              </div>
-              <h3>Broken Access Control</h3>
-              <p>
-                Access control vulnerabilities occur when users can act outside
-                of their intended permissions. This can lead to unauthorized
-                actions such as viewing or modifying data, and escalating
-                privileges.
-              </p>
-              <a href="#" class="btn" title="Read More"
-                >Read more <i class="fa fa-angle-double-right"></i
-              ></a>
-              <br/><br/>
-            </div>
-          </div>
-          <div
-            class="col-lg-3 col-sm-12 col-md-3 wow fadeInLeft"
+            class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft"
             data-wow-delay="0.6s"
             style="
               visibility: visible;
@@ -142,13 +110,13 @@
                 in the exposure of sensitive data (the previous name for this
                 category).
               </p>
-              <a href="#" class="btn" title="Read More"
+              <a href="cryptofail.php" class="btn" title="Read More"
                 >Read more <i class="fa fa-angle-double-right"></i
-              ></a>
+              ></a></br></br>
             </div>
           </div>
           <div
-            class="col-lg-3 col-sm-12 col-md-3 wow fadeInLeft"
+            class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft"
             data-wow-delay="0.9s"
             style="
               visibility: visible;
@@ -169,11 +137,11 @@
               </p>
               <a href="injection.php" class="btn" title="Read More"
                 >Read more <i class="fa fa-angle-double-right"></i
-              ></a><br/><br/>
+              ></a>
             </div>
           </div>
           <div
-            class="col-lg-3 col-sm-12 col-md-3 wow fadeInLeft"
+            class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft"
             data-wow-delay="1.2s"
             style="
               visibility: visible;
@@ -185,16 +153,16 @@
               <div class="serivce-icon">
                 <i class="fa fa-fa"></i>
               </div>
-              <h3>Insecure Design</h3>
+              <h3>XSS</h3>
               <p>
                 Security vulnerabilities that stem from poor system design,
                 leading to flaws in application logic, workflows, and data
                 flows. It emphasizes the need for secure software design
                 principles from the start.
               </p>
-              <a href="#" class="btn" title="Read More"
+              <a href="xss.php" class="btn" title="Read More"
                 >Read more <i class="fa fa-angle-double-right"></i
-              ></a><br/><br/><br/>
+              ></a><br/><br/>
             </div>
           </div>
         </div>
@@ -202,67 +170,59 @@
       </div>
     </section>
     
-    <section class="team-area section-gap" id="team">
+    <section class="team-area section-gap" id="research">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="menu-content pb-70 col-lg-8">
+          <div class="menu-content pb-50 col-lg-8">
             <div class="title text-center">
-              <h1 class="mb-10">WAVES Team</h1>
+              <h1 class="mb-10 text-warning">REFERENCE DOCUMENTS</h1>
               <p>
                 We combine our shared passion for cybersecurity with software
                 development expertise to create the coolest online platform for
-                penetration testing and security assessments.
+                demonstrating OSWASP TOP 10 vulnerabilities.
               </p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="img/ali1.png" alt="Guard-img" />
-                <ul class="social">
-                  <li><a href="#" class="fa fa-envelope"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
+        <div class="container text-dark">
+          <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header text-dark">SQL Injection</h5>
+                <div class="card-body">
+                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
+                  <p class="card-text">SQL injection exploits improper handling of user-supplied input. Most web applications allow users to input data via forms (e.g., login fields, search boxes)....... </p>
+                  <a href="blog.php?id=1" class="btn btn-sm btn-outline-info">Read All</a>
+                </div>
               </div>
-              <div class="team-content">
-                <h3 class="title">Name</h3>
-                <span class="post">Role</span>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header text-dark">Broken Authentication</h5>
+                <div class="card-body">
+                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
+                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>
+                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+              <div class="card">
+                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <div class="card-body">
+                  <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
+                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwords, credit card  ........ </p>
+                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="img/shahwar1.png" alt="Guard-img" />
-                <ul class="social">
-                  <li><a href="#" class="fa fa-envelope"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
-              <div class="team-content">
-                <h3 class="title">Shahwar Afridi</h3>
-                <span class="post">Security Auditor</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6">
-            <div class="our-team">
-              <div class="pic">
-                <img src="img/aqib1.png" alt="Guard-img" />
-                <ul class="social">
-                  <li><a href="#" class="fa fa-envelope"></a></li>
-                  <li><a href="#" class="fa fa-linkedin"></a></li>
-                </ul>
-              </div>
-              <div class="team-content">
-                <h3 class="title">Aqib Mehmood</h3>
-                <span class="post">Security Analyst</span>
-              </div>
-            </div>
-          </div>
-        </div>
+  </div>
       </div>
     </section>
 

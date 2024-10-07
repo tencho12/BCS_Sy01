@@ -16,7 +16,6 @@
 				bcClass: 'sf-breadcrumb',
 				menuClass: 'sf-js-enabled',
 				anchorClass: 'sf-with-ul',
-				menuArrowClass: 'sf-arrows'
 			},
 			ios = (function () {
 				var ios = /^(?![\w\W]*Windows Phone)[\w\W]*(iPhone|iPad|iPod)/i.test(navigator.userAgent);
