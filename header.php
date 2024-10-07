@@ -10,17 +10,35 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="index.php">Home</a></li>
-          <li><a href="xss.php">XSS</a></li>
-          <li><a href="injection.php">SQL INJECTION</a></li>
-          <li><a href="cryptofail.php">CRYPTOGRAPHIC FAILURE</a></li>
           
-          <!-- <li><a href="scan.html">Services</a></li> -->
-          <!-- <li><a href="#facts-area">Facts</a></li> -->
-          <!-- <li><a href="#price">Price</a></li> -->
-          <li><a href="index.php#research">RESEARCH</a></li>
+           <li class="menu-item dropdown">
+            <a href="#" class="dropdown-toggle">XSS</a>
+            <ul class="dropdown-menu">
+              <li><a href="xss_overview.php">OVERVIEW</a></li>
+              <li><a href="xss_quiz.php">QUIZ</a></li>
+              <li><a href="xss.php">DEMO</a></li>
+            </ul>
+          </li>
+           <li class="menu-item dropdown">
+            <a href="injection.php" class="dropdown-toggle">SQL INJECTION</a>
+            <ul class="dropdown-menu">
+              <li><a href="injection.php">OVERVIEW</a></li>
+              <li><a href="advanced-injection.php">QUIZ</a></li>
+              <li><a href="advanced-injection.php">DEMO</a></li>
+            </ul>
+          </li>
+          <li class="menu-item dropdown">
+            <a href="cryptofail.php" class="dropdown-toggle">CRYPTOGRAPHIC FAILURE</a>
+            <ul class="dropdown-menu">
+              <li><a href="cryptofail.php">Introduction</a></li>
+              <li><a href="advanced-crypto.php">Advanced Crypto Failures</a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="xss.php">XSS</a></li> -->
+          <!-- <li><a href="injection.php">SQL INJECTION</a></li>
+          <li><a href="cryptofail.php">CRYPTOGRAPHIC FAILURE</a></li>
+          <li><a href="index.php#research">RESEARCH</a></li> -->
           <li><a href="#contact">Contact</a></li>
-          <!-- <a href="http://127.0.0.1:8000" data-animation="animated fadeInUp" class="sliderbtn1" target="_blank"><span  style="font-weight: bolder;">
-						Launch App</span></a> -->
         </ul>
       </nav>
       <!-- #nav-menu-container -->

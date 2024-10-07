@@ -13,3 +13,53 @@
     color: #b9b9b9;
     /* Text color */
 }
+
+/* Basic styling for the nav-menu */
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: #333;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    display: none;
+    /* Hide dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    min-width: 160px;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: #333;
+}
+
+/* Show dropdown on hover */
+.nav-menu li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Optional: Adding a hover effect on the top-level menu items */
+.nav-menu li:hover>a {
+    background-color: #f0f0f0;
+    color: #000;
+}
