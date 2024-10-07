@@ -67,17 +67,10 @@
               Applications safe and secure.
             </p>
             <a
-              href="http://127.0.0.1:8000"
+              href="#research"
               data-animation="animated fadeInUp"
               class="sliderbtn1"
-              target="_blank"
               ><span style="font-weight: bolder"> Get Started</span></a
-            >
-            <a
-              href="#price"
-              data-animation="animated fadeInUp"
-              class="sliderbtn2"
-              ><span style="font-weight: bolder">More Detail</span></a
             >
           </div>
         </div>

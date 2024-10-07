@@ -49,8 +49,8 @@
     <section class="service-area section-gap" id="vulnerabilities">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-md-8 pb-40 header-text">
-            <h1>XSS OVERVIEW</h1>
+          <div class="col-md-8 pb-20 header-text">
+            <h1>WATCH XSS VIDEOS</h1>
             <p>Cross-Site Scripting</p>
           </div>
         </div>
@@ -65,19 +65,16 @@
             "
           >
             <div class="single-service">
-              <div class="serivce-icon">
-                <i class="fa fa-bug"></i>
+              <div class="service-video">
+                <!-- Local Video Embed -->
+                <video width="100%" height="auto" controls>
+                  <source src="videos\demo.mp4" type="video/mp4">
+                  <source src="videos\demo.mp4" type="video/webm">
+                  <!-- Fallback message if video format is not supported -->
+                  Your browser does not support the video tag.
+                </video>
+                <h5>What is XSS?</h5>
               </div>
-              <h3>Cryptographic Failures</h3>
-              <p>
-                Common errors such as using hardcoded passwords, outdated
-                cryptographic algorithms, or weak cryptographic keys can result
-                in the exposure of sensitive data (the previous name for this
-                category).
-              </p>
-              <a href="cryptofail.php" class="btn" title="Read More"
-                >Read more <i class="fa fa-angle-double-right"></i
-              ></a></br></br>
             </div>
           </div>
           <div
@@ -89,20 +86,17 @@
               animation-name: fadeInLeft;
             "
           >
-            <div class="single-service">
-              <div class="serivce-icon">
-                <i class="fa fa-eye"></i>
+             <div class="single-service">
+              <div class="service-video">
+                <!-- Local Video Embed -->
+                <video width="100%" height="auto" controls>
+                  <source src="videos\demo.mp4" type="video/mp4">
+                  <source src="videos\demo.mp4" type="video/webm">
+                  <!-- Fallback message if video format is not supported -->
+                  Your browser does not support the video tag.
+                </video>
+                  <h5>What is XSS?</h5>
               </div>
-              <h3>Injection</h3>
-              <p>
-                Injection flaws, such as SQL, NoSQL, and OS command injection,
-                occur when untrusted data is sent to an interpreter. This can
-                result in attackers executing unauthorized commands or accessing
-                data without proper permissions.
-              </p>
-              <a href="injection.php" class="btn" title="Read More"
-                >Read more <i class="fa fa-angle-double-right"></i
-              ></a>
             </div>
           </div>
           <div
@@ -115,19 +109,16 @@
             "
           >
             <div class="single-service">
-              <div class="serivce-icon">
-                <i class="fa fa-fa"></i>
+              <div class="service-video">
+                <!-- Local Video Embed -->
+                <video width="100%" height="auto" controls>
+                  <source src="videos\demo.mp4" type="video/mp4">
+                  <source src="videos\demo.mp4" type="video/webm">
+                  <!-- Fallback message if video format is not supported -->
+                  Your browser does not support the video tag.
+                </video>
+                  <h5>What is XSS?</h5>
               </div>
-              <h3>XSS</h3>
-              <p>
-                Security vulnerabilities that stem from poor system design,
-                leading to flaws in application logic, workflows, and data
-                flows. It emphasizes the need for secure software design
-                principles from the start.
-              </p>
-              <a href="xss.php" class="btn" title="Read More"
-                >Read more <i class="fa fa-angle-double-right"></i
-              ></a><br/><br/>
             </div>
           </div>
         </div>
@@ -190,104 +181,6 @@
   </div>
       </div>
     </section>
-
-    <section class="contact-page-area section-gap" id="contact">
-      <div class="container">
-        <div class="row">
-          <!-- <div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>-->
-          <div class="col-lg-4 d-flex flex-column address-wrap">
-            <div class="single-contact-address d-flex flex-row">
-              <div class="icon">
-                <span class="lnr lnr-home"></span>
-              </div>
-              <div class="contact-details">
-                <h5>MCT Campus</h5>
-                <p>Mhow, Indore</p>
-              </div>
-            </div>
-            <div class="single-contact-address d-flex flex-row">
-              <div class="icon">
-                <span class="lnr lnr-phone-handset"></span>
-              </div>
-              <div class="contact-details">
-                <h5>+92 123 445 678</h5>
-                <!-- <p>24/7 Free Customer Support Available</p> -->
-              </div>
-            </div>
-            <div class="single-contact-address d-flex flex-row">
-              <div class="icon">
-                <span class="lnr lnr-envelope"></span>
-              </div>
-              <div class="contact-details">
-                <h5>admin@waves.com</h5>
-                <p>Send us your query anytime!</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <form
-              id="myForm"
-              action="mail.php"
-              method="post"
-              class="contact-form text-right form-area"
-            >
-              <div class="row">
-                <div class="col-lg-6 form-group">
-                  <input
-                    name="name"
-                    placeholder="Enter your name"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter your name'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="text"
-                  />
-
-                  <input
-                    name="email"
-                    placeholder="Enter email address"
-                    pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter email address'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="email"
-                  />
-
-                  <input
-                    name="subject"
-                    placeholder="Enter your subject"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter your subject'"
-                    class="common-input mb-20 form-control"
-                    required=""
-                    type="text"
-                  />
-                  <div class="mt-20 alert-msg" style="text-align: left"></div>
-                </div>
-                <div class="col-lg-6 form-group">
-                  <textarea
-                    class="common-textarea form-control"
-                    name="message"
-                    placeholder="Messege"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Messege'"
-                    required=""
-                  ></textarea>
-                  <button
-                    class="primary-btn mt-20 text-white"
-                    style="float: right"
-                  >
-                    Send Message
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End contact-page Area -->
 
   <?php include 'footer.php'; ?>
 
