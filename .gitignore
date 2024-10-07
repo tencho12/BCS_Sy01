@@ -1,1 +1,2 @@
-/videos
+videos
+config/db_connection.php
