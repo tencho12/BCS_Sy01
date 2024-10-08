@@ -25,7 +25,7 @@
             <ul class="dropdown-menu">
               <li><a href="bruteforce_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=bruteforce">QUIZ</a></li>
-              <li><a href="xss.php">DEMO</a></li>
+              <li><a href="broke\atack.php">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
@@ -33,7 +33,7 @@
             <ul class="dropdown-menu">
               <li><a href="csrf_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=csrf">QUIZ</a></li>
-              <li><a href="xss.php">DEMO</a></li>
+              <!-- <li><a href="xss.php">DEMO</a></li> -->
             </ul>
           </li>
            <li class="menu-item dropdown">
@@ -41,7 +41,7 @@
             <ul class="dropdown-menu">
               <li><a href="idor_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=idor">QUIZ</a></li>
-              <li><a href="xss.php">DEMO</a></li>
+              <!-- <li><a href="xss.php">DEMO</a></li> -->
             </ul>
           </li>
            <li class="menu-item dropdown">

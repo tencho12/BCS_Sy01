@@ -145,11 +145,12 @@
             <!-- Card 1 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">SQL Injection</h5>
+                <h5 class="card-header text-dark">XSS</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-text">SQL injection exploits improper handling of user-supplied input. Most web applications allow users to input data via forms (e.g., login fields, search boxes)....... </p>
-                  <a href="blog.php?id=1" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">state of research on cross-site scripting:</h5>
+                  <p class="card-text">: Cross-site scripting (XSS) is a security vulnerability that affects web applications. It occurs due
+                  to improper or lack of  ....... </p>
+                  <a href="Project_Study\xss\state of research on cross-site scripting.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -157,11 +158,13 @@
             <!-- Card 2 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Broken Authentication</h5>
+                <h5 class="card-header text-dark">DOM based XSS</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>
-                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">DOM Based Cross Site Scripting</h5>
+                  <p class="card-title text-dark">? It’s that vulnerability wherein one sends 
+                  malicious data (typically HTML stuff with Javascript code in it) that is echoed back later by the 
+application in an HTML  ........ </p>
+                  <a href="Project_Study\xss\DOM Based Cross Site Scripting or XSS of the Third Kind.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -169,11 +172,12 @@
             <!-- Card 3 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">XSS</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
-                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwords, credit card  ........ </p>
-                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">Cross-Site Scripting (XSS) attacks and defense mechanisms</h5>
+                  <p class="card-text">Nowadays, web applications are becoming one
+                    of the standard platforms for representing data and service........ </p>
+                  <a href="Project_Study\xss\Cross-Site Scripting (XSS) attacks and defense mechanisms.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>

@@ -177,7 +177,7 @@
       <h3>Broken Authentication</h3>
       <p>
         Flaws in authentication mechanisms allow attackers to assume other
-        users' identities, such as through stolen passwords or session hijacking.
+        users identities through stolen passwords or session hijacking.
       </p>
       <a href="broken_authentication.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
     </div>
@@ -191,6 +191,7 @@
       <h3>Insecure Design</h3>
       <p>
         Vulnerabilities resulting from poor system design, emphasizing secure development principles for minimizing risks.
+
       </p>
       <a href="insecure_design.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
     </div>
@@ -206,6 +207,48 @@
         Inadequate security settings can lead to unauthorized access, data exposure, and compromise of sensitive data.
       </p>
       <a href="security_misconfiguration.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>
+</div>
+<br/><br/>
+<!-- New Row (last 3 vulnerabilities) -->
+<div class="row">
+  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.4s" style="visibility: visible; animation-delay: 2.4s; animation-name: fadeInLeft;">
+    <div class="single-service">
+      <div class="serivce-icon">
+        <i class="fa fa-database"></i>
+      </div>
+      <h3>Vulnerable and Outdated Components</h3>
+      <p>
+        Using outdated or vulnerable components, such as libraries, frameworks, and other software modules, can lead to exploitable security flaws.
+      </p>
+      <a href="outdated_components.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.7s" style="visibility: visible; animation-delay: 2.7s; animation-name: fadeInLeft;">
+    <div class="single-service">
+      <div class="serivce-icon">
+        <i class="fa fa-exclamation-triangle"></i>
+      </div>
+      <h3>Identification and Authentication Failures</h3>
+      <p>
+        Failures in identifying and authenticating users or sessions can expose systems to unauthorized access, posing security risks.
+      </p>
+      <a href="identification_failures.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="3.0s" style="visibility: visible; animation-delay: 3.0s; animation-name: fadeInLeft;">
+    <div class="single-service">
+      <div class="serivce-icon">
+        <i class="fa fa-fire"></i>
+      </div>
+      <h3>Server-Side Request Forgery (SSRF)</h3>
+      <p>
+        SSRF flaws occur when a web application fetches a remote resource without validating the user-supplied URL, potentially exposing sensitive data.
+      </p>
+      <a href="ssrf.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
     </div>
   </div>
 </div>
