@@ -68,12 +68,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\demo.mp4" type="video/mp4">
+                  <source src="videos\xss\Injection __ Cross-Site Scripting __ Reflected XSS __ OWASP TOP 10__ LAB 1.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                <h5>What is XSS?</h5>
+                <h5>Injection Cross-Site Scripting Reflected XSS</h5>
               </div>
             </div>
           </div>
@@ -90,12 +90,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\demo.mp4" type="video/mp4">
+                  <source src="videos\xss\Injection __ Cross-Site Scripting __ Reflected XSS __ OWASP TOP 10__ LAB 1.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                  <h5>What is XSS?</h5>
+                  <h5>Reflected XSS OWASP TOP 10 LAB 1</h5>
               </div>
             </div>
           </div>

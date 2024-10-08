@@ -23,24 +23,24 @@
            <li class="menu-item dropdown">
             <a href="#" class="dropdown-toggle">BRUTE FORCE</a>
             <ul class="dropdown-menu">
-              <li><a href="xss_overview.php">OVERVIEW</a></li>
-              <li><a href="xss_quiz.php">QUIZ</a></li>
+              <li><a href="bruteforce_overview.php">OVERVIEW</a></li>
+              <li><a href="quiz.php?quiz=bruteforce">QUIZ</a></li>
               <li><a href="xss.php">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
             <a href="#" class="dropdown-toggle">CSRF</a>
             <ul class="dropdown-menu">
-              <li><a href="xss_overview.php">OVERVIEW</a></li>
-              <li><a href="xss_quiz.php">QUIZ</a></li>
+              <li><a href="csrf_overview.php">OVERVIEW</a></li>
+              <li><a href="quiz.php?quiz=csrf">QUIZ</a></li>
               <li><a href="xss.php">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
             <a href="#" class="dropdown-toggle">IDOR</a>
             <ul class="dropdown-menu">
-              <li><a href="xss_overview.php">OVERVIEW</a></li>
-              <li><a href="xss_quiz.php">QUIZ</a></li>
+              <li><a href="idor_overview.php">OVERVIEW</a></li>
+              <li><a href="quiz.php?quiz=idor">QUIZ</a></li>
               <li><a href="xss.php">DEMO</a></li>
             </ul>
           </li>
@@ -60,14 +60,9 @@
               <li><a href="cryptofail.php">DEMO</a></li>
             </ul>
           </li>
-          <!-- <li><a href="xss.php">XSS</a></li> -->
-          <!-- <li><a href="injection.php">SQL INJECTION</a></li>
-          <li><a href="cryptofail.php">CRYPTOGRAPHIC FAILURE</a></li>
-          <li><a href="index.php#research">RESEARCH</a></li> -->
           <li><a href="#contact">USER GUIDE</a></li>
         </ul>
       </nav>
-      <!-- #nav-menu-container -->
     </div>
   </div>
     <hr/>

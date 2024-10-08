@@ -50,8 +50,8 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-20 header-text">
-            <h1>WATCH XSS VIDEOS</h1>
-            <p>Cross-Site Scripting</p>
+            <h1>WATCH BRUTE FORCE VIDEOS</h1>
+            <p>Brute force</p>
           </div>
         </div>
         <div class="row">
@@ -68,12 +68,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\2.Cryptographic failure\2021 OWASP Top Ten_ Cryptographic Failures.mp4" type="video/mp4">
+                  <source src="videos\Brute Force\Brute Force Enumeration of Username & Password - PortSwigger Web Security Academy Series.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                <h5>OWASP Top Ten Cryptographic Failures?</h5>
+                <h5>Brute Force Enumeration of Username & Password</h5>
               </div>
             </div>
           </div>
@@ -90,12 +90,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\2.Cryptographic failure\OWASP TOP 10 - Sensitive Data Exposure - Cryptographic failures.mp4">
+                  <source src="videos\Brute Force\Two Factor Authentication(2FA) Bypass Using Brute-Force Attack.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                  <h5>Sensitive Data Exposure - Cryptographic failures</h5>
+                  <h5>Two Factor Authentication(2FA) Bypass Using Brute-Force</h5>
               </div>
             </div>
           </div>
@@ -112,12 +112,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\2.Cryptographic failure\OWASP Top 10 Cryptographic Failures A02 – Explained.mp4" type="video/mp4">
+                  <source src="videos\demo.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                  <h5>Cryptographic Failures A02 – Explained</h5>
+                  <h5> Bypass Using Brute-Force Attack</h5>
               </div>
             </div>
           </div>
@@ -145,12 +145,14 @@
             <!-- Card 1 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">BRUTE FORCE</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">cryptographic failures prevention guide:</h5>
-                  <p class="card-text">Cryptography is one of the key components in cyber security that relies on codes 
-                    to ensure that a message can only be read by the ........ </p>
-                  <a href="Project_Study\cryptographic-failures-prevention-guide-en.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
+                  <h5 class="card-title text-dark">Enhancing Security with In-Depth
+                    Analysis of Brute-Force Attack:</h5>
+                  <p class="card-text">Brute-force attack is considered one of the oldest attacks in the entire
+                    history of cybersecurity. Amid the diverse cyberattacks, , the brute-force technique or
+                    exhaustive search has....... </p>
+                  <a href="Project_Study\Brute Force_Securing.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -158,11 +160,12 @@
             <!-- Card 2 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">BRUTE FORCE</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>
-                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">Brute Force Attacks Using Machine Learnig</h5>
+                  <p class="card-title text-dark">: The importance of identifying network traffic abnormalities in cybersecurity cannot be 
+                  emphasized enough, particularly considering the growing frequency and complexity of computer ........ </p>
+                  <a href="Project_Study\Brute_Force_Attacks_Using_Machine_Learni_Detect.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -170,11 +173,13 @@
             <!-- Card 3 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">BRUTE FORCE</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
-                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwords, credit card  ........ </p>
-                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">brute force attack and protection techniques</h5>
+                  <p class="card-text">Every user who is connected to the public computer network is the 
+                    target of various attacks. For years, one of the biggest problems for the security 
+                    of computer networks has been ........ </p>
+                  <a href="Project_Study\brute-force-attack-and-protection-techniques.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>

@@ -1,6 +1,5 @@
 {
   "xss": {
-    "title": "Math Quiz",
     "questions": [
       {
         "question": "What does XSS stand for?",
@@ -1565,6 +1564,591 @@
           "hint": "Obfuscation hides the real purpose of data or code."
         }
       ]
+    ]
+  },
+  "bruteforce": {
+    "questions": [
+      {
+        "question": "What is a brute force attack?",
+        "answers": [
+          "A method of data compression",
+          "A type of cyber attack where every possible password is tried",
+          "A form of data encryption",
+          "A technique for increasing storage capacity"
+        ],
+        "correct_answer": "A type of cyber attack where every possible password is tried",
+        "hint": "It involves trying all possible combinations."
+      },
+      {
+        "question": "What is typically targeted in a brute force attack?",
+        "answers": [
+          "Software updates",
+          "User accounts and passwords",
+          "Network bandwidth",
+          "Firewall configurations"
+        ],
+        "correct_answer": "User accounts and passwords",
+        "hint": "These are often the first line of defense."
+      },
+      {
+        "question": "What can significantly slow down a brute force attack?",
+        "answers": [
+          "Strong passwords and account lockouts",
+          "Multiple user accounts",
+          "Large data storage",
+          "Weak encryption"
+        ],
+        "correct_answer": "Strong passwords and account lockouts",
+        "hint": "These methods make it harder to guess credentials."
+      },
+      {
+        "question": "What is the primary tool used in brute force attacks?",
+        "answers": [
+          "Encryption software",
+          "Password cracking tools",
+          "Firewall settings",
+          "Antivirus programs"
+        ],
+        "correct_answer": "Password cracking tools",
+        "hint": "These tools automate the guessing process."
+      },
+      {
+        "question": "Which of the following is a common defense against brute force attacks?",
+        "answers": [
+          "Using simple passwords",
+          "Implementing CAPTCHA",
+          "Ignoring unusual login attempts",
+          "Allowing unlimited login attempts"
+        ],
+        "correct_answer": "Implementing CAPTCHA",
+        "hint": "This helps verify if the user is human."
+      },
+      {
+        "question": "What is a dictionary attack?",
+        "answers": [
+          "A random guessing method",
+          "A targeted attack using a list of common passwords",
+          "A type of denial-of-service attack",
+          "An encryption method"
+        ],
+        "correct_answer": "A targeted attack using a list of common passwords",
+        "hint": "It uses a predefined list instead of all combinations."
+      },
+      {
+        "question": "What is the effect of a lockout policy on brute force attacks?",
+        "answers": [
+          "It encourages users to change passwords frequently",
+          "It completely prevents brute force attacks",
+          "It limits the number of failed login attempts",
+          "It simplifies the login process"
+        ],
+        "correct_answer": "It limits the number of failed login attempts",
+        "hint": "This is a common security measure."
+      },
+      {
+        "question": "Which type of system is most vulnerable to brute force attacks?",
+        "answers": [
+          "Systems with multi-factor authentication",
+          "Systems with weak password policies",
+          "Systems with regular updates",
+          "Systems with firewalls"
+        ],
+        "correct_answer": "Systems with weak password policies",
+        "hint": "Weak passwords are easier to guess."
+      },
+      {
+        "question": "What is the main limitation of brute force attacks?",
+        "answers": [
+          "They are always successful",
+          "They take a long time with strong passwords",
+          "They can only be performed offline",
+          "They require physical access to the device"
+        ],
+        "correct_answer": "They take a long time with strong passwords",
+        "hint": "The complexity of passwords affects the time needed."
+      },
+      {
+        "question": "How does the use of salt improve password security?",
+        "answers": [
+          "It makes passwords easier to remember",
+          "It adds random data to passwords before hashing",
+          "It increases the storage capacity",
+          "It encrypts passwords"
+        ],
+        "correct_answer": "It adds random data to passwords before hashing",
+        "hint": "This makes precomputed attacks harder."
+      },
+      {
+        "question": "What is a common consequence of a successful brute force attack?",
+        "answers": [
+          "Improved system performance",
+          "Unauthorized access to accounts",
+          "Enhanced encryption",
+          "Decreased network traffic"
+        ],
+        "correct_answer": "Unauthorized access to accounts",
+        "hint": "This can lead to data breaches."
+      },
+      {
+        "question": "What is an example of a brute force attack?",
+        "answers": [
+          "A phishing attempt",
+          "Guessing a password repeatedly until successful",
+          "Sending spam emails",
+          "Installing malware"
+        ],
+        "correct_answer": "Guessing a password repeatedly until successful",
+        "hint": "It involves relentless attempts."
+      },
+      {
+        "question": "Why is using two-factor authentication (2FA) effective against brute force attacks?",
+        "answers": [
+          "It eliminates the need for passwords",
+          "It requires an additional verification step",
+          "It speeds up the login process",
+          "It allows multiple users to log in simultaneously"
+        ],
+        "correct_answer": "It requires an additional verification step",
+        "hint": "This adds another layer of security."
+      },
+      {
+        "question": "Which programming technique can help detect brute force attempts?",
+        "answers": [
+          "Data normalization",
+          "Logging and monitoring failed login attempts",
+          "Encrypting user data",
+          "Automating software updates"
+        ],
+        "correct_answer": "Logging and monitoring failed login attempts",
+        "hint": "This can alert administrators to suspicious activity."
+      },
+      {
+        "question": "What does 'rate limiting' do in cybersecurity?",
+        "answers": [
+          "Speeds up login attempts",
+          "Restricts the number of attempts from an IP address",
+          "Allows unlimited login attempts",
+          "Changes passwords frequently"
+        ],
+        "correct_answer": "Restricts the number of attempts from an IP address",
+        "hint": "This can help mitigate brute force attacks."
+      },
+      {
+        "question": "Which of the following is a consequence of weak password management?",
+        "answers": [
+          "Increased system speed",
+          "Greater likelihood of successful brute force attacks",
+          "Reduced risk of data loss",
+          "Enhanced user experience"
+        ],
+        "correct_answer": "Greater likelihood of successful brute force attacks",
+        "hint": "Weak management leads to easy guesses."
+      },
+      {
+        "question": "What role does encryption play in protecting passwords?",
+        "answers": [
+          "It makes passwords visible",
+          "It helps store passwords securely",
+          "It compresses password data",
+          "It prevents all types of attacks"
+        ],
+        "correct_answer": "It helps store passwords securely",
+        "hint": "Encryption protects data at rest."
+      }
+    ]
+  },
+  "csrf": {
+    "questions": [
+      {
+        "question": "What does CSRF stand for?",
+        "answers": [
+          "Cross-Site Resource Framework",
+          "Cross-Site Request Forgery",
+          "Cross-Site Request Function",
+          "Cross-Site Response Forgery"
+        ],
+        "correct_answer": "Cross-Site Request Forgery",
+        "hint": "It involves unauthorized commands transmitted from a user."
+      },
+      {
+        "question": "How does a CSRF attack typically occur?",
+        "answers": [
+          "Through phishing emails",
+          "By exploiting user authentication cookies",
+          "By injecting malware into the system",
+          "Through unsecured Wi-Fi networks"
+        ],
+        "correct_answer": "By exploiting user authentication cookies",
+        "hint": "It targets the authenticated session of a user."
+      },
+      {
+        "question": "What is a common defense against CSRF attacks?",
+        "answers": [
+          "Using HTTPS only",
+          "Implementing Content Security Policy",
+          "Using anti-CSRF tokens",
+          "Disabling cookies"
+        ],
+        "correct_answer": "Using anti-CSRF tokens",
+        "hint": "These tokens help verify requests."
+      },
+      {
+        "question": "Which of the following is a characteristic of CSRF attacks?",
+        "answers": [
+          "They require user interaction",
+          "They rely on session hijacking",
+          "They can be executed silently in the background",
+          "They require direct access to the victim's computer"
+        ],
+        "correct_answer": "They can be executed silently in the background",
+        "hint": "Users may not even be aware of the attack."
+      },
+      {
+        "question": "What is the primary goal of a CSRF attack?",
+        "answers": [
+          "To steal user credentials",
+          "To perform actions on behalf of a user",
+          "To install malware",
+          "To disrupt service"
+        ],
+        "correct_answer": "To perform actions on behalf of a user",
+        "hint": "It exploits the user's trust in the web application."
+      },
+      {
+        "question": "What type of application is most vulnerable to CSRF attacks?",
+        "answers": [
+          "Static websites",
+          "Web applications with user accounts",
+          "APIs with no authentication",
+          "Email clients"
+        ],
+        "correct_answer": "Web applications with user accounts",
+        "hint": "These applications maintain user sessions."
+      },
+      {
+        "question": "Which HTTP method is often targeted in CSRF attacks?",
+        "answers": ["GET", "POST", "PUT", "DELETE"],
+        "correct_answer": "POST",
+        "hint": "This method is commonly used for state-changing operations."
+      },
+      {
+        "question": "What is the role of the 'Referer' header in preventing CSRF?",
+        "answers": [
+          "It authenticates users",
+          "It indicates the source of a request",
+          "It encrypts data",
+          "It stores session information"
+        ],
+        "correct_answer": "It indicates the source of a request",
+        "hint": "It can be checked to verify request origins."
+      },
+      {
+        "question": "Which of the following is NOT a consequence of a successful CSRF attack?",
+        "answers": [
+          "Unauthorized fund transfers",
+          "Changing account settings",
+          "Installing software on the user’s device",
+          "Sending messages from the user's account"
+        ],
+        "correct_answer": "Installing software on the user’s device",
+        "hint": "CSRF primarily manipulates user accounts."
+      },
+      {
+        "question": "What does the 'Same-Origin Policy' relate to?",
+        "answers": [
+          "A security feature preventing cross-origin requests",
+          "A method for improving site speed",
+          "A way to encrypt data in transit",
+          "A standard for website design"
+        ],
+        "correct_answer": "A security feature preventing cross-origin requests",
+        "hint": "It helps protect against various attacks, including CSRF."
+      },
+      {
+        "question": "In which scenario is a CSRF attack most likely to succeed?",
+        "answers": [
+          "When the user is logged out",
+          "When the user is logged into a trusted site",
+          "When the site uses strong passwords",
+          "When the site has no users"
+        ],
+        "correct_answer": "When the user is logged into a trusted site",
+        "hint": "The attack exploits the user's session."
+      },
+      {
+        "question": "What can developers use to validate requests against CSRF?",
+        "answers": [
+          "User agents",
+          "Session IDs",
+          "Tokens unique to the user session",
+          "Browser cookies"
+        ],
+        "correct_answer": "Tokens unique to the user session",
+        "hint": "These are often generated and checked with each request."
+      },
+      {
+        "question": "Which of the following is an example of a CSRF attack?",
+        "answers": [
+          "Changing a user’s password via a forged request",
+          "Phishing for user credentials",
+          "Using a keylogger to capture input",
+          "Injecting SQL commands"
+        ],
+        "correct_answer": "Changing a user’s password via a forged request",
+        "hint": "It manipulates the user's actions without their consent."
+      },
+      {
+        "question": "What is a key indicator of a CSRF vulnerability?",
+        "answers": [
+          "The use of CAPTCHA",
+          "Lack of CSRF tokens in forms",
+          "Strong password policies",
+          "SSL/TLS encryption"
+        ],
+        "correct_answer": "Lack of CSRF tokens in forms",
+        "hint": "Forms should always include security tokens."
+      },
+      {
+        "question": "Why is CSRF particularly dangerous for banking sites?",
+        "answers": [
+          "They have high traffic volumes",
+          "They often use complex passwords",
+          "They handle sensitive transactions without additional verification",
+          "They require frequent logins"
+        ],
+        "correct_answer": "They handle sensitive transactions without additional verification",
+        "hint": "Trust in the user's authentication is exploited."
+      },
+      {
+        "question": "What type of token is often used to prevent CSRF?",
+        "answers": [
+          "Authentication token",
+          "Anti-CSRF token",
+          "Session token",
+          "Encryption key"
+        ],
+        "correct_answer": "Anti-CSRF token",
+        "hint": "This token is specific to each session and request."
+      },
+      {
+        "question": "Which of the following best describes a CSRF token?",
+        "answers": [
+          "A long random string used to verify requests",
+          "An encrypted password",
+          "A method of data compression",
+          "A user’s session ID"
+        ],
+        "correct_answer": "A long random string used to verify requests",
+        "hint": "It helps ensure that the request came from the authenticated user."
+      },
+      {
+        "question": "What is the impact of a successful CSRF attack on a website?",
+        "answers": [
+          "Data theft",
+          "Unauthorized actions taken by users",
+          "Increased server load",
+          "Website downtime"
+        ],
+        "correct_answer": "Unauthorized actions taken by users",
+        "hint": "The attacker can manipulate user accounts without consent."
+      }
+    ]
+  },
+  "idor": {
+    "questions": [
+      {
+        "question": "What does IDOR stand for?",
+        "answers": [
+          "Insecure Direct Object Reference",
+          "Indirect Object Reference",
+          "Integrated Data Object Retrieval",
+          "Internal Direct Object Reference"
+        ],
+        "correct_answer": "Insecure Direct Object Reference",
+        "hint": "It involves direct access to objects without proper authorization."
+      },
+      {
+        "question": "What is a common vulnerability associated with IDOR?",
+        "answers": [
+          "SQL Injection",
+          "Cross-Site Scripting (XSS)",
+          "Unauthorized access to data",
+          "Denial of Service (DoS)"
+        ],
+        "correct_answer": "Unauthorized access to data",
+        "hint": "Attackers can access data they should not see."
+      },
+      {
+        "question": "How can IDOR vulnerabilities typically be exploited?",
+        "answers": [
+          "By changing URLs or parameters",
+          "By injecting malicious scripts",
+          "By stealing cookies",
+          "By using a brute force attack"
+        ],
+        "correct_answer": "By changing URLs or parameters",
+        "hint": "Modifying inputs can grant unauthorized access."
+      },
+      {
+        "question": "Which of the following is an example of IDOR?",
+        "answers": [
+          "Accessing someone else's account by changing a user ID in the URL",
+          "SQL Injection through a login form",
+          "Stealing session tokens via XSS",
+          "Sending a malicious file to the server"
+        ],
+        "correct_answer": "Accessing someone else's account by changing a user ID in the URL",
+        "hint": "It's about directly referencing objects inappropriately."
+      },
+      {
+        "question": "What is the best practice to prevent IDOR vulnerabilities?",
+        "answers": [
+          "Use complex passwords",
+          "Validate user permissions before accessing objects",
+          "Employ SSL/TLS encryption",
+          "Limit input length"
+        ],
+        "correct_answer": "Validate user permissions before accessing objects",
+        "hint": "Authorization checks are crucial."
+      },
+      {
+        "question": "Which application layer is primarily affected by IDOR?",
+        "answers": [
+          "Database layer",
+          "Presentation layer",
+          "Business logic layer",
+          "Network layer"
+        ],
+        "correct_answer": "Business logic layer",
+        "hint": "This layer handles access control and object references."
+      },
+      {
+        "question": "What type of objects are commonly targeted in IDOR attacks?",
+        "answers": [
+          "User profiles",
+          "API endpoints",
+          "Static resources",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "hint": "Any object can be referenced directly."
+      },
+      {
+        "question": "Which of the following is a symptom of IDOR?",
+        "answers": [
+          "Users seeing only their own data",
+          "Users being unable to access the application",
+          "Users accessing data belonging to other users",
+          "Users being logged out frequently"
+        ],
+        "correct_answer": "Users accessing data belonging to other users",
+        "hint": "Unauthorized data access is a clear indicator."
+      },
+      {
+        "question": "What does 'object' refer to in IDOR?",
+        "answers": [
+          "Any data that can be referenced in a URL",
+          "A file stored on the server",
+          "A piece of user input",
+          "A session variable"
+        ],
+        "correct_answer": "Any data that can be referenced in a URL",
+        "hint": "This includes user accounts, documents, etc."
+      },
+      {
+        "question": "What kind of validation can help prevent IDOR?",
+        "answers": [
+          "Input validation",
+          "Output encoding",
+          "Access control validation",
+          "Error handling"
+        ],
+        "correct_answer": "Access control validation",
+        "hint": "Checking user permissions is key."
+      },
+      {
+        "question": "Which of the following frameworks can help mitigate IDOR risks?",
+        "answers": [
+          "Spring Security",
+          "Django ORM",
+          "Node.js",
+          "None of the above"
+        ],
+        "correct_answer": "Spring Security",
+        "hint": "It provides robust authorization mechanisms."
+      },
+      {
+        "question": "Why is IDOR considered a serious vulnerability?",
+        "answers": [
+          "It can lead to data leakage",
+          "It is easy to exploit",
+          "It can impact multiple users",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "hint": "Its consequences can be wide-reaching."
+      },
+      {
+        "question": "Which HTTP method is typically involved in IDOR attacks?",
+        "answers": ["GET", "POST", "PUT", "DELETE"],
+        "correct_answer": "GET",
+        "hint": "This method often retrieves data."
+      },
+      {
+        "question": "In which scenarios is IDOR particularly common?",
+        "answers": [
+          "When accessing user profiles",
+          "When handling file downloads",
+          "When processing API requests",
+          "All of the above"
+        ],
+        "correct_answer": "All of the above",
+        "hint": "Any direct access can be susceptible."
+      },
+      {
+        "question": "How can logging help with IDOR detection?",
+        "answers": [
+          "By tracking failed login attempts",
+          "By monitoring access patterns to sensitive data",
+          "By identifying user sessions",
+          "By validating input data"
+        ],
+        "correct_answer": "By monitoring access patterns to sensitive data",
+        "hint": "Unusual access attempts can signal vulnerabilities."
+      },
+      {
+        "question": "What is a common mistake that leads to IDOR vulnerabilities?",
+        "answers": [
+          "Not using HTTPS",
+          "Not implementing input validation",
+          "Directly exposing database IDs in URLs",
+          "Using weak passwords"
+        ],
+        "correct_answer": "Directly exposing database IDs in URLs",
+        "hint": "This practice can reveal sensitive references."
+      },
+      {
+        "question": "What type of security testing is effective for identifying IDOR vulnerabilities?",
+        "answers": [
+          "Static code analysis",
+          "Dynamic application security testing",
+          "Network penetration testing",
+          "Social engineering"
+        ],
+        "correct_answer": "Dynamic application security testing",
+        "hint": "This testing simulates real-world attacks."
+      },
+      {
+        "question": "What is a common user action that can trigger an IDOR attack?",
+        "answers": [
+          "Logging in",
+          "Downloading a file",
+          "Changing account settings",
+          "Accessing a URL with a modified parameter"
+        ],
+        "correct_answer": "Accessing a URL with a modified parameter",
+        "hint": "This is how attackers exploit the vulnerability."
+      }
     ]
   }
 }

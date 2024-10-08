@@ -50,8 +50,8 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-20 header-text">
-            <h1>WATCH XSS VIDEOS</h1>
-            <p>Cross-Site Scripting</p>
+            <h1>WATCH CSRF VIDEOS</h1>
+            <p>Cross-Site Request Forgery</p>
           </div>
         </div>
         <div class="row">
@@ -68,12 +68,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\2.Cryptographic failure\2021 OWASP Top Ten_ Cryptographic Failures.mp4" type="video/mp4">
+                  <source src="videos\IDOR\IDOR Attack _ Demo.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                <h5>OWASP Top Ten Cryptographic Failures?</h5>
+                <h5>IDOR Attack</h5>
               </div>
             </div>
           </div>
@@ -90,12 +90,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\2.Cryptographic failure\OWASP TOP 10 - Sensitive Data Exposure - Cryptographic failures.mp4">
+                  <source src="videos\IDOR\Insecure Direct Object Reference (IDOR) Explained.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                  <h5>Sensitive Data Exposure - Cryptographic failures</h5>
+                  <h5>Insecure Direct Object Reference (IDOR) Explained</h5>
               </div>
             </div>
           </div>
@@ -112,12 +112,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\2.Cryptographic failure\OWASP Top 10 Cryptographic Failures A02 – Explained.mp4" type="video/mp4">
+                  <source src="videos\demo.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                  <h5>Cryptographic Failures A02 – Explained</h5>
+                  <h5>Insecure Direct Object Reference (IDOR) Explained</h5>
               </div>
             </div>
           </div>
@@ -145,12 +145,12 @@
             <!-- Card 1 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">CSRF Attacks</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">cryptographic failures prevention guide:</h5>
-                  <p class="card-text">Cryptography is one of the key components in cyber security that relies on codes 
-                    to ensure that a message can only be read by the ........ </p>
-                  <a href="Project_Study\cryptographic-failures-prevention-guide-en.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
+                  <h5 class="card-title text-dark">CSRF Attacks Acunetix:</h5>
+                  <p class="card-text">also known as CSRF, Sea Surf, or XSRF, is an attack whereby
+                  an attacker tricks a victim into performing actions on their behalf. The impact of the attack....... </p>
+                  <a href="Project_Study\CSRF Attacks_ Acunetix.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@
             <!-- Card 2 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">Broken Authentication</h5>
                 <div class="card-body">
                   <h5 class="card-title text-dark">How SQL Injection Works:</h5>
                   <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>

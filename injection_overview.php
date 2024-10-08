@@ -68,12 +68,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\demo.mp4" type="video/mp4">
+                  <source src="videos\3.Injection\Exploit SQL injection To Bypass Login.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                <h5>What is XSS?</h5>
+                <h5>Exploit SQL injection To Bypass Login</h5>
               </div>
             </div>
           </div>
@@ -90,12 +90,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\demo.mp4" type="video/mp4">
+                  <source src="videos\3.Injection\Exploit SQL Injection to Retrieve Admin Password.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                  <h5>What is XSS?</h5>
+                  <h5>Exploit SQL Injection to Retrieve Admin Password</h5>
               </div>
             </div>
           </div>
@@ -112,12 +112,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\demo.mp4" type="video/mp4">
+                  <source src="videos\3.Injection\Injection Attacks_ Types_1.mp4" type="video/mp4">
                   <source src="videos\demo.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                  <h5>What is XSS?</h5>
+                  <h5>Injection Attacks Types</h5>
               </div>
             </div>
           </div>
@@ -157,11 +157,11 @@
             <!-- Card 2 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Broken Authentication</h5>
+                <h5 class="card-header text-dark">SQL Injection</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>
-                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">Injections Analysis and Countermeasures</h5>
+                  <p class="card-title text-dark">Web applications are popular targets of security attacks. One common type of such attacks is SQL injection, where an .... </p>
+                  <a href="Project_Study\Injections_Analysis and Countermeasures.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -169,11 +169,12 @@
             <!-- Card 3 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">SQL Injection</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
-                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwords, credit card  ........ </p>
-                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">Advanced SQL Injection</h5>
+                  <p class="card-text">- data is extracted using the same channel that is used to inject the SQL code. 
+                    This is the most straightforward kind of attack,  ........ </p>
+                  <a href="Project_Study\SQLi_Easy_way.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
