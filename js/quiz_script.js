@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
             `).join('')}
             <button id="hint-btn" class="btn btn-info mt-3">Hint</button>
             <p id="hint-text" class="mt-2" style="display:none;">${questionObj.hint}</p>
-            <p class="mt-3 text-dark"><strong>Your Current Score: <span id="current-score">${userScore}</span></strong></p> <!-- Score display here -->
+            <p class="mt-3 text-success h4 pt-20 pb-20 "><strong>Your Current Score: <span id="current-score">${userScore}</span></strong></p> <!-- Score display here -->
         `;
 
         document.getElementById('hint-btn').addEventListener('click', function () {

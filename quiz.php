@@ -9,7 +9,7 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png" />
     <!-- Author Meta -->
-    <meta name="author" content="WAVES®" />
+    <meta name="author" content="SWAPT" />
     <!-- Meta Description -->
     <meta name="description" content="" />
     <!-- Meta Keyword -->
@@ -63,9 +63,9 @@
                 </div>
                 
                 <div id="controls" class="mt-4 d-flex justify-content-between">
-                    <button id="prev-btn" class="btn btn-secondary">Previous</button>
-                    <button id="next-btn" class="btn btn-primary">Next</button>
-                    <a class="btn btn-danger mb-2" href="index.php" role="button" >
+                    <button id="prev-btn" class="btn btn-secondary w-25">Previous</button>
+                    <button id="next-btn" class="btn btn-primary w-25">Next</button>
+                    <a class="btn btn-danger mb-2 w-25" href="index.php" role="button" >
                      Quit
                       </a>
                 </div>
