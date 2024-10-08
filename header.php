@@ -25,7 +25,7 @@
             <ul class="dropdown-menu">
               <li><a href="bruteforce_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=bruteforce">QUIZ</a></li>
-              <li><a href="broke\atack.php">DEMO</a></li>
+              <!-- <li><a href="broke\atack.php">DEMO</a></li> -->
             </ul>
           </li>
            <li class="menu-item dropdown">

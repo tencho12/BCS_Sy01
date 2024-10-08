@@ -177,7 +177,7 @@
       <h3>Broken Authentication</h3>
       <p>
         Flaws in authentication mechanisms allow attackers to assume other
-        users identities through stolen passwords or session hijacking.
+        users identities through stolen passwords
       </p>
       <a href="broken_authentication.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
     </div>
@@ -235,6 +235,7 @@
       <p>
         Failures in identifying and authenticating users or sessions can expose systems to unauthorized access, posing security risks.
       </p>
+      <br/>
       <a href="identification_failures.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
     </div>
   </div>
