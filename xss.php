@@ -122,8 +122,8 @@
                 <div class="col-7">
                   <h3 id="quizheader" style="color: yellow">WHEN YOU PASS THE QUIZ, The secure form will be displayed here for testing</h3>
                   <div id="result" class="result hidden"> 
-                     <a class="btn btn-light mb-2" href="xss_insecure.php" target="_blank" role="button" >
-                      Test vulnerable code
+                     <a class="btn btn-light mb-2" href="xss_secure.php" target="_blank" role="button" >
+                      Test Secure code
                       </a>
                     <!-- <iframe src="xss_secure.php" style="width: 100%; height: 500px; border: none;"></iframe> -->
                   </div>

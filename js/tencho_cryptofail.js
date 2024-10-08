@@ -1,6 +1,8 @@
           function checkAnswers() {
           const answers = {
-              q1: 'A',
+              q1: 'B',
+              q2: 'C',
+              q3: 'C'
           };
 
           let score = 0;
@@ -54,7 +56,7 @@
 
     // tencho change here
     function showNextQuestion() {
-        if (currentQuestion <= 1) {
+        if (currentQuestion <= 3) {
             hideAllQuestions();
             document.getElementById(`question${currentQuestion}`).style.display = 'block';
         } else {
@@ -67,7 +69,7 @@
 
      // tencho change here
     function hideAllQuestions() {
-        for (let i = 1; i <= 1; i++) {
+        for (let i = 1; i <= 3; i++) {
             document.getElementById(`question${i}`).style.display = 'none';
         }
     }

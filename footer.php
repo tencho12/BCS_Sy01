@@ -57,6 +57,7 @@
                   <a href="https://owasp.org/www-community/attacks/xss/" target="_blank"
                     ><i class="fa fa-chevron-right mr-5"></i>Cross Site Scripting (XSS)</a>
                 </li>
+                
               </ul>
             </div>
           </div>

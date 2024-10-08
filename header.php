@@ -17,7 +17,7 @@
             <ul class="dropdown-menu">
               <li><a href="xss_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=xss">QUIZ</a></li>
-              <li><a href="xss.php">DEMO</a></li>
+              <li><a href="http://localhost/xss/1xss.php">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
@@ -45,7 +45,7 @@
             </ul>
           </li>
            <li class="menu-item dropdown">
-            <a href="injection.php" class="dropdown-toggle">SQL INJECTION</a>
+            <a href="#" class="dropdown-toggle">SQL INJECTION</a>
             <ul class="dropdown-menu">
               <li><a href="injection_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=sql_injection">QUIZ</a></li>
@@ -53,7 +53,7 @@
             </ul>
           </li>
           <li class="menu-item dropdown">
-            <a href="cryptofail.php" class="dropdown-toggle">CRYPTOGRAPHIC FAILURE</a>
+            <a href="#" class="dropdown-toggle">CRYPTOGRAPHIC FAILURE</a>
             <ul class="dropdown-menu">
               <li><a href="cryptofail_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=cryptographic_fail">QUIZ</a></li>

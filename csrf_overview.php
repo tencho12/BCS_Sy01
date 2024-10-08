@@ -158,11 +158,12 @@
             <!-- Card 2 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Broken Authentication</h5>
+                <h5 class="card-header text-dark">CSRF: Exploitation and Prevention</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>
-                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">Cross-Site Request Forgeries: Exploitation and Prevention:</h5>
+                  <p class="card-title text-dark">Cross-Site Request Forgery (CSRF) attacks occur when a
+                    malicious web site causes a user’s web browser to  ........ </p>
+                  <a href="Project_Study\csrf2.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -170,11 +171,13 @@
             <!-- Card 3 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">Cross-Site Request Forgery</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
-                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwords, credit card  ........ </p>
-                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">Cross-Site Request Forgery: Attack and Defense</h5>
+                  <p class="card-text">Cross Site Request Forgery (CSRF) has emerged as a 
+                      potent threat to Web 2.0 applications. Because of the 
+                      stateless  ........ </p>
+                  <a href="Project_Study\csrf.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>

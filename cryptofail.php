@@ -68,33 +68,33 @@
         <div class="container mt-5 collapse" id="collapseExample">
           <div class="row">
                 <div class="col-5">
-                  <h2 class="mb-2">SQL Injection Quiz</h2>
+                  <h2 class="mb-2">Cryptographic Failures Quiz</h2>
                    <div class="container">
                       <div id="quizContainer" class="quiz-container">
                         <div class="py-2 quiz-question" id="question1" class="question">
-                            <p>1. What is cryptographic failure?</p>
-                            <input type="radio" name="q1" value="A" required> A) Failure to use encryption<br>
-                            <input type="radio" name="q1" value="B"> B) Using weak or outdated cryptographic algorithms<br>
-                            <input type="radio" name="q1" value="C"> C) Storing encryption keys insecurely<br>
-                            <input type="radio" name="q1" value="D"> D) All of the above<br>
-                            <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q1', 'D')">Submit</button>
+                            <p>1. Why are cryptographic algorithms like MD5 and SHA-1 considered insecure today?</p>
+                            <input type="radio" name="q1" value="A" required> A) They use too much computational power<br>
+                            <input type="radio" name="q1" value="B"> B) They are susceptible to collision attacks<br>
+                            <input type="radio" name="q1" value="C"> C) They are too slow for modern systems<br>
+                            <input type="radio" name="q1" value="D"> D) They do not support long enough keys<br>
+                            <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q1', 'B')">Submit</button>
                         </div>
 
                           <div class="py-2 quiz-question" id="question2" class="question" style="display:none;">
-                              <p>2. Which of the following is a best practice to secure encryption keys?</p>
-                              <input type="radio" name="q2" value="A" required> A) Store keys in the same database as the encrypted data<br>
-                              <input type="radio" name="q2" value="B"> B) Use hardware security modules (HSM) for key management<br>
-                              <input type="radio" name="q2" value="C"> C) Store keys in environment variables<br>
-                              <input type="radio" name="q2" value="D"> D) Hard-code keys in the source code<br>
-                              <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q2', 'B')">Submit</button>
+                              <p>2. Why is the use of hardcoded cryptographic keys in software a security vulnerability?</p>
+                              <input type="radio" name="q2" value="A" required> A) It slows down the encryption process<br>
+                              <input type="radio" name="q2" value="B"> B) It makes the software easier to update<br>
+                              <input type="radio" name="q2" value="C"> C) Hardcoded keys can be extracted through reverse engineering<br>
+                              <input type="radio" name="q2" value="D"> D) It improves the security of the software<br>
+                              <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q2', 'C')">Submit</button>
                           </div>
 
                             <div class="py-2 quiz-question" id="question3" class="question" style="display:none;">
-                                <p>3. What is the risk of using outdated cryptographic algorithms like DES or MD5?</p>
-                                <input type="radio" name="q3" value="A" required> A) Faster encryption<br>
-                                <input type="radio" name="q3" value="B"> B) They are more secure than modern algorithms<br>
-                                <input type="radio" name="q3" value="C"> C) They are vulnerable to attacks due to their short key lengths<br>
-                                <input type="radio" name="q3" value="D")> D) They are resistant to all forms of cryptanalysis<br>
+                                <p>3. What is the consequence of poor key management in cryptographic systems?</p>
+                                <input type="radio" name="q3" value="A" required> A) Decreased system performance<br>
+                                <input type="radio" name="q3" value="B"> B) Reduced encryption speed<br>
+                                <input type="radio" name="q3" value="C"> C) Attackers gaining access to encrypted data<br>
+                                <input type="radio" name="q3" value="D")> D) Shorter key lengths<br>
                                 <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q3', 'C')">Submit</button>
                             </div>
 

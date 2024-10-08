@@ -149,7 +149,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-dark">cryptographic failures prevention guide:</h5>
                   <p class="card-text">Cryptography is one of the key components in cyber security that relies on codes 
-                    to ensure that a message can only be read by the ........ </p>
+                    to ensure that a  ........ </p>
                   <a href="Project_Study\cryptographic-failures-prevention-guide-en.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>

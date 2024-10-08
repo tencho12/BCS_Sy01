@@ -145,11 +145,14 @@
             <!-- Card 1 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">SQL Injection</h5>
+                <h5 class="card-header text-dark">IDORE</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-text">SQL injection exploits improper handling of user-supplied input. Most web applications allow users to input data via forms (e.g., login fields, search boxes)....... </p>
-                  <a href="blog.php?id=1" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">Insecure Direct Object 
+                    References</h5>
+                  <p class="card-text">The insecure direct object reference simply represents the 
+                    flaws in the system design without the full protection 
+                    mechanism for the sensitive ....... </p>
+                  <a href="Project_Study\idor1.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -157,11 +160,11 @@
             <!-- Card 2 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Broken Authentication</h5>
+                <h5 class="card-header text-dark">IDOR: Implementation</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>
-                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
+                  <h5 class="card-title text-dark">Implementation of a Hands-on Attack and Defense</h5>
+                  <p class="card-title text-dark">This thesis aims to implement a web-based hands-on attack and defense lab for insecure direct object  ........ </p>
+                  <a href="Project_Study\idor2.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
@@ -169,11 +172,12 @@
             <!-- Card 3 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">Cryptographic Failures</h5>
+                <h5 class="card-header text-dark">IDORE Usage</h5>
                 <div class="card-body">
                   <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
-                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwords, credit card  ........ </p>
-                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
+                  <p class="card-text">Based on this web application, the lab exercises were created including the 
+                    automated scripts to evaluate learners solutions. ........ </p>
+                  <a href="Project_Study\idor2.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
             </div>
