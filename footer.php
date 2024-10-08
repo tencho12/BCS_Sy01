@@ -102,9 +102,9 @@
                 <br/>Shardul Kulkarni
                 <br/>Bibhuti Kumar
                 <br/>Udayana Thilakasiri
+                <br/>Sanuram Karki
                 <br/>Tenzin Chophel
-                <br/>Sanuram Karki</p>
-
+                </p>
             </div>
           </div>
         </div>
