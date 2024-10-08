@@ -50,8 +50,8 @@
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-20 header-text">
-            <h1>WATCH XSS VIDEOS</h1>
-            <p>Cross-Site Scripting</p>
+            <h1>WATCH SQL INJECTION VIDEOS</h1>
+            <p>SQL INJECTION</p>
           </div>
         </div>
         <div class="row">

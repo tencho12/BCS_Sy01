@@ -71,6 +71,11 @@
               data-animation="animated fadeInUp"
               class="sliderbtn1"
               ><span style="font-weight: bolder">OWASP TOP 10<span></a>
+               <a
+              href="#research"
+              data-animation="animated fadeInUp"
+              class="sliderbtn1"
+              ><span style="font-weight: bolder">DIVE DEEP<span></a>
           </div>
         </div>
       </div>
@@ -82,10 +87,10 @@
     <section class="service-area section-gap" id="vulnerabilities">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-md-8 pb-40 header-text">
+          <div class="col-md-8 pb-10 header-text">
               <br/>
-            <h1>OWASP TOP 10 vulnerabilities</h1>
-            <p>Explore the OWASP top 10 vulnerabilities</p>
+            <h1>OWASP TOP 10 VULNERABILITIES</h1>
+            <p>Explore the OWASP top 10 Vulnerabilities</p>
           </div>
         </div>
         <div class="row">
@@ -166,103 +171,102 @@
             </div>
           </div>
         </div>
-<br/><br/>
+        <br/><br/>
     <!-- First Row (next 3 vulnerabilities) -->
-<div class="row">
-  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInLeft;">
-    <div class="single-service">
-      <div class="serivce-icon">
-        <i class="fa fa-lock"></i>
-      </div>
-      <h3>Broken Authentication</h3>
-      <p>
-        Flaws in authentication mechanisms allow attackers to assume other
-        users identities through stolen passwords
-      </p>
-      <a href="broken_authentication.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
-    </div>
-  </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="1.5s" style="visibility: visible; animation-delay: 1.5s; animation-name: fadeInLeft;">
+            <div class="single-service">
+              <div class="serivce-icon">
+                <i class="fa fa-lock"></i>
+              </div>
+              <h3>Broken Authentication</h3>
+              <p>
+                Flaws in authentication mechanisms allow attackers to assume other
+                users identities through stolen passwords
+              </p>
+              <a href="broken_authentication.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
 
-  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="1.8s" style="visibility: visible; animation-delay: 1.8s; animation-name: fadeInLeft;">
-    <div class="single-service">
-      <div class="serivce-icon">
-        <i class="fa fa-file-code-o"></i>
-      </div>
-      <h3>Insecure Design</h3>
-      <p>
-        Vulnerabilities resulting from poor system design, emphasizing secure development principles for minimizing risks.
+          <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="1.8s" style="visibility: visible; animation-delay: 1.8s; animation-name: fadeInLeft;">
+            <div class="single-service">
+              <div class="serivce-icon">
+                <i class="fa fa-file-code-o"></i>
+              </div>
+              <h3>Insecure Design</h3>
+              <p>
+                Vulnerabilities resulting from poor system design, emphasizing secure development principles for minimizing risks.
 
-      </p>
-      <a href="insecure_design.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
-    </div>
-  </div>
+              </p>
+              <a href="insecure_design.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
 
-  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.1s" style="visibility: visible; animation-delay: 2.1s; animation-name: fadeInLeft;">
-    <div class="single-service">
-      <div class="serivce-icon">
-        <i class="fa fa-unlock"></i>
-      </div>
-      <h3>Security Misconfiguration</h3>
-      <p>
-        Inadequate security settings can lead to unauthorized access, data exposure, and compromise of sensitive data.
-      </p>
-      <a href="security_misconfiguration.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
-    </div>
-  </div>
-</div>
-<br/><br/>
+          <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.1s" style="visibility: visible; animation-delay: 2.1s; animation-name: fadeInLeft;">
+            <div class="single-service">
+              <div class="serivce-icon">
+                <i class="fa fa-unlock"></i>
+              </div>
+              <h3>Security Misconfiguration</h3>
+              <p>
+                Inadequate security settings can lead to unauthorized access, data exposure, and compromise of sensitive data.
+              </p>
+              <a href="security_misconfiguration.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <br/><br/>
 <!-- New Row (last 3 vulnerabilities) -->
-<div class="row">
-  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.4s" style="visibility: visible; animation-delay: 2.4s; animation-name: fadeInLeft;">
-    <div class="single-service">
-      <div class="serivce-icon">
-        <i class="fa fa-database"></i>
-      </div>
-      <h3>Vulnerable and Outdated Components</h3>
-      <p>
-        Using outdated or vulnerable components, such as libraries, frameworks, and other software modules, can lead to exploitable security flaws.
-      </p>
-      <a href="outdated_components.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
-    </div>
-  </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.4s" style="visibility: visible; animation-delay: 2.4s; animation-name: fadeInLeft;">
+            <div class="single-service">
+              <div class="serivce-icon">
+                <i class="fa fa-database"></i>
+              </div>
+              <h3>Vulnerable and Outdated Components</h3>
+              <p>
+                Using outdated or vulnerable components, such as libraries, frameworks, and other software modules, can lead to exploitable security flaws.
+              </p>
+              <a href="outdated_components.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
 
-  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.7s" style="visibility: visible; animation-delay: 2.7s; animation-name: fadeInLeft;">
-    <div class="single-service">
-      <div class="serivce-icon">
-        <i class="fa fa-exclamation-triangle"></i>
-      </div>
-      <h3>Identification and Authentication Failures</h3>
-      <p>
-        Failures in identifying and authenticating users or sessions can expose systems to unauthorized access, posing security risks.
-      </p>
-      <br/>
-      <a href="identification_failures.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
-    </div>
-  </div>
+          <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="2.7s" style="visibility: visible; animation-delay: 2.7s; animation-name: fadeInLeft;">
+            <div class="single-service">
+              <div class="serivce-icon">
+                <i class="fa fa-exclamation-triangle"></i>
+              </div>
+              <h3>Identification and Authentication Failures</h3>
+              <p>
+                Failures in identifying and authenticating users or sessions can expose systems to unauthorized access, posing security risks.
+              </p>
+              <br/>
+              <a href="identification_failures.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
 
-  <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="3.0s" style="visibility: visible; animation-delay: 3.0s; animation-name: fadeInLeft;">
-    <div class="single-service">
-      <div class="serivce-icon">
-        <i class="fa fa-fire"></i>
-      </div>
-      <h3>Server-Side Request Forgery (SSRF)</h3>
-      <p>
-        SSRF flaws occur when a web application fetches a remote resource without validating the user-supplied URL, potentially exposing sensitive data.
-      </p>
-      <a href="ssrf.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
-    </div>
-  </div>
-</div>
-
+          <div class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft" data-wow-delay="3.0s" style="visibility: visible; animation-delay: 3.0s; animation-name: fadeInLeft;">
+            <div class="single-service">
+              <div class="serivce-icon">
+                <i class="fa fa-fire"></i>
+              </div>
+              <h3>Server-Side Request Forgery (SSRF)</h3>
+              <p>
+                SSRF flaws occur when a web application fetches a remote resource without validating the user-supplied URL, potentially exposing sensitive data.
+              </p>
+              <a href="ssrf.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     
     <section class="team-area section-gap" id="research">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="menu-content pb-50 col-lg-8">
+          <div class="menu-content pb-10 col-lg-8">
             <div class="title text-center">
-              <h1 class="mb-10 text-warning">REFERENCE DOCUMENTS</h1>
+              <h1 class="mb-10 text-warning">DIVE DEEP...</h1>
               <p>
                For a list of documents for further reading, explore the links below...
               </p>
@@ -307,22 +311,10 @@
               </div>
             </div>
           </div>
-  </div>
+      </div>
       </div>
     </section>
 
-    <section class="contact-page-area section-gap" id="contact">
-      <div class="container">
-        <div class="row">
-
-                  <div class="mt-20 alert-msg" style="text-align: left"></div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- End contact-page Area -->
 
   <?php include 'footer.php'; ?>

@@ -14,7 +14,7 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="single-footer-widget">
-              <h6>QUICK LINks</h6>
+              <h6>QUICK LINkS</h6>
               <ul class="quick_link">
                 <li>
                   <a href="index.php"
@@ -36,6 +36,21 @@
                     ><i class="fa fa-chevron-right mr-5"></i>XSS</a
                   >
                 </li>
+                <li>
+                  <a href="bruteforce_overview.php"
+                    ><i class="fa fa-chevron-right mr-5"></i>BRUTE FORCE</a
+                  >
+                </li>
+                <li>
+                  <a href="csrf_overview.php"
+                    ><i class="fa fa-chevron-right mr-5"></i>CSRF</a
+                  >
+                </li>
+                <li>
+                  <a href="cryptofail_overview.php"
+                    ><i class="fa fa-chevron-right mr-5"></i>CRYPTOGRAPHIC FAILURE</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
@@ -55,7 +70,15 @@
                 </li>
                 <li>
                   <a href="https://owasp.org/www-community/attacks/xss/" target="_blank"
-                    ><i class="fa fa-chevron-right mr-5"></i>Cross Site Scripting (XSS)</a>
+                    ><i class="fa fa-chevron-right mr-5"></i>CROSS SITE SCRIPTING (XSS)</a>
+                </li>
+                <li>
+                  <a href="https://owasp.org/API-Security/editions/2023/en/0xa2-broken-authentication/" target="_blank"
+                    ><i class="fa fa-chevron-right mr-5"></i>BROKEN AUTH</a>
+                </li>
+                <li>
+                  <a href="https://owasp.org/www-community/attacks/xss/" target="_blank"
+                    ><i class="fa fa-chevron-right mr-5"></i>XSS</a>
                 </li>
                 
               </ul>
@@ -63,54 +86,17 @@
           </div>
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="single-footer-widget">
-              <h6>Contact Us</h6>
-              <address>
-                <ul class="my_address">
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-envelope" aria-hidden="true"></i
-                      >syndicate1@gmail.com</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-phone" aria-hidden="true"></i>+91 123
-                      456789</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><i class="fa fa-map-marker" aria-hidden="true"></i
-                      ><span>MCTE, MHOW</span></a>
-                  </li>
-                </ul>
-              </address>
-              <div class="" id="mc_embed_signup">
-                <form method="get" class="form-inline">
-                  <input
-                    class="form-control"
-                    name="EMAIL"
-                    placeholder="Enter Email"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Enter Email '"
-                    required=""
-                    type="email"
-                  />
-                  <button class="click-btn btn btn-default">
-                    <span class="lnr lnr-arrow-right"></span>
-                  </button>
-                  <div style="position: absolute; left: -5000px">
-                    <input
-                      name="b_36c4fd991d266f23781ded980_aefe40901a"
-                      tabindex="-1"
-                      value=""
-                      type="text"
-                    />
-                  </div>
+              <h6>TEAM</h6>
+                Saptarshi Sarkar
+                <br/>Rahul Dev
+                <br/>Jijith Balakrishnan
+                <br/>Rohan Rakesh
+                <br/>Shardul Kulkarni
+                <br/>Bibhuti Kumar
+                <br/>Udayana Thilakasiri
+                <br/> Tenzin Chophel
+                <br/> Sanuram Karki</p>
 
-                  <div class="info"></div>
-                </form>
-              </div>
             </div>
           </div>
         </div>
