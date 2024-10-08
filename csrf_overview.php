@@ -148,9 +148,7 @@
             <div class="title text-center">
               <h1 class="mb-10 text-warning">REFERENCE DOCUMENTS</h1>
               <p>
-                We combine our shared passion for cybersecurity with software
-                development expertise to create the coolest online platform for
-                demonstrating OSWASP TOP 10 vulnerabilities.
+               For a list of documents for further reading, explore the links below...
               </p>
             </div>
           </div>

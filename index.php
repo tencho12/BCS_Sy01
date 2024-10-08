@@ -272,7 +272,7 @@
             <div class="title text-center">
               <h1 class="mb-10 text-warning">DIVE DEEP...</h1>
               <p>
-               For a list of documents for further reading, explore the links below...
+               For a list of documents for further reading, explore the links below...
               </p>
             </div>
           </div>
