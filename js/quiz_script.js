@@ -10,10 +10,20 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             quizData = data[quizName];
+             // Shuffle the questions array
+            quizData.questions = shuffleArray(quizData.questions);
             displayQuestion();
         })
         .catch(error => console.error('Error loading quiz data:', error));
 
+        // Fisher-Yates shuffle algorithm
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1)); // Random index from 0 to i
+                [array[i], array[j]] = [array[j], array[i]];   // Swap elements
+            }
+            return array;
+        }
     // Display the current question
     function displayQuestion() {
         const questionObj = quizData.questions[currentQuestionIndex];
@@ -62,6 +72,16 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         } else {
             alert('Please select an answer before proceeding.');
+        }
+    });
+
+     // Handle Previous button click
+    document.getElementById('prev-btn').addEventListener('click', function () {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--; // Move to the previous question
+            displayQuestion(); // Update the display
+        } else {
+            alert('This is the first question.'); // Handle case when on the first question
         }
     });
 });
