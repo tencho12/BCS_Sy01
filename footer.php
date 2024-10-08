@@ -79,6 +79,14 @@
                 <li>
                   <a href="https://owasp.org/www-community/attacks/xss/" target="_blank"
                     ><i class="fa fa-chevron-right mr-5"></i>XSS</a>
+                </li> 
+                <li>
+                  <a href="https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html" target="_blank"
+                    ><i class="fa fa-chevron-right mr-5"></i>IDORE</a>
+                </li>
+                <li>
+                  <a href="https://owasp.org/www-community/attacks/csrf" target="_blank"
+                    ><i class="fa fa-chevron-right mr-5"></i>CSRF</a>
                 </li>
                 
               </ul>

@@ -160,10 +160,10 @@
             <!-- Card 1 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">XSS</h5>
+                <h5 class="card-header text-dark">XSS Research</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">state of research on cross-site scripting:</h5>
-                  <p class="card-text">: Cross-site scripting (XSS) is a security vulnerability that affects web applications. It occurs due
+                  <h5 class="card-title text-dark">State of research on cross-site scripting:</h5>
+                  <p class="card-text">Cross-site scripting (XSS) is a security vulnerability that affects web applications. It occurs due
                   to improper or lack of  ....... </p>
                   <a href="Project_Study\xss\state of research on cross-site scripting.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
@@ -176,9 +176,9 @@
                 <h5 class="card-header text-dark">DOM based XSS</h5>
                 <div class="card-body">
                   <h5 class="card-title text-dark">DOM Based Cross Site Scripting</h5>
-                  <p class="card-title text-dark">? It’s that vulnerability wherein one sends 
+                  <p class="card-title text-dark">It’s that vulnerability wherein one sends 
                   malicious data (typically HTML stuff with Javascript code in it) that is echoed back later by the 
-application in an HTML  ........ </p>
+                  application in an HTML  ........ </p>
                   <a href="Project_Study\xss\DOM Based Cross Site Scripting or XSS of the Third Kind.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>
@@ -187,7 +187,7 @@ application in an HTML  ........ </p>
             <!-- Card 3 -->
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">XSS</h5>
+                <h5 class="card-header text-dark">XSS attacks and defense mechanisms</h5>
                 <div class="card-body">
                   <h5 class="card-title text-dark">Cross-Site Scripting (XSS) attacks and defense mechanisms</h5>
                   <p class="card-text">Nowadays, web applications are becoming one

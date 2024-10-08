@@ -297,7 +297,7 @@
                 <h5 class="card-header text-dark">Broken Authentication</h5>
                 <div class="card-body">
                   <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms. </p>
+                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms.</p>
                   <!-- <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a> -->
                 </div>
               </div>
