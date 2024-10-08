@@ -46,7 +46,21 @@
     <!-- <div class="mt-50"></div> -->
     <!-- Start service Area -->
      <div class="pt-60"></div>
-    <section class="service-area section-gap" id="vulnerabilities">
+     <section class="service-area section-gap" id="vulnerabilities">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8 header-text">
+              <h2>INSECURE DIRECT OBJECT REFERENCE (IDOR)</h2><br/>
+            </div>
+          </div>
+          <div>
+            <p style="line-height: 1.7; font-size: 15px">
+              Insecure Direct Object References (IDOR) is a security vulnerability that occurs when an application exposes a reference to an internal object, such as a file, database record, or URL, without proper authorization checks. This allows an attacker to manipulate the input parameters to gain unauthorized access to sensitive data or functionality, bypassing normal access controls. IDOR typically arises in web applications where users can change identifiers in URLs or form fields, allowing them to view or modify other users' data. There are two primary types of IDOR: horizontal IDOR, where an attacker accesses data belonging to another user at the same permission level (e.g., viewing another user's profile), and vertical IDOR, where an attacker accesses data meant for users with higher privileges (e.g., admin features). To mitigate IDOR vulnerabilities, developers should implement robust access controls, validate user permissions for each request, and avoid exposing internal object identifiers directly in the application.
+            </p>
+          </div>
+        </div>
+      </section>
+    <section class="service-area" id="vulnerabilities">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-20 header-text">

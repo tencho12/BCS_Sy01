@@ -58,7 +58,7 @@
         <div class="carousel-item active">
           <img src="img/bibhuti.jpg" alt="fw_al_001_01" />
           <div class="fw_al_008_slide">
-            <h2 data-animation="animated fadeInUp">WAVES®</h2><br>
+            <h2 data-animation="animated fadeInUp">WAVES<sup>®</sup></h2><br>
             <p data-animation="animated fadeInUp">
                 The Web Application
                 Vulnerability & Exposures Simulator (WAVES®) provides you with an
@@ -74,7 +74,7 @@
                <a
               href="#research"
               data-animation="animated fadeInUp"
-              class="sliderbtn1"
+              class="btn btn-outline mt-0"
               ><span style="font-weight: bolder">DIVE DEEP<span></a>
           </div>
         </div>
@@ -115,9 +115,10 @@
                 in the exposure of sensitive data (the previous name for this
                 category).
               </p>
-              <a href="cryptofail.php" class="btn" title="Read More"
+              <!-- <a href="cryptofail.php" class="btn" title="Read More"
                 >Read more <i class="fa fa-angle-double-right"></i
-              ></a></br></br>
+              ></a> -->
+            <br/>
             </div>
           </div>
           <div
@@ -140,10 +141,10 @@
                 result in attackers executing unauthorized commands or accessing
                 data without proper permissions.
               </p>
-              <a href="injection.php" class="btn" title="Read More"
+              <!-- <a href="injection.php" class="btn" title="Read More"
                 >Read more <i class="fa fa-angle-double-right"></i
-              ></a>
-            </div>
+              ></a> -->
+            </div><br/>
           </div>
           <div
             class="col-lg-4 col-sm-12 col-md-4 wow fadeInLeft"
@@ -165,9 +166,10 @@
                 flows. It emphasizes the need for secure software design
                 principles from the start.
               </p>
-              <a href="xss.php" class="btn" title="Read More"
+              <!-- <a href="xss.php" class="btn" title="Read More"
                 >Read more <i class="fa fa-angle-double-right"></i
-              ></a><br/><br/>
+              ></a> -->
+              <br/>
             </div>
           </div>
         </div>
@@ -184,7 +186,8 @@
                 Flaws in authentication mechanisms allow attackers to assume other
                 users identities through stolen passwords
               </p>
-              <a href="broken_authentication.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+              <br/><br/>
+              <!-- <a href="broken_authentication.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a> -->
             </div>
           </div>
 
@@ -196,9 +199,9 @@
               <h3>Insecure Design</h3>
               <p>
                 Vulnerabilities resulting from poor system design, emphasizing secure development principles for minimizing risks.
-
               </p>
-              <a href="insecure_design.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+              <br/><br/>
+              <!-- <a href="insecure_design.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a> -->
             </div>
           </div>
 
@@ -211,7 +214,8 @@
               <p>
                 Inadequate security settings can lead to unauthorized access, data exposure, and compromise of sensitive data.
               </p>
-              <a href="security_misconfiguration.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+              <br/><br/>
+              <!-- <a href="security_misconfiguration.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a> -->
             </div>
           </div>
         </div>
@@ -227,7 +231,7 @@
               <p>
                 Using outdated or vulnerable components, such as libraries, frameworks, and other software modules, can lead to exploitable security flaws.
               </p>
-              <a href="outdated_components.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+              <!-- <a href="outdated_components.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a> -->
             </div>
           </div>
 
@@ -241,7 +245,7 @@
                 Failures in identifying and authenticating users or sessions can expose systems to unauthorized access, posing security risks.
               </p>
               <br/>
-              <a href="identification_failures.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+              <!-- <a href="identification_failures.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a> -->
             </div>
           </div>
 
@@ -254,7 +258,7 @@
               <p>
                 SSRF flaws occur when a web application fetches a remote resource without validating the user-supplied URL, potentially exposing sensitive data.
               </p>
-              <a href="ssrf.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a>
+              <!-- <a href="ssrf.php" class="btn" title="Read More">Read more <i class="fa fa-angle-double-right"></i></a> -->
             </div>
           </div>
         </div>
@@ -281,8 +285,8 @@
                 <h5 class="card-header text-dark">SQL Injection</h5>
                 <div class="card-body">
                   <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-text">SQL injection exploits improper handling of user-supplied input. Most web applications allow users to input data via forms (e.g., login fields, search boxes)....... </p>
-                  <a href="blog.php?id=1" class="btn btn-sm btn-outline-info">Read All</a>
+                  <p class="card-text">SQL injection exploits improper handling of user-supplied input. Most web applications allow users to input data via forms (e.g., login fields, search boxes) </p>
+                  <!-- <a href="blog.php?id=1" class="btn btn-sm btn-outline-info">Read All</a> -->
                 </div>
               </div>
             </div>
@@ -293,8 +297,8 @@
                 <h5 class="card-header text-dark">Broken Authentication</h5>
                 <div class="card-body">
                   <h5 class="card-title text-dark">How SQL Injection Works:</h5>
-                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms to ........ </p>
-                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
+                  <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms. </p>
+                  <!-- <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a> -->
                 </div>
               </div>
             </div>
@@ -305,8 +309,8 @@
                 <h5 class="card-header text-dark">Cryptographic Failures</h5>
                 <div class="card-body">
                   <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
-                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwords, credit card  ........ </p>
-                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
+                  <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwordds and credit card </p>
+                  <!-- <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a> -->
                 </div>
               </div>
             </div>

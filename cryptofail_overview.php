@@ -46,7 +46,21 @@
     <!-- <div class="mt-50"></div> -->
     <!-- Start service Area -->
      <div class="pt-60"></div>
-    <section class="service-area section-gap" id="vulnerabilities">
+      <section class="service-area section-gap" id="vulnerabilities">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8 header-text">
+              <h1>CRYPTOGRAPHIC FAILURE</h1>
+            </div>
+          </div>
+          <div>
+            <p style="line-height: 1.7; font-size: 15px">
+              Cryptographic Failures refer to vulnerabilities that arise when cryptographic algorithms, protocols, or implementations are incorrectly applied, leading to compromised data confidentiality, integrity, or authenticity. These failures can stem from weak or outdated algorithms, improper key management, and inadequate encryption practices. There are several types of cryptographic failures, including insecure key storage, where sensitive cryptographic keys are stored in accessible locations; using deprecated algorithms, such as MD5 or SHA-1, which have known vulnerabilities; and lack of proper encryption, such as transmitting sensitive data over unencrypted channels. Cryptographic failures can allow attackers to intercept or tamper with sensitive information, leading to data breaches and unauthorized access. To mitigate these risks, organizations should implement strong encryption standards, ensure proper key management practices, regularly update cryptographic libraries, and conduct security assessments to identify and remediate weaknesses in their cryptographic systems. Employing multi-factor authentication can also enhance overall security and reduce the impact of cryptographic failures.
+            </p>
+          </div>
+        </div>
+      </section>
+    <section class="service-area" id="vulnerabilities">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-20 header-text">

@@ -46,7 +46,22 @@
     <!-- <div class="mt-50"></div> -->
     <!-- Start service Area -->
      <div class="pt-60"></div>
-    <section class="service-area section-gap" id="vulnerabilities">
+     <section class="service-area section-gap" id="vulnerabilities">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 header-text">
+            <h1>BRUTEFORCE ATTACK</h1>
+          </div>
+        </div>
+        <div>
+          <p style="line-height: 1.7; font-size: 15px">
+            A brute force attack is a trial-and-error method used to gain unauthorized access to a system by systematically trying all possible combinations of usernames, passwords, or encryption keys. Brute force attacks exploit weak or easily guessable passwords and can be automated using tools or scripts. The success of a brute force attack depends on the complexity of the password or key and the attacker's available resources.  A brute force simulator has been developed to understand the nitty-gritty of such attacks and how to improve security measures for the same.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="service-area " id="vulnerabilities">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-20 header-text">

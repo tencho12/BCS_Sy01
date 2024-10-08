@@ -94,8 +94,8 @@
                 <br/>Shardul Kulkarni
                 <br/>Bibhuti Kumar
                 <br/>Udayana Thilakasiri
-                <br/> Tenzin Chophel
-                <br/> Sanuram Karki</p>
+                <br/>Tenzin Chophel
+                <br/>Sanuram Karki</p>
 
             </div>
           </div>
@@ -103,6 +103,6 @@
       </div>
     </footer>
     <div class="copyright_area">
-      Copyright 2024-2024 All rights reserved. <a href="#">WAVES®</a>
+      Copyright : Syndicate 01- BCS-04 Course, FCTS, MCTE, Mhow. <a href="index.php">WAVES®</a>
     </div>
     <!-- End footer Area -->

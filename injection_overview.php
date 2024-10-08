@@ -46,7 +46,22 @@
     <!-- <div class="mt-50"></div> -->
     <!-- Start service Area -->
      <div class="pt-60"></div>
-    <section class="service-area section-gap" id="vulnerabilities">
+          <section class="service-area section-gap" id="vulnerabilities">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 header-text">
+            <h1>SQL INJECTION</h1>
+          </div>
+        </div>
+        <div>
+          <p style="line-height: 1.7; font-size: 15px">
+            SQL injection is a common web security vulnerability that allows attackers to interfere with the queries a web application makes to its database. It occurs when user inputs are improperly sanitized, enabling malicious SQL code to be injected and executed within the query. This can lead to unauthorized access to sensitive data, bypassing authentication, data corruption, or even complete control over the affected database. Attackers often exploit SQL injection vulnerabilities to extract confidential information such as usernames, passwords, and credit card details. Preventing SQL injection involves using prepared statements, parameterized queries, and input validation techniques to ensure that user-supplied data is properly handled.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="service-area" id="vulnerabilities">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-20 header-text">

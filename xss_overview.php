@@ -45,8 +45,23 @@
 
     <!-- <div class="mt-50"></div> -->
     <!-- Start service Area -->
-     <div class="pt-60"></div>
+    <div class="pt-60"></div>
     <section class="service-area section-gap" id="vulnerabilities">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8 header-text">
+            <h1>CROSS SITE SCRIPTING (XSS) ATTACK</h1>
+          </div>
+        </div>
+        <div>
+          <p style="line-height: 1.7; font-size: 15px">
+            Cross-Site Scripting (XSS) is a web application vulnerability that allows attackers to inject malicious scripts, typically JavaScript, into web pages viewed by others. When users interact with a page compromised by XSS, the injected script can execute within their browser, gaining access to sensitive data such as cookies, session tokens, or other user information. There are three main types of XSS attacks: Stored XSS, where the malicious code is stored on the server (e.g., in a database) and delivered to users through normal page requests; Reflected XSS, where the attack script is embedded in a URL or form input and reflected by the server into the user's browser; and DOM-based XSS, which manipulates the client-side code directly without server interaction. XSS attacks exploit weak input validation and inadequate output encoding, making input sanitization, output encoding, and Content Security Policy (CSP) implementation crucial for defense against XSS.
+          </p>
+        </div>
+        
+      </div>
+    </section>
+    <section class="service-area" id="vulnerabilities">
       <div class="container">
         <div class="row d-flex justify-content-center">
           <div class="col-md-8 pb-20 header-text">
