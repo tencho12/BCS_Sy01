@@ -84,7 +84,7 @@
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
                   <source src="videos\xss\Injection __ Cross-Site Scripting __ Reflected XSS __ OWASP TOP 10__ LAB 1.mp4" type="video/mp4">
-                  <source src="videos\demo.mp4" type="video/webm">
+                  <source src="videos\xss\Injection __ Cross-Site Scripting __ Reflected XSS __ OWASP TOP 10__ LAB 1.mp44" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
@@ -105,8 +105,8 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\xss\Injection __ Cross-Site Scripting __ Reflected XSS __ OWASP TOP 10__ LAB 1.mp4" type="video/mp4">
-                  <source src="videos\demo.mp4" type="video/webm">
+                  <source src="videos\3.Injection\Host Header Injection Attack ｜ Authentication Bypass.mp4" type="video/mp4">
+                  <source src="videos\3.Injection\Host Header Injection Attack ｜ Authentication Bypass.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
@@ -127,12 +127,12 @@
               <div class="service-video">
                 <!-- Local Video Embed -->
                 <video width="100%" height="auto" controls>
-                  <source src="videos\demo.mp4" type="video/mp4">
-                  <source src="videos\demo.mp4" type="video/webm">
+                  <source src="videos\3.Injection\XSS To Capture Cookies.mp4" type="video/mp4">
+                  <source src="videos\3.Injection\XSS To Capture Cookies.mp4" type="video/webm">
                   <!-- Fallback message if video format is not supported -->
                   Your browser does not support the video tag.
                 </video>
-                  <h5>What is XSS?</h5>
+                  <h5>XSS To Capture Cookies</h5>
               </div>
             </div>
           </div>

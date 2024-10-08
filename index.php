@@ -286,7 +286,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-dark">How SQL Injection Works:</h5>
                   <p class="card-text">SQL injection exploits improper handling of user-supplied input. Most web applications allow users to input data via forms (e.g., login fields, search boxes) </p>
-                  <!-- <a href="blog.php?id=1" class="btn btn-sm btn-outline-info">Read All</a> -->
+                  <a href="blog.php?id=1" class="btn btn-sm btn-outline-info">Read All</a>
                 </div>
               </div>
             </div>
@@ -298,7 +298,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-dark">How SQL Injection Works:</h5>
                   <p class="card-title text-dark">Broken Authentication is a common web application vulnerability where attackers exploit flaws in authentication mechanisms.</p>
-                  <!-- <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a> -->
+                  <a href="blog.php?id=2" class="btn btn-sm btn-outline-info">Read All</a>
                 </div>
               </div>
             </div>
@@ -310,7 +310,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
                   <p class="card-text">Cryptographic Failures (formerly known as "Sensitive Data Exposure" in the OWASP Top 10) occur when sensitive data, such as passwordds and credit card </p>
-                  <!-- <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a> -->
+                  <a href="blog.php?id=3" class="btn btn-sm btn-outline-info">Read All</a>
                 </div>
               </div>
             </div>

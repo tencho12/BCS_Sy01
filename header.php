@@ -48,6 +48,7 @@
               <li><a href="injection_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=sql_injection">QUIZ</a></li>
               <li><a href="injection.php">DEMO</a></li>
+              <li><a href="http://localhost/attack/index.php">AUTO SIMULATOR</a></li>
             </ul>
           </li>
           <li class="menu-item dropdown">
