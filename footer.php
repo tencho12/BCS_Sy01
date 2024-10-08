@@ -4,9 +4,9 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12 social-widget">
             <div class="single-footer-widget">
-              <h6>WAVES</h6>
+              <h6>WAVES®</h6>
               <p>
-                WAVES - Web Application Vulnerability & Exploit Simulator is an
+                WAVES® - Web Application Vulnerability & Exploit Simulator is an
                 Web Vulnerability Simulator tool that will help you make your Web
                 Applications safe and secure.
               </p>
@@ -117,6 +117,6 @@
       </div>
     </footer>
     <div class="copyright_area">
-      Copyright 2024-2024 All rights reserved. <a href="#">WAVES</a>
+      Copyright 2024-2024 All rights reserved. <a href="#">WAVES®</a>
     </div>
     <!-- End footer Area -->

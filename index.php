@@ -9,7 +9,7 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png" />
     <!-- Author Meta -->
-    <meta name="author" content="SWAPT" />
+    <meta name="author" content="WAVES®" />
     <!-- Meta Description -->
     <meta name="description" content="" />
     <!-- Meta Keyword -->
@@ -17,7 +17,7 @@
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-    <title>WAVES - Be Aware, Be Secure</title>
+    <title>WAVES®</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
@@ -58,10 +58,10 @@
         <div class="carousel-item active">
           <img src="img/bibhuti.jpg" alt="fw_al_001_01" />
           <div class="fw_al_008_slide">
-            <h2 data-animation="animated fadeInUp">WAVES</h2><br>
+            <h2 data-animation="animated fadeInUp">WAVES®</h2><br>
             <p data-animation="animated fadeInUp">
                 The Web Application
-                Vulnerability & Exposures Simulator (WAVES) provides you with an
+                Vulnerability & Exposures Simulator (WAVES®) provides you with an
                 offline envioronment to demonstrate the most common Web Application
                 Security Risks as listed in the popular websites such as OWASP Top 10. To
                 check them out, click on the link below.

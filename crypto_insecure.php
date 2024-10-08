@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.png" />
     <!-- Author Meta -->
-    <meta name="author" content="SWAPT" />
+    <meta name="author" content="WAVES®" />
     <!-- Meta Description -->
     <meta name="description" content="" />
     <!-- Meta Keyword -->
@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <!-- meta character set -->
     <meta charset="UTF-8" />
     <!-- Site Title -->
-    <title>WAVES - Be Aware, Be Secure</title>
+    <title>WAVES®</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet" />
     <!--
