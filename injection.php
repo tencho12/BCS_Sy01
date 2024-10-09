@@ -72,11 +72,11 @@
                     <div class="container">
                       <div id="quizContainer" class="quiz-container">
                         <div class="py-2 quiz-question" id="question1" class="question">
-                            <p>1. What is SQL injection?</p>
-                            <input type="radio" name="q1" value="A" required> A) A type of SQL command<br>
-                            <input type="radio" name="q1" value="B"> B) A security vulnerability<br>
-                            <input type="radio" name="q1" value="C"> C) A database management technique<br>
-                            <input type="radio" name="q1" value="D"> D) None of the above<br>
+                            <p>1. Select the best option for running the query securly?</p>
+                            <input type="radio" name="q1" value="A" required> A) $query = \"SELECT * FROM users WHERE user = '\$username' AND password = '\$password'\"</input><br/>
+                            <input class="mt-3" type="radio" name="q1" value="B"> B) $stmt = \$conn->prepare(\"SELECT * FROM users WHERE user = ? AND password = ?\"); \$stmt->bind_param('ss', \$username, \$password)</input><br/>
+                            <input class="mt-3" type="radio" name="q1" value="C"> C) $query = addslashes(\$username)</input><br/>
+                            <input class="mt-3" type="radio" name="q1" value="D"> D) $query = htmlentities(\$username)</input><br/>
                             <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q1', 'B')">Submit</button>
                         </div>
 
