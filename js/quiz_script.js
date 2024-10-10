@@ -4,26 +4,28 @@ document.addEventListener('DOMContentLoaded', function () {
     let quizData = {};
     const urlParams = new URLSearchParams(window.location.search);
     const quizName = urlParams.get('quiz') || 'xss';  // Default to 'xss'
+    const vulnerability = quizName;  // Use quizName as vulnerability
     
     // Load quiz data from JSON
     fetch('quiz/quiz.json')
         .then(response => response.json())
         .then(data => {
             quizData = data[quizName];
-             // Shuffle the questions array
+            // Shuffle the questions array
             quizData.questions = shuffleArray(quizData.questions);
             displayQuestion();
         })
         .catch(error => console.error('Error loading quiz data:', error));
 
-        // Fisher-Yates shuffle algorithm
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1)); // Random index from 0 to i
-                [array[i], array[j]] = [array[j], array[i]];   // Swap elements
-            }
-            return array;
+    // Fisher-Yates shuffle algorithm
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1)); // Random index from 0 to i
+            [array[i], array[j]] = [array[j], array[i]];   // Swap elements
         }
+        return array;
+    }
+
     // Display the current question
     function displayQuestion() {
         const questionObj = quizData.questions[currentQuestionIndex];
@@ -54,7 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (selectedAnswer) {
             const answerIndex = parseInt(selectedAnswer.value); // User's selected index
             const correctAnswerIndex = quizData.questions[currentQuestionIndex].correct_answer; // Correct answer index
-            const answer = quizData.questions[currentQuestionIndex].answers[answerIndex]
+            const answer = quizData.questions[currentQuestionIndex].answers[answerIndex];
+
             // Compare the selected answer index to the correct answer index
             if (answer === correctAnswerIndex) {
                 userScore++; // Increase score if the selected answer is correct
@@ -75,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-     // Handle Previous button click
+    // Handle Previous button click
     document.getElementById('prev-btn').addEventListener('click', function () {
         if (currentQuestionIndex > 0) {
             currentQuestionIndex--; // Move to the previous question
@@ -84,4 +87,27 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('This is the first question.'); // Handle case when on the first question
         }
     });
-});
+
+   // Handle Quit button click
+    document.getElementById('quit-btn').addEventListener('click', function (event) {
+        event.preventDefault();
+
+        // Send score to the server
+        fetch('/BCS_Sy01/quiz_score_updater.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `score=${userScore}&vulnerability=${vulnerability}`
+        })
+        .then(response => response.text())
+        .then(data => {
+            
+            console.log('Score update response:', data);
+            debugger
+            // Optionally redirect or show a success message
+            window.location.href = 'index.php';  // Redirect to the home page or another page
+        })
+        .catch(error => console.error('Error updating score:', error));
+    });
+    });

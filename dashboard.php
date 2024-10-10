@@ -8,96 +8,94 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     exit();
 }
 
+// Include the database connection
+include 'config/db_connection.php';
+
 // Retrieve user details from the session variables
 $first_name = $_SESSION['first_name'];
 $last_name = $_SESSION['last_name'];
 $username = $_SESSION['username'];
 $user_id = $_SESSION['user_id'];
 
-// You can fetch more user details from the database if needed (like email, avatar, etc.)
-// Example: $email = $_SESSION['email']; or fetch from database using $user_id
+// Fetch quiz results from the score table
+$query = "SELECT * FROM score_tb WHERE userid = '$user_id' ORDER BY date_taken DESC";
+$result = mysqli_query($conn, $query);
+
+// Check for errors in the query
+if (!$result) {
+    die("Query failed: " . mysqli_error($conn));
+}
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
+<head>
     <!-- Mobile Specific Meta -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <!-- Favicon-->
-    <link rel="shortcut icon" href="img/favicon.png" />
-    <!-- Author Meta -->
-    <meta name="author" content="WAVES®" />
-    <!-- Meta Description -->
-    <meta name="description" content="" />
-    <!-- Meta Keyword -->
-    <meta name="keywords" content="" />
-    <!-- meta character set -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta charset="UTF-8" />
-    <!-- Site Title -->
-    <title>WAVES® - User Login</title>
+    <title>WAVES® - User Dashboard</title>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700"
-      rel="stylesheet"
-    />
-    <!--
-			CSS
-			============================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet" />
+    <!-- CSS -->
     <link rel="stylesheet" href="css/linearicons.css" />
     <link rel="stylesheet" href="css/tencho.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/bootstrap.css" />
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
-    <link rel="stylesheet" href="css/magnific-popup.css" />
-    <link rel="stylesheet" href="css/nice-select.css" />
-    <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/owl.carousel.css" />
-    <link rel="stylesheet" href="css/full_width_animated_layers_008.css" />
     <link rel="stylesheet" href="css/main.css" />
-  </head>
+</head>
 
-  <body id="home">
+<body id="home">
     <?php include 'header.php'; ?>
 
     <div class="pt-60"></div>
     <section class="service-area section-gap pb-20" id="login-section">
-      <div class="container">
         <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Welcome, <?php echo $first_name . ' ' . $last_name; ?>!</h1>
-                <p><strong>Username:</strong> <?php echo $username; ?></p>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Welcome, <?php echo $first_name . ' ' . $last_name; ?>!</h1>
+                    <p><strong>Username:</strong> <?php echo $username; ?></p>
 
-                <!-- Displaying More User Information (if available) -->
-                <!-- You can retrieve this from the database if you have more fields like email, avatar, etc. -->
-                <p><strong>Full Name:</strong> <?php echo $first_name . ' ' . $last_name; ?></p>
+                    <!-- Display User Information -->
+                    <p><strong>Full Name:</strong> <?php echo $first_name . ' ' . $last_name; ?></p>
 
-                <!-- Display additional user details (e.g., Email, Avatar, etc.) -->
-                <!-- Uncomment and adjust if you have more details -->
-                <!--
-                <p><strong>Email:</strong> <?php echo $email; ?></p>
-                <p><strong>Avatar:</strong> <img src="img/<?php echo $avatar; ?>" alt="User Avatar"></p>
-                -->
+                    <!-- Quiz Results -->
+                    <h2>Your Quiz Results</h2><br/>
+                    <?php if (mysqli_num_rows($result) > 0): ?>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Quiz Name</th>
+                                    <th>Score</th>
+                                    <th>Date Taken</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php while ($row = mysqli_fetch_assoc($result)): ?>
+                                    <tr>
+                                        <td><?php echo htmlspecialchars($row['vulnerability']); ?></td>
+                                        <td><?php echo htmlspecialchars($row['score']); ?></td>
+                                        <td><?php echo htmlspecialchars($row['date_taken']); ?></td>
+                                    </tr>
+                                <?php endwhile; ?>
+                            </tbody>
+                        </table>
+                    <?php else: ?>
+                        <p>No quiz results found.</p>
+                    <?php endif; ?>
 
-                <!-- Logout Button -->
-                <form action="logout.php" method="POST">
-                    <button type="submit" class="btn btn-danger">Logout</button>
-                </form>
+                    <!-- Logout Button -->
+                    <form action="logout.php" method="POST">
+                        <button type="submit" class="btn btn-danger">Logout</button>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-
-      </div>
     </section>
 
     <?php include 'footer.php'; ?>
-
-    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+</body>
+<script src="js/vendor/jquery-2.2.4.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -119,5 +117,9 @@ $user_id = $_SESSION['user_id'];
     <script src="js/jquery.touchSwipe.min.js"></script>
     <script src="js/paradise_slider_min.js"></script>
     <script src="js/main.js"></script>
-  </body>
 </html>
+
+<?php
+// Close the database connection
+mysqli_close($conn);
+?>

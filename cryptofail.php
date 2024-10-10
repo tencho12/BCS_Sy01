@@ -191,10 +191,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <button type="submit" class="btn btn-primary mt-3">Submit Quiz</button>
               </form>
 
-              <!-- Result Message -->
-              <!-- <div id="quizResult" class="mt-3 hidden">
-                  <p id="quizResultText"></p>
-              </div> -->
               <div id="quizResult" class="mt-3 hidden">
                 <p id="quizResultText"></p>
                 <a href="crypto_secure.php" class="btn btn-success">Test Secure Form</a>

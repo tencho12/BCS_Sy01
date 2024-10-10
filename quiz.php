@@ -65,9 +65,11 @@
                 <div id="controls" class="mt-4 d-flex justify-content-between">
                     <button id="prev-btn" class="btn btn-secondary w-25">Previous</button>
                     <button id="next-btn" class="btn btn-primary w-25">Next</button>
-                    <a class="btn btn-danger mb-2 w-25" href="index.php" role="button" >
+                    <a id="quit-btn" class="btn btn-danger mb-2 w-25" role="button">Quit</a>
+
+                    <!-- <a class="btn btn-danger mb-2 w-25" href="index.php" role="button" >
                      Quit
-                      </a>
+                      </a> -->
                 </div>
               </div>
             </div>

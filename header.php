@@ -23,7 +23,7 @@
             <ul class="dropdown-menu">
               <li><a href="bruteforce_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=bruteforce">QUIZ</a></li>
-              <li><a href="attack\index.php">DEMO</a></li>
+              <li><a href="broke\index.html">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
@@ -60,7 +60,7 @@
             </ul>
           </li>
           <li><a href="Project_Study\Syn1 (WAVES) Proj Report.pdf" download>USER GUIDE</a></li>
-          <li><a href="auth.php">Login</a></li>
+          <li><a href="auth.php">Account</a></li>
         </ul>
       </nav>
     </div>

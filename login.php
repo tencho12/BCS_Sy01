@@ -26,11 +26,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (password_verify($password, $user_data['password'])) {
             // Password is correct, start session and set session variables
             $_SESSION['loggedin'] = true;
-            $_SESSION['user_id'] = $user_data['id'];
+            $_SESSION['user_id'] = $user_data['user_id'];
             $_SESSION['username'] = $user_data['user'];
             $_SESSION['first_name'] = $user_data['first_name'];
             $_SESSION['last_name'] = $user_data['last_name'];
 
+            // Log session data for debugging
+            error_log("Session User ID: " . $_SESSION['user_id']);
             // Redirect to the dashboard or another page
             header("Location: dashboard.php");
             exit();

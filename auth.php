@@ -1,3 +1,14 @@
+<?php
+// Start session to track if the user is logged in
+session_start();
+
+// Check if the user is already logged in
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    // If user is logged in, redirect them to the dashboard
+    header('Location: dashboard.php');
+    exit();  // Make sure no further code is executed after the redirect
+}
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
