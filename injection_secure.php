@@ -97,6 +97,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <input type="number" class="form-control" id="user_id" name="user_id" required>
               </div>
               <button type="submit" class="btn btn-primary">Fetch User Info</button>
+              <a href="index.php" class="btn btn-warning ml-3">Return Home</a>
             </form>
 
             <!-- Div to display the result -->

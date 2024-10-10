@@ -1,3 +1,40 @@
+<?php
+// Include the database connection file
+include 'config/db_connection.php';
+
+// Initialize variables to store the results
+$users = [];
+$error = "";
+
+// Check if the form has been submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the user input (user ID)
+    $id = $_POST['user_id'];
+
+    // Unsafely construct the SQL query
+    $query = "SELECT first_name, last_name, password FROM users WHERE user_id = '$id';";
+    
+    // Execute the query
+    $result = mysqli_query($conn, $query);
+
+    // Check for errors in execution
+    if ($result) {
+        if (mysqli_num_rows($result) > 0) {
+            // Fetch all results into the array
+            while ($row = mysqli_fetch_assoc($result)) {
+                $users[] = $row; // Store each row in the users array
+            }
+        } else {
+            $error = "No user found with ID $id.";
+        }
+    } else {
+        $error = "Error executing query.";
+    }
+
+    // Close the connection
+    mysqli_close($conn);
+}
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -45,78 +82,119 @@
 
   <body id="home">
     <?php include 'header.php'; ?>
+
+    <br/><br/><br/><br/>
     
-    <!-- Start service Area -->
-    <section class="service-area section-gap" id="vulnerabilities" data-animation="animated fadeInUp">
-      <div class="container" style="margin-top: 40px;">
-         <div>
-             <iframe src="injection_insecure.php" style="width: 100%; height: 400px; border: none;"></iframe>
-          </div>
-          <div class="row">
-            <div class="col">
-                <a class="btn btn-primary mb-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    PASS THE QUIZ TO SECURE YOUR FORM
-                </a>
+ <!-- Start of the Page Content -->
+    <section class="container mt-5">
+        <!-- Form for user input -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mb-4">Insecure SQL Injection Form</h1>
+                <form method="POST" action="" class="mb-4" id="userForm">
+                    <div class="form-group">
+                        <label for="user_id">Enter User ID:</label>
+                        <input type="text" class="form-control" id="user_id" name="user_id" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary">Fetch User Info</button>
+                </form>
             </div>
-            <div class="col">
-                <a class="btn btn-info mb-2" href="https://owasp.org/www-community/attacks/SQL_Injection" target="_blank" role="button" >
-                   View OWASP Documentation
-                </a>
-            </div>
-          </div>
         </div>
-        <div class="container mt-5 collapse" id="collapseExample">
-          <div class="row">
-                <div class="col-5">
-                  <h2 class="mb-2">SQL Injection Quiz</h2>
-                    <div class="container">
-                      <div id="quizContainer" class="quiz-container">
-                        <div class="py-2 quiz-question" id="question1" class="question">
-                            <p>1. Select the best option for running the query securly?</p>
-                            <input type="radio" name="q1" value="A" required> A) $query = \"SELECT * FROM users WHERE user = '\$username' AND password = '\$password'\"</input><br/>
-                            <input class="mt-3" type="radio" name="q1" value="B"> B) $stmt = \$conn->prepare(\"SELECT * FROM users WHERE user = ? AND password = ?\"); \$stmt->bind_param('ss', \$username, \$password)</input><br/>
-                            <input class="mt-3" type="radio" name="q1" value="C"> C) $query = addslashes(\$username)</input><br/>
-                            <input class="mt-3" type="radio" name="q1" value="D"> D) $query = htmlentities(\$username)</input><br/>
-                            <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q1', 'B')">Submit</button>
-                        </div>
 
-                          <div class="py-2 quiz-question" id="question2" class="question" style="display:none;">
-                              <p>2. Which of the following is a method to prevent SQL injection?</p>
-                              <input type="radio" name="q2" value="A" required> A) Input sanitization<br>
-                              <input type="radio" name="q2" value="B"> B) Using prepared statements<br>
-                              <input type="radio" name="q2" value="C"> C) Both A and B<br>
-                              <input type="radio" name="q2" value="D"> D) None of the above<br>
-                              <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q2', 'C')">Submit</button>
-                          </div>
-
-                            <div class="py-2 quiz-question" id="question3" class="question" style="display:none;">
-                                <p>3. Why should error messages be generic in production?</p>
-                                <input type="radio" name="q3" value="A" required> A) To prevent revealing sensitive information<br>
-                                <input type="radio" name="q3" value="B"> B) They are not important<br>
-                                <input type="radio" name="q3" value="C"> C) To confuse attackers<br>
-                                <input type="radio" name="q3" value="D"> D) To make debugging easier<br>
-                                <button type="button" class="btn btn-outline-primary mt-3" onclick="checkAnswer('q3', 'A')">Submit</button>
-                            </div>
-
-                            <div id="resultText" style="display:none;">
-                                <h4>Result:</h4>
-                                <h5 id="feedbackText"></h5>
-                                <button type="button" class="btn btn-outline-primary mt-3" onclick="restartQuiz()">Start Again</button>
-                            </div>
-                  </div>
-                </div>
-              </div>
-                <div class="col-7">
-                  <h3 id="quizheader" style="color: yellow">WHEN YOU PASS THE QUIZ, The secure form will be displayed here for testing</h3>
-                  <div id="result" class="result hidden"> 
-                    <iframe src="injection_secure.php" style="width: 100%; height: 500px; border: none;"></iframe>
-                  </div>
-                <div>
-              </div> 
+         <!-- User Info Table -->
+        <?php if (!empty($users)): ?>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <h2>Fetched User Information</h2>
+                <table class="table table-bordered">
+                    <thead class="thead-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Password</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php foreach ($users as $user): ?>
+                        <tr>
+                            <td><?php echo htmlspecialchars($id); ?></td>
+                            <td><?php echo htmlspecialchars($user['first_name']); ?></td>
+                            <td><?php echo htmlspecialchars($user['last_name']); ?></td>
+                            <td><?php echo htmlspecialchars($user['password']); ?></td>
+                        </tr>
+                        <?php endforeach; ?>
+                    </tbody>
+                </table>
             </div>
-          </div>
+        </div>
+        <?php elseif (!empty($error)): ?>
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="alert alert-danger"><?php echo htmlspecialchars($error); ?></div>
+            </div>
+        </div>
+        <?php endif; ?>
+
+       <!-- Card displaying vulnerability information -->
+    <div class="row">
+      <div class="col-md-12">
+          <div class="card">
+              <div class="card-header bg-danger text-white">
+                  <h5 class="card-title">Vulnerability: SQL Injection</h5>
+              </div>
+              <div class="card-body">
+                    <p class="card-text text-dark">
+                        The code below is vulnerable to SQL Injection, a security vulnerability that allows attackers to interfere with the queries that your application makes to its database. 
+                        In this case, an attacker could manipulate the SQL query by injecting malicious code through the user input (`user_id` field).
+                    </p>
+                    
+                    <!-- Vulnerable Code Example -->
+                    <div class="alert alert-warning">
+                        <strong>Vulnerable Code:</strong>
+                        <pre><code>
+                        // Unsafely constructed SQL query
+                        $query = "SELECT first_name, last_name, password FROM users WHERE user_id = '$id';";
+                        $result = mysqli_query($conn, $query);
+                        </code></pre>
+                    </div>
+
+                    <p class="card-text">
+                        To prevent this, we should use prepared statements with bound parameters. This method separates the SQL query structure from the user input, preventing malicious input from altering the query logic.
+                    </p>
+              </div>
         </div>
       </div>
+    </div>
+
+    <!-- MCQ Section to Fix the Vulnerability -->
+    <div class="row mt-5">
+      <div class="col-md-12">
+        <h2>MCQ: How to Fix SQL Injection</h2>
+        <p>Choose the correct method to prevent SQL Injection:</p>
+
+          <form id="mcqForm">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mcq" id="option1" value="A">
+                    <label class="form-check-label" for="option1">A) Use string concatenation to build SQL queries.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mcq" id="option2" value="B">
+                    <label class="form-check-label" for="option2">B) Use prepared statements with bound parameters.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="mcq" id="option3" value="C">
+                    <label class="form-check-label" for="option3">C) Allow the database to automatically sanitize the input.</label>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Submit Answer</button>
+          </form>
+          <!-- Result Message -->
+          <div id="result" class="mt-3 hidden">
+            <p id="resultText"></p>
+            <a id="resultText" href="injection_secure.php" class="btn btn-success">Test Secure Form</a>
+          </div>
+      </div>
+    </div>
     </section>
 
 
@@ -145,6 +223,30 @@
     <script src="js/paradise_slider_min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tencho_injection.js"></script>
+       <script>
+        // Function to check MCQ answers
+        document.getElementById('mcqForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const correctAnswer = 'B'; // Correct answer is B
+            const selectedAnswer = document.querySelector('input[name="mcq"]:checked');
+
+            const resultText = document.getElementById('resultText');
+            const resultDiv = document.getElementById('result');
+
+            if (selectedAnswer) {
+                if (selectedAnswer.value === correctAnswer) {
+                    resultText.innerText = 'Correct! You selected the right option (B). Prepared statements with bound parameters are the secure way to avoid SQL Injection.';
+                } else {
+                    resultText.innerText = 'Incorrect. The correct answer is B. Using prepared statements with bound parameters prevents SQL Injection.';
+                }
+                resultDiv.classList.remove('hidden');
+            } else {
+                resultText.innerText = 'Please select an option.';
+                resultDiv.classList.remove('hidden');
+            }
+        });
+    </script>
 
   </body>
 </html>

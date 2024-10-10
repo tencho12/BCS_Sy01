@@ -1,3 +1,39 @@
+<?php
+// Include the database connection file
+include 'config/db_connection.php';
+
+// Initialize variables to store the result and error message
+$error = "";
+$success = "";
+
+// Check if the form has been submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Get the user input (first name, last name, username, password)
+    $first_name = mysqli_real_escape_string($conn, $_POST['first_name']);
+    $last_name = mysqli_real_escape_string($conn, $_POST['last_name']);
+    $username = mysqli_real_escape_string($conn, $_POST['user']);
+    $password = mysqli_real_escape_string($conn, $_POST['password']);
+    
+    // Set default values for avatar, last_login, and failed_login
+    $avatar = "default-avatar.png"; // Assuming you have a default avatar
+    $last_login = date("Y-m-d H:i:s"); // Setting the current date and time
+    $failed_login = 0; // Initially, failed login attempts are set to 0
+
+    // Unsafely construct the SQL query (No password hashing as per your request)
+    $query = "INSERT INTO users (first_name, last_name, user, password, avatar, last_login, failed_login) 
+              VALUES ('$first_name', '$last_name', '$username', '$password', '$avatar', '$last_login', '$failed_login')";
+
+    // Execute the query
+    if (mysqli_query($conn, $query)) {
+        $success = "User registered successfully!";
+    } else {
+        $error = "Error executing query: " . mysqli_error($conn);
+    }
+
+    // Close the connection
+    mysqli_close($conn);
+}
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
   <head>
@@ -45,85 +81,130 @@
 
   <body id="home">
     <?php include 'header.php'; ?>
-    
+    <br/><br/><br/><br/>
     <!-- Start service Area -->
-    <section class="service-area section-gap" id="vulnerabilities" data-animation="animated fadeInUp">
-      <div class="container" style="margin-top: 40px;">
-         <div>
-             <iframe src="crypto_insecure.php" style="width: 100%; height: 600px; border: none;"></iframe>
-          </div>
-          <div class="row">
-            <div class="col">
-                <a class="btn btn-primary mb-2" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                    PASS THE QUIZ TO SECURE YOUR FORM
-                </a>
-            </div>
-            <div class="col">
-                <a class="btn btn-info mb-2" href="https://owasp.org/Top10/A02_2021-Cryptographic_Failures/" target="_blank" role="button" >
-                   View OWASP Documentation
-                </a>
-            </div>
-          </div>
-        </div>
-        <div class="container mt-5 collapse" id="collapseExample">
-          <div class="row">
-                <div class="col-5">
-                  <h2 class="mb-2">Cryptographic Failures Quiz</h2>
-                   <div class="container">
-                      <div id="quizContainer" class="quiz-container">
-                        <div class="py-2 quiz-question" id="question1" class="question">
-                            <p>1. Why are cryptographic algorithms like MD5 and SHA-1 considered insecure today?</p>
-                            <input type="radio" name="q1" value="A" required> A) They use too much computational power<br>
-                            <input type="radio" name="q1" value="B"> B) They are susceptible to collision attacks<br>
-                            <input type="radio" name="q1" value="C"> C) They are too slow for modern systems<br>
-                            <input type="radio" name="q1" value="D"> D) They do not support long enough keys<br>
-                            <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q1', 'B')">Submit</button>
-                        </div>
+    <section class="service-area" id="vulnerabilities" data-animation="animated fadeInUp">
+      <div class="container">
+        <div class="container mt-5">
+          <h2 class="mb-4">Insecure hashed password</h2>
 
-                          <div class="py-2 quiz-question" id="question2" class="question" style="display:none;">
-                              <p>2. Why is the use of hardcoded cryptographic keys in software a security vulnerability?</p>
-                              <input type="radio" name="q2" value="A" required> A) It slows down the encryption process<br>
-                              <input type="radio" name="q2" value="B"> B) It makes the software easier to update<br>
-                              <input type="radio" name="q2" value="C"> C) Hardcoded keys can be extracted through reverse engineering<br>
-                              <input type="radio" name="q2" value="D"> D) It improves the security of the software<br>
-                              <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q2', 'C')">Submit</button>
+          <!-- Form for username, first name, last name, and password input -->
+          <form method="POST" action="" class="mb-4" id="userForm">
+                <div class="form-group">
+                  <label for="first_name">First Name:</label>
+                  <input type="text" class="form-control" id="first_name" name="first_name" required />
+                </div>
+                <div class="form-group">
+                  <label for="last_name">Last Name:</label>
+                  <input type="text" class="form-control" id="last_name" name="last_name" required />
+                </div>
+                <div class="form-group">
+                  <label for="user">Username:</label>
+                  <input type="text" class="form-control" id="user" name="user" required />
+                </div>
+                <div class="form-group">
+                  <label for="password">Password:</label>
+                  <input type="password" class="form-control" id="password" name="password" required />
+                </div>
+                <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+
+              <!-- Display result or error message -->
+          <div>
+            <?php if (!empty($success)): ?>
+              <div class="alert alert-success"><?php echo htmlspecialchars($success); ?></div>
+            <?php elseif (!empty($error)): ?>
+            <div class="alert alert-danger"><?php echo htmlspecialchars($error); ?></div>
+              <?php endif; ?>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">
+                        <h5 class="card-title">Vulnerability: Insecure Cryptographic Failure (Plain-Text Password Storage)</h5>
+                    </div>
+                    <div class="card-body">
+                          <p class="card-text text-dark">
+                              The code below is vulnerable to Insecure Cryptographic Failure. In this case, the application stores user passwords in plain text in the database without any hashing. 
+                              This creates a significant security risk, as attackers who gain access to the database can easily retrieve user passwords and compromise accounts.
+                          </p>
+                          
+                          <!-- Vulnerable Code Example -->
+                          <div class="alert alert-warning">
+                              <strong>Vulnerable Code:</strong>
+                              <pre><code>
+                              // Storing password in plain-text without hashing
+                              $password = $_POST['password'];
+                              $query = "INSERT INTO users (username, password) VALUES ('$username', '$password');";
+                              $result = mysqli_query($conn, $query);
+                              </code></pre>
                           </div>
 
-                            <div class="py-2 quiz-question" id="question3" class="question" style="display:none;">
-                                <p>3. What is the consequence of poor key management in cryptographic systems?</p>
-                                <input type="radio" name="q3" value="A" required> A) Decreased system performance<br>
-                                <input type="radio" name="q3" value="B"> B) Reduced encryption speed<br>
-                                <input type="radio" name="q3" value="C"> C) Attackers gaining access to encrypted data<br>
-                                <input type="radio" name="q3" value="D")> D) Shorter key lengths<br>
-                                <button type="button" class="btn btn-sm btn-outline-primary mt-3" onclick="checkAnswer('q3', 'C')">Submit</button>
-                            </div>
+                          <p class="card-text">
+                              To prevent this, passwords should always be securely hashed before storing them in the database. A common and recommended approach is to use PHP's `password_hash()` function to create a hashed version of the password, and `password_verify()` to check the password during login.
+                          </p>
 
-                            <div id="resultText" style="display:none;">
-                                <h4>Result:</h4>
-                                <h5 id="feedbackText"></h5>
-                                <button type="button" class="btn btn-outline-primary mt-3" onclick="restartQuiz()">Start Again</button>
-                            </div>
-                 
-                  <div id="resultText" style="display:none;">
-                    <h4>Result:</h4>
-                    <h5 id="feedbackText"></h5>
-                    <button type="button" class="btn btn-outline-primary mt-3" onclick="restartQuiz()">Start Again</button>
-                  </div>
-                           
-                  </div>
-                </div>
+                          <p class="card-text">
+                              Without properly hashing passwords, any breach of the database could expose all user credentials, leading to serious security risks.
+                          </p>
+                    </div>
               </div>
-                <div class="col-7">
-                  <h3 id="quizheader" style="color: yellow">WHEN YOU PASS THE QUIZ, The secure form will be displayed here for testing</h3>
-                  <div id="result" class="result hidden"> 
-                    <iframe src="crypto_secure.php" style="width: 100%; height: 600px; border: none;"></iframe>
-                  </div>
-                <div>
-              </div> 
             </div>
+          </div>
+          <!-- quiz part from here -->
+           <!-- Quiz Section: Insecure Cryptographic Failure -->
+        <div class="row mt-5">
+          <div class="col-md-12">
+              <h2>Quiz: Insecure Cryptographic Failure (Plain-Text Password Storage)</h2>
+              <p>Answer the following questions to test your understanding of the insecure cryptographic failure vulnerability:</p>
+
+              <!-- MCQ 1: Question about storing passwords -->
+              <form id="quizForm">
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mcq1" id="option1a" value="A">
+                      <label class="form-check-label" for="option1a">A) Storing user passwords in plain text is acceptable if the database is secured with strong access controls.</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mcq1" id="option1b" value="B">
+                      <label class="form-check-label" for="option1b">B) Storing passwords in plain text is insecure and should never be done.</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mcq1" id="option1c" value="C">
+                      <label class="form-check-label" for="option1c">C) It's okay to store passwords in plain text as long as they are encrypted in transit.</label>
+                  </div>
+
+                  <!-- MCQ 2: Question about password hashing -->
+                  <div class="form-check mt-4">
+                      <input class="form-check-input" type="radio" name="mcq2" id="option2a" value="A">
+                      <label class="form-check-label" for="option2a">A) Password hashing should be avoided as it is unnecessary if a secure password policy is enforced.</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mcq2" id="option2b" value="B">
+                      <label class="form-check-label" for="option2b">B) Password hashing should be done using strong algorithms like bcrypt before storing passwords in the database.</label>
+                  </div>
+                  <div class="form-check">
+                      <input class="form-check-input" type="radio" name="mcq2" id="option2c" value="C">
+                      <label class="form-check-label" for="option2c">C) Password hashing is not necessary as long as the password is stored in an encrypted column.</label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary mt-3">Submit Quiz</button>
+              </form>
+
+              <!-- Result Message -->
+              <!-- <div id="quizResult" class="mt-3 hidden">
+                  <p id="quizResultText"></p>
+              </div> -->
+              <div id="quizResult" class="mt-3 hidden">
+                <p id="quizResultText"></p>
+                <a href="crypto_secure.php" class="btn btn-success">Test Secure Form</a>
+              </div>
           </div>
         </div>
       </div>
+
+      
+      
     </section>
 
 
@@ -152,6 +233,48 @@
     <script src="js/paradise_slider_min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tencho_cryptofail.js"></script>
+    <script>
+      // Handle the quiz form submission
+      document.getElementById('quizForm').addEventListener('submit', function(event) {
+          event.preventDefault();
+
+          const correctAnswers = {
+              mcq1: 'B', // Correct answer for MCQ 1
+              mcq2: 'B'  // Correct answer for MCQ 2
+          };
+
+          const mcq1Answer = document.querySelector('input[name="mcq1"]:checked');
+          const mcq2Answer = document.querySelector('input[name="mcq2"]:checked');
+
+          let resultMessage = '';
+          let score = 0;
+
+          // Check MCQ 1
+          if (mcq1Answer && mcq1Answer.value === correctAnswers.mcq1) {
+              score++;
+          } else {
+              resultMessage += 'MCQ 1 is incorrect. Storing passwords in plain text is always insecure.\n';
+          }
+
+          // Check MCQ 2
+          if (mcq2Answer && mcq2Answer.value === correctAnswers.mcq2) {
+              score++;
+          } else {
+              resultMessage += 'MCQ 2 is incorrect. Password hashing should be done using strong algorithms like bcrypt.\n';
+          }
+
+          // Show the result
+          const resultText = document.getElementById('quizResultText');
+          const resultDiv = document.getElementById('quizResult');
+
+          if (score === 2) {
+              resultText.innerText = 'Congratulations! You have answered both questions correctly.';
+          } else {
+              resultText.innerText = resultMessage || 'Some answers are incorrect. Try again!';
+          }
+          resultDiv.classList.remove('hidden');
+      });
+    </script>
 
   </body>
 </html>

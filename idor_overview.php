@@ -181,14 +181,13 @@
               </div>
             </div>
 
-            <!-- Card 3 -->
+            <!-- Card 3 -->x
             <div class="col-md-4">
               <div class="card">
-                <h5 class="card-header text-dark">IDORE Usage</h5>
+                <h5 class="card-header text-dark">IDOR Usage</h5>
                 <div class="card-body">
-                  <h5 class="card-title text-dark">What are Cryptographic Failures?</h5>
-                  <p class="card-text">Based on this web application, the lab exercises were created including the 
-                    automated scripts to evaluate learners solutions. ........ </p>
+                  <h5 class="card-title text-dark">IDOR</h5>
+                  <p class="card-text">Based  on  this  web  application,  the  lab  exercises  were  created  including  the automated scripts to evaluate learners’ solutions.  ........ </p>
                   <a href="Project_Study\idor2.pdf" class="btn btn-sm btn-outline-info" download>Download</a>
                 </div>
               </div>

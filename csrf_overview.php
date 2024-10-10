@@ -46,21 +46,21 @@
     <!-- <div class="mt-50"></div> -->
     <!-- Start service Area -->
      <div class="pt-60"></div>
-          <section class="service-area section-gap pb-20" id="vulnerabilities">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-md-8 header-text">
-            <h1>CROSS-SITE REQUEST FORGERY (CSRF)</h1>
+      <section class="service-area section-gap pb-20" id="vulnerabilities">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-8 header-text">
+              <h1>CROSS-SITE REQUEST FORGERY (CSRF)</h1>
+            </div>
           </div>
+          <div>
+            <p style="line-height: 1.7; font-size: 15px">
+              Cross-Site Request Forgery (CSRF) is a web security vulnerability that enables an attacker to trick a victim's browser into making unwanted requests to a web application where the user is authenticated, without their consent. This can lead to unauthorized actions being performed on behalf of the victim, such as changing account settings, making purchases, or transferring funds. CSRF attacks exploit the trust that a web application has in the user's browser, leveraging the user’s existing session. There are primarily two types of CSRF: state-changing requests, which alter the state of the application (e.g., modifying account details), and non-state-changing requests, such as fetching data or triggering actions that do not change server state. To defend against CSRF, web developers can implement anti-CSRF tokens, which are unique tokens sent with requests that validate the authenticity of the request, and employ the Same Site attribute in cookies to restrict cross-origin requests.
+            </p>
+          </div>
+          
         </div>
-        <div>
-          <p style="line-height: 1.7; font-size: 15px">
-            Cross-Site Request Forgery (CSRF) is a web security vulnerability that enables an attacker to trick a victim's browser into making unwanted requests to a web application where the user is authenticated, without their consent. This can lead to unauthorized actions being performed on behalf of the victim, such as changing account settings, making purchases, or transferring funds. CSRF attacks exploit the trust that a web application has in the user's browser, leveraging the user’s existing session. There are primarily two types of CSRF: state-changing requests, which alter the state of the application (e.g., modifying account details), and non-state-changing requests, such as fetching data or triggering actions that do not change server state. To defend against CSRF, web developers can implement anti-CSRF tokens, which are unique tokens sent with requests that validate the authenticity of the request, and employ the Same Site attribute in cookies to restrict cross-origin requests.
-          </p>
-        </div>
-        
-      </div>
-    </section>
+      </section>
     <section class="service-area" id="vulnerabilities">
       <div class="container">
         <div class="row d-flex justify-content-center">

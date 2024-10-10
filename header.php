@@ -15,7 +15,7 @@
             <ul class="dropdown-menu">
               <li><a href="xss_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=xss">QUIZ</a></li>
-              <li><a href="http://localhost/xss/1xss.php">DEMO</a></li>
+              <li><a href="1xss.php">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
@@ -23,7 +23,7 @@
             <ul class="dropdown-menu">
               <li><a href="bruteforce_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=bruteforce">QUIZ</a></li>
-              <li><a href="http://localhost/broke/atack.php">DEMO</a></li>
+              <li><a href="attack\index.php">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
@@ -39,7 +39,7 @@
             <ul class="dropdown-menu">
               <li><a href="idor_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=idor">QUIZ</a></li>
-              <li><a href="http://localhost/idor/index.php">DEMO</a></li>
+              <li><a href="idor\index.php">DEMO</a></li>
             </ul>
           </li>
            <li class="menu-item dropdown">
@@ -48,7 +48,7 @@
               <li><a href="injection_overview.php">OVERVIEW</a></li>
               <li><a href="quiz.php?quiz=sql_injection">QUIZ</a></li>
               <li><a href="injection.php">DEMO</a></li>
-              <li><a href="http://localhost/attack/index.php">AUTO SIMULATOR</a></li>
+              <li><a href="attack\index.php">AUTO SIMULATOR</a></li>
             </ul>
           </li>
           <li class="menu-item dropdown">
@@ -60,6 +60,7 @@
             </ul>
           </li>
           <li><a href="Project_Study\Syn1 (WAVES) Proj Report.pdf" download>USER GUIDE</a></li>
+          <li><a href="auth.php">Login</a></li>
         </ul>
       </nav>
     </div>
