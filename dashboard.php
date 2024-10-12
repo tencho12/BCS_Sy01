@@ -26,6 +26,20 @@ if (!$result) {
     die("Query failed: " . mysqli_error($conn));
 }
 
+// Fetch all users and their total quiz scores
+$user_score_query = "
+    SELECT u.user, u.first_name, u.last_name, SUM(s.score) as total_score
+    FROM users u
+    JOIN score_tb s ON u.user_id = s.userid
+    GROUP BY u.user_id
+    ORDER BY total_score DESC
+";
+$user_score_result = mysqli_query($conn, $user_score_query);
+
+// Check for errors in the query
+if (!$user_score_result) {
+    die("Query failed: " . mysqli_error($conn));
+}
 ?>
 
 <!DOCTYPE html>
@@ -53,14 +67,17 @@ if (!$result) {
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Welcome, <?php echo $first_name . ' ' . $last_name; ?>!</h1>
-                    <p><strong>Username:</strong> <?php echo $username; ?></p>
+
+                    <!-- <h1>Welcome, <?php echo $first_name . ' ' . $last_name; ?>!</h1> -->
+                    <h2 class="py-2">Welcome, <span class="text-info"><?php echo $first_name . ' ' . $last_name; ?>!</span> </h2>
+                    <!-- <p><strong>Username:</strong> <?php echo $username; ?></p> -->
 
                     <!-- Display User Information -->
                     <p><strong>Full Name:</strong> <?php echo $first_name . ' ' . $last_name; ?></p>
 
                     <!-- Quiz Results -->
-                    <h2>Your Quiz Results</h2><br/>
+                     <br/><br/>
+                    <h2 class="text-warning">Your Quiz Results</h2><br/>
                     <?php if (mysqli_num_rows($result) > 0): ?>
                         <table class="table table-bordered">
                             <thead>
@@ -82,6 +99,32 @@ if (!$result) {
                         </table>
                     <?php else: ?>
                         <p>No quiz results found.</p>
+                    <?php endif; ?>
+
+                    <!-- All Users Quiz Scores -->
+                     <br/>
+                    <h2 class="text-warning">All Users Leaderboard</h2><br/>
+                    <?php if (mysqli_num_rows($user_score_result) > 0): ?>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Full Name</th>
+                                    <th>Total Score</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php while ($user_row = mysqli_fetch_assoc($user_score_result)): ?>
+                                    <tr>
+                                        <td><?php echo htmlspecialchars($user_row['user']); ?></td>
+                                        <td><?php echo htmlspecialchars($user_row['first_name'] . ' ' . $user_row['last_name']); ?></td>
+                                        <td><?php echo htmlspecialchars($user_row['total_score']); ?></td>
+                                    </tr>
+                                <?php endwhile; ?>
+                            </tbody>
+                        </table>
+                    <?php else: ?>
+                        <p>No users have taken the quiz yet.</p>
                     <?php endif; ?>
 
                     <!-- Logout Button -->
