@@ -104,7 +104,6 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             
             console.log('Score update response:', data);
-            debugger
             // Optionally redirect or show a success message
             window.location.href = 'index.php';  // Redirect to the home page or another page
         })

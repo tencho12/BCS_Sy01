@@ -101,6 +101,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['password_csrf_demo'])
         .container:hover {
             transform: translateY(-5px);
         }
+         .option {
+            background-color: #28a745;
+            color: white;
+            padding: 9px;
+            font-size: 14px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
     </style>
 </head>
 <body>
@@ -117,6 +129,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['password_csrf_demo'])
             </div>
             <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
             <button type="submit">Change Password</button>
+              <a class="option" href="../index.php">
+                    <span class="option-text">Return Home</span>
+                    <i class="fas fa-shield-alt"></i>
+                </a>
         </form>
     </div>
 </body>

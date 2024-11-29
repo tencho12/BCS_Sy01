@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 // Simulate a logged-in user
 if (!isset($_SESSION['logged_in'])) {
     $_SESSION['logged_in'] = true;
@@ -99,7 +100,19 @@ if ($current_question >= count($questions)) {
         .form-group input[type="submit"]:hover, .fix button:hover { background-color: #218838; }
         .feedback { margin-bottom: 20px; }
         .vulnerable pre { word-wrap: break-word; white-space: pre-wrap; background-color: #f5f5f5; padding: 10px; border-radius: 5px; overflow: hidden; }
+        .option {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
     </style>
+     
 </head>
 <body>
 <div class="header">CSRF ATTACK SIMULATION AND LEARNING HUB</div>
@@ -159,7 +172,12 @@ if ($current_question >= count($questions)) {
                         </label>
                     </div>
                 <?php endforeach; ?>
+                <br/>
                 <button type="submit">Submit Answer</button>
+                <a class="option" href="../index.php">
+                    <span class="option-text">Return Home</span>
+                    <i class="fas fa-shield-alt"></i>
+                </a>
             </form>
         </div>
     <?php endif; ?>
@@ -171,3 +189,5 @@ if ($current_question >= count($questions)) {
 </div>
 </body>
 </html>
+
+
