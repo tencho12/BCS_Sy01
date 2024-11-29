@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
         event.preventDefault();
 
         // Send score to the server
-        fetch('/BCS_Sy01/quiz_score_updater.php', {
+        fetch('quiz_score_updater.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
